@@ -1,0 +1,20 @@
+footer {
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-footer {
+    width: 100%;
+    margin:auto;
+    width: calc(3vw*30 + .1em);
+    height: calc(3vw * 2 + .1em);
+    background-color: var(--dark-color);
+    align-self: center;
+    bottom: 0;
+}

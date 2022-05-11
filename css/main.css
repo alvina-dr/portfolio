@@ -1,0 +1,119 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+/*COLOR VARIABLES*/
+body {
+    /*FIRST SET OF COLOR*/
+    --primary-color: rgb(60, 153, 145);
+    --secondary-color:rgb(20, 71, 100);
+    --background-color: rgb(7, 30, 36);
+    --light-color: rgb(209, 246, 255);
+    --dark-color: rgb(13, 22, 24);
+    --text-color: rgb(161, 161, 161);
+
+    /*SECOND SET OF COLOR*/
+    --primary-color:rgb(156, 190, 198);
+    --secondary-color: rgb(37, 37, 37);
+    --background-color: rgb(19, 19, 19);
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.grid {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;    
+    position: absolute;
+    padding: 0;
+    background: transparent;
+    background-image: linear-gradient(var(--secondary-color) .1em, transparent .1em), linear-gradient(90deg, var(--secondary-color) .1em, transparent .1em);
+    background-size: 3vw 3vw; /*size of one square*/
+    z-index: -1;
+}
+
+
+
+
+.grid-index-2 {
+    margin-top: 200vh;
+    margin-bottom: 100px;
+    width: calc(3vw*30 + .1em);
+    height: calc(3vw * 10 + .1em);
+    z-index: 3;
+}
+
+button {
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border-radius: 0;
+    transition: .3s;
+    padding: 10px;
+    cursor: pointer;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+}
+
+.div-row {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+}
+
+.background-point {
+    background-color: var(--dark-color);
+    background-image:url(../img/point-pattern.png);
+    background-position: 0 15px;
+    background-repeat: repeat;
+    padding: 30px 0;
+}
+
+.btn-more {
+    color: var(--primary-color);
+    border: solid 2px var(--primary-color);
+    padding: 0 10px;
+    padding-left: 20%;
+    margin-top: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    width: fit-content;
+    z-index: 3;
+}
+
+.btn-more:before {
+    content: '';
+    transition: .5s;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--primary-color);
+    color: transparent;
+    left: -100%;
+}
+
+.btn-more:hover:before
+{
+    left: -60%; 
+}
