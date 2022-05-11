@@ -18,10 +18,15 @@
     flex-direction: column;
     justify-content: flex-start;
     margin: 0;
+    line-height: 23px;
 }
 
 #about-section div {
     margin-bottom: 10px;
+}
+
+#about-section h3 {
+    padding-bottom: 5px;
 }
 
 @media screen and (max-width: 1000px) {
