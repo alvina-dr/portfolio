@@ -69,3 +69,15 @@ navbar {
   width: calc(3vw*30 + .1em);
   height: calc(3vw * 1 + .1em);
 }
+
+@media screen and (max-width: 1000px) {
+  .grid-header {
+    height: calc(3vw * 2 + .1em);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-header {
+    height: calc(3vw * 3 + .1em);
+  }
+}

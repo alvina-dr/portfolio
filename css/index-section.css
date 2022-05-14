@@ -31,6 +31,13 @@
     padding-bottom: 5px;
 }
 
+.grid-index-1 {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: calc(3vw*30 + .1em);
+    height: calc(3vw * 16 + .1em);
+}
+
 @media screen and (max-width: 1000px) {
     #about-section {
         width: 100%;
@@ -66,12 +73,7 @@
     }
 }
 
-.grid-index-1 {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 16 + .1em);
-}
+
 
 .scroll-text-div {
     width: 90%;
