@@ -61,6 +61,9 @@
         height: fit-content;
         text-align: justify;
     }
+    #project-section {
+        padding: 0 10px;
+    }
 }
 
 .grid-index-1 {

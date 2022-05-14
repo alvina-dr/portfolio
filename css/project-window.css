@@ -134,3 +134,21 @@
     background-color: var(--light-color);
     color: var(--background-color);
 }
+
+@media screen and (max-width: 600px) {
+    .project-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-window2 {
+        display: none;
+    }
+    .project-window1 {
+        margin: 0;
+    }
+    #project-menu  {
+        margin-top: 10px;
+        padding-left: 0;
+    }
+
+}
