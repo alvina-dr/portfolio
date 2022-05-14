@@ -1,5 +1,4 @@
 var projectNavTitle = document.getElementById("project-nav-title");
-
 var projectTitle = document.getElementById("project-title");
 var projectText = document.getElementById("project-text");
 var projectId = document.getElementById("project-id");
@@ -7,10 +6,6 @@ var projectLink = document.getElementById("project-link");
 var projectImage = document.getElementById("project-image");
 var newTag = document.getElementById("new-tag");
 var buttonArray = [];
-
-//get picture source
-//get link for complete project
-//get bool value for new or not
 var projectMenu = document.getElementById("project-menu");
 
 
@@ -20,8 +15,6 @@ projects.forEach( project =>  {
     projectButton.setAttribute("onclick", "ShowProject('"+projectButton.id+"');")
     buttonArray.push(projectButton);
 });
-
-ShowProject(0);
 
 function ShowProject (id) {
     buttonArray.forEach (button => {
@@ -41,3 +34,5 @@ function ShowProject (id) {
     }
 
 };
+
+ShowProject(0);

@@ -24,7 +24,7 @@
     object-fit: cover;
     transition: .5s;
     position: relative;
-    filter: brightness(50%);
+    filter: brightness(70%);
 }
 
 .project-card-data {

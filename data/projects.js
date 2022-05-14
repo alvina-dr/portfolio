@@ -5,7 +5,7 @@ var projects =
         "projectID": "0",
         "image": "img/cover-favorite.jpg",
         "projectText": "Find The Way Back is the result of my last game jam ! It's a puzzle game and I'm really proud of the mechanics and the story that it allowed us to tell.",
-        "projectLink": "html/projects/photomontage.html",
+        "projectLink": "html/projects/find-the-way-back.html",
         "new": true
     },
     {
