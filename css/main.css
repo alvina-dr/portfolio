@@ -59,6 +59,7 @@ button {
     border-radius: 0;
     transition: .3s;
     padding: 10px;
+    cursor: none;
 }
 
 section {

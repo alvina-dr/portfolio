@@ -1,5 +1,5 @@
 let mouseCursor = document.querySelector(".cursor-default");
-let links = document.querySelectorAll("a");
+let links = document.querySelectorAll("a, button");
 window.addEventListener("mousemove", cursor);
 
 function cursor(e) {
@@ -18,11 +18,8 @@ links.forEach(link =>
         })
         document.addEventListener('mouseleave', () => {
             mouseCursor.classList.add("cursor-hidden");
-            console.log("leave window");
         })
         document.addEventListener('mouseover', () => {
             mouseCursor.classList.remove("cursor-hidden");
-            console.log("enter window");
-
         })
     })
