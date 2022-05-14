@@ -13,12 +13,15 @@ var buttonArray = [];
 //get bool value for new or not
 var projectMenu = document.getElementById("project-menu");
 
+
 projects.forEach( project =>  {
     var projectButton = projectMenu.appendChild(document.createElement('button'))
     projectButton.setAttribute('id', project.projectID);
     projectButton.setAttribute("onclick", "ShowProject('"+projectButton.id+"');")
     buttonArray.push(projectButton);
-})
+});
+
+ShowProject(0);
 
 function ShowProject (id) {
     buttonArray.forEach (button => {
@@ -37,8 +40,4 @@ function ShowProject (id) {
         newTag.setAttribute("class", "new-tag-hidden");
     }
 
-}
-
-
-//make a button for each project in json file
-//link button to make corresponding project appear
+};
