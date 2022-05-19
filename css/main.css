@@ -77,6 +77,10 @@ section {
     margin: auto;
 }
 
+.div-column {
+    display: flex;
+    flex-direction: column;
+}
 .background-point {
     background-color: var(--dark-color);
     background-image:url(../img/point-pattern.png);
@@ -120,7 +124,7 @@ section {
 .cursor-default {
     width: 10px;
     background-color: var(--light-color);
-    border-radius: 50px;
+    border-radius: 50%;
     height: 10px;
     position: fixed;
     transform: translate(-50%, -50%);
@@ -137,4 +141,29 @@ section {
 
 .cursor-hidden {
     display: none;
+}
+
+#text-to-copy {
+    position: absolute;
+    user-select: none;
+    font-family: Barlow;
+    font-weight: 700;
+    animation: text-rotation 7.5s linear infinite;
+}
+
+@keyframes text-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#text-to-copy span {
+    position: absolute;
+    text-transform: uppercase;
+    top: -60px;
+    display: inline-block;
+    transform-origin: 0 60px;
 }
