@@ -1,0 +1,18 @@
+.project-window2 {
+    height: auto;
+    padding-top: 35px;
+    color: var(--light-color);
+}
+
+.icon-social-media {
+    filter: invert(96%) sepia(78%) saturate(3963%) hue-rotate(174deg) brightness(109%) contrast(100%);
+    width: 40px;
+    margin: 5px;
+}
+
+.grid-contact-1 {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: calc(3vw*30 + .1em);
+    height: calc(3vw * 13 + .1em);
+}
