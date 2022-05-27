@@ -1,0 +1,14 @@
+.project-window1 {
+    width: 100%;
+}
+
+.project-window1 .project-window1-image {
+    padding-top: 20px;
+    filter: none;
+}
+
+#experience-section .div-row{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
