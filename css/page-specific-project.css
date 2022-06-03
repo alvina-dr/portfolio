@@ -26,10 +26,20 @@
     margin-top: 120px;
     margin-bottom: 100px;
     width: calc(3vw*30 + .1em);
-    height: calc(3vw * 73 + .1em);
+    height: calc(3vw * 75 + .1em);
 }
 
 #photomontage-section img {
     width: 100%;
     margin-bottom: 20px;
+}
+
+.content-line-showcase {
+        margin-bottom: 20px;
+        height: 40px;
+        overflow: hidden;
+}
+
+.content-line-showcase img {
+    width: calc(100%/8);
 }
