@@ -42,4 +42,5 @@
 
 .content-line-showcase img {
     width: calc(100%/8);
+    object-position: center -20px;
 }
