@@ -3,18 +3,3 @@
     margin-bottom: 100px;
 }
 
-#photomontage-section .div-row {
-    justify-content: space-around;
-}
-
-#photomontage-section img {
-    width: 70%;
-    margin-bottom: 20px;
-}
-
-.grid-photomontage-1 {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 37 + .1em);
-}
