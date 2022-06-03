@@ -33,11 +33,15 @@ a {
     font-weight: 400;
     font-size: large;
     color: var(--light-color);
-    cursor: none;
+    cursor: none;  
+}
+
+.link-in-text {
+
     text-decoration: underline;
 }
 
-a:hover {
+.link-in-text:hover {
     background-color: var(--primary-color);
 }
 
