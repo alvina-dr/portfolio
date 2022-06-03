@@ -45,7 +45,7 @@ var projects =
         "projectID": "5",
         "image": "img/cover-3d.jpg",
         "projectText": "I started 3D modelisation when I first discovered Unity and wanted to make my own assets. Then it became a real interest for a while and I still love composing a picture or modelising objects.",
-        "projectLink": "html/projects/photomontage.html",
+        "projectLink": "html/projects/3d.html",
         "new": false
     },
     {
