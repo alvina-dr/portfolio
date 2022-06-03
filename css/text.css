@@ -32,12 +32,12 @@ a {
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
     font-size: large;
-    color: var(--light-color);
+    color: var(--primary-color);
     cursor: none;  
 }
 
 .link-in-text {
-
+    color: var(--light-color);
     text-decoration: underline;
 }
 
