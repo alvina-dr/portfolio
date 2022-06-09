@@ -1,7 +1,9 @@
 var textToCopy = document.getElementById('text-to-copy');
+var string = textToCopy.innerHTML;
 textToCopy.setAttribute("onclick", "CopyText()")
 
 function CopyText() {
-    navigator.clipboard.writeText(textToCopy.innerHTML);
-    alert('Copied !');
+    navigator.clipboard.writeText(string);
+    copiedSign.style.display = "block";
+    setTimeout(() => { copiedSign.style.display = "none"; }, 1000);
 }

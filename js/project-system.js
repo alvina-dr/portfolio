@@ -28,9 +28,9 @@ function ShowProject (id) {
     projectLink.setAttribute("href", projects[id].projectLink);
     projectImage.src = projects[id].image;
     if (projects[id].new) {
-        newTag.setAttribute("class", "new-tag");
+        newTag.classList.remove("new-tag-hidden");
     } else {
-        newTag.setAttribute("class", "new-tag-hidden");
+        newTag.classList.add("new-tag-hidden");
     }
 
 };

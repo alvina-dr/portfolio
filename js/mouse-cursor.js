@@ -1,5 +1,5 @@
 let mouseCursor = document.querySelector(".cursor-default");
-let links = document.querySelectorAll("a, button");
+let links = document.querySelectorAll("a, button, .video-game-card");
 window.addEventListener("mousemove", cursor);
 
 function cursor(e) {

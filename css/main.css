@@ -75,6 +75,13 @@ section {
     flex-direction: column;
 }
 
+.div-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 /*BUTTONS*/
 
 button {

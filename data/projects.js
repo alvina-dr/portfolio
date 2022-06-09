@@ -21,7 +21,7 @@ var projects =
         "projectID": "2",
         "image": "img/cover-video-game.jpg",
         "projectText": "I've been making video games for a while (since I was eleven) and I love gameplay programming.",
-        "projectLink": "html/projects/photomontage.html",
+        "projectLink": "html/projects/video-games.html",
         "new": false
     },
     {
@@ -52,7 +52,7 @@ var projects =
         "projectTitle": "Web",
         "projectID": "6",
         "image": "img/cover-web.jpg",
-        "projectText": "I discovered web development during my DHE in Bordeaux. It quickly became a hobby and led to me learning JS among other things.",
+        "projectText": "I discovered web development during my DipHE in Bordeaux. It quickly became a hobby and led to me learning JS among other things.",
         "projectLink": "html/projects/photomontage.html",
         "new": false
     },
