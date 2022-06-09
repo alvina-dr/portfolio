@@ -107,6 +107,7 @@ button:hover {
     margin: 20px 0;
     margin-block-end: 20px;
     margin-block-start: 20px;
+    margin-right: 10px;
 }
 
 .btn-more {
