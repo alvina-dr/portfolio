@@ -73,8 +73,6 @@
     }
 }
 
-
-
 .scroll-text-div {
     width: 90%;
     margin: auto;
@@ -98,7 +96,7 @@
 
 .scroll-text-new {
     display: inline-block;
-    animation: Scroll 10s forwards linear infinite;
+    animation: Scroll 10s linear infinite;
     align-self: center;
 }
 

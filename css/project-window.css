@@ -113,21 +113,7 @@
     bottom: 0;
     right: 0;
     z-index: 2;
-    border: solid 1px var(--light-color);
-    background-color: transparent;
-    text-decoration: none;
-    color: var(--light-color);
-    border-radius: 0;
-    transition: .3s;
-    padding: 10px;
     margin: 20px;
-    cursor: none;
-}
-
-.project-window-btn-more:hover {
-    border: solid 1px var(--light-color);
-    background-color: var(--light-color);
-    color: var(--background-color);
 }
 
 @media screen and (max-width: 600px) {

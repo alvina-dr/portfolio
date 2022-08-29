@@ -188,3 +188,21 @@ button:hover {
     display: inline-block;
     transform-origin: 0 60px;
 }
+
+.btn1 {
+    border: solid 2px var(--light-color);
+    background-color: var(--light-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--background-color);
+    border-radius: 0;
+    padding: 10px;
+    cursor: none;
+    width: fit-content;
+}
+
+.btn1:hover { 
+    background-color: transparent;
+    color: var(--light-color);
+}

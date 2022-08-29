@@ -10,7 +10,7 @@ var videoGameDatas =
         "name" : "Find the way back",
         "image1": "../../img/video-games/find-the-way-back.jpg",
         "image2": "../../img/video-games/find-the-way-back.jpg",
-        "link": "../../index.html"
+        "link": "find-the-way-back.html"
     },
     {
         "name" : "Thief tales",
@@ -35,6 +35,12 @@ var videoGameDatas =
         "image1": "../../img/video-games/golden-pumpkin.jpg",
         "image2": "../../img/video-games/find-the-way-back.jpg",
         "link": "../../index.html"
+    }, 
+    {
+        "name" : "Samedi 10 heures !",
+        "image1": "../../img/video-games/those-who-remain.jpg",
+        "image2": "../../img/video-games/find-the-way-back.jpg",
+        "link": "../../html/about.html"
     },
     {
         "name" : "Those who remain",
