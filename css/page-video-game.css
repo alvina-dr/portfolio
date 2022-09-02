@@ -2,7 +2,7 @@
     margin-top: 120px;
     margin-bottom: 100px;
     width: calc(3vw*30 + .1em);
-    height: calc(3vw * 23 + .1em);
+    height: calc(3vw * 26 + .1em);
 }
 
 #video-game-section {
@@ -10,51 +10,29 @@
 }
 
 .div-wrap {
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
 }
 
 .video-game-card {
     background-color: transparent;
     position: relative;
-    width: 22.5%;
+    width: 90%;
     transition: .5s;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
     margin-bottom: 20px;
     border-radius: 8px;
     transform-style: preserve-3d;
-
 }
 
 .video-game-card:after {
     content: '';
     padding-bottom: 100%;
-}
-
-.video-game-card-top {
-    margin-top: 5px;
-    background-color:var(--light-color);
-    overflow: hidden;
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 80%;
-    height: 30%;
-    transition: .3s;
-}
-
-.video-game-card-top2 {
-    background-color:var(--primary-color);
-    border-radius: 0 0 8px 8px;
-    overflow: hidden;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 27.5%;
-    width: 45%;
-    height: 30%;
-    clip-path: polygon(0 0, 55% 0, 55% 90%, 80% 90%, 80% 10%, 55% 10%, 55% 0, 100% 0, 100% 100%, 0 100% );
 }
 
 .video-game-card-arrow {
@@ -78,51 +56,29 @@
     50% {background-color: var(--light-color);}
 }
 
-.video-game-card-bottom {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: 0.5s;
-    background-color: var(--primary-color);
-    clip-path: polygon(0 0, 14% 0%, 15% 1%, 15% 30%, 16% 31%, 74% 31%, 75% 30%, 75% 1%, 76% 0, 90% 0, 100% 10%, 100% 100%, 86% 100%, 85% 99%, 85% 41%, 84% 40%, 16% 40%, 15% 41%, 15% 99%, 14% 100%, 0% 100%);
-    z-index: 1;
-    bottom: 0;
-    border-radius: 8px;
-    filter: brightness(0.4);
-}
-
-.video-game-card-bottom2 {
-    background-color:var(--dark-color);
-    filter: opacity(0.9);
-    overflow: hidden;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    z-index: 0;
-    width: 71%;
-    height: 59%;
-    margin-bottom: 1%;
-    display: flex;
-    justify-content: center;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 6%, 94% 5%, 6% 5%, 5% 6%, 5% 100%, 0 100%);
-}
-
 .video-game-scroll-div {
     background-color: var(--dark-color);
     position: absolute;
     z-index: 6;
-    top: 30%;
+    top: 20%;
     left: 3.5%;
-    height: 71%;
+    height: 80%;
     overflow: hidden;
     width: 8%;
     display: flex;
     justify-content: center;
+}
+
+.video-game-scroll-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .video-game-card h4 {
-    position: absolute;
     color: var(--light-color);
     font-family: 'titleFont', sans-serif;
     font-weight: 1000;
@@ -132,40 +88,23 @@
     writing-mode: vertical-rl;
     text-orientation: upright;
     white-space: nowrap;
-    animation: scroll-up 10s linear infinite;
-}
-
-.video-game-scroll-text2 {
-    top: 100%;
-    animation: scroll-up2 10s linear infinite;
-
+    animation: scroll-up 10s linear infinite; 
 }
 
 @keyframes scroll-up {
-    0% {top: 0%;}
-    100% {top: -200%;}
+    to {
+        transform: translateY(-100%);
+    }
 }
 
-@keyframes scroll-up2 {
-    0% {top: 100%;}
-    100% {top: -100%;}
-}
-
-.video-game-card h4::after {
-    content: inherit;
-}
-
-.video-game-card-img1 {
+.video-game-card-img {
     transition: .4s;
-    width: 90%;
+    width: 100%;
     height: 100%;
     position: absolute; 
     object-fit: cover;
     filter: saturate(0.7) sepia(0.3);
     margin: 0;
-    bottom: -40%;
-    border-radius: 50px;
-    clip-path: polygon(0 0, 100% 0, 100% 59%, 0 59%);
 }
 
 .video-game-card a {
@@ -173,14 +112,31 @@
     color: var(--primary-color);
     padding: 5px 7px;
     text-decoration: none;
-    transition: bottom 1.3s, background-color .3s;
+    transition: .3s;
     z-index: 6;
     position: absolute;
     right: -5px;
-    top: 20%;
+    bottom: 5%;
     font-size: 20px;
+    cursor: none;
 }
 
-.video-game-card-selected a:hover {
-    background-color:var(--secondary-color);
+.video-game-card a:hover {
+    background-color:var(--primary-color);
+    color:var(--secondary-color);
+    right: 0px;
 }
+
+.object-to-filter {
+    display: none;
+}
+
+.filter-show {
+    display: flex;
+}
+
+.filter-active-btn {
+    background-color: transparent;
+    color: var(--light-color);
+}
+

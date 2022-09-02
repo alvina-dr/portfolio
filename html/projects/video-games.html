@@ -36,9 +36,10 @@
 
 <!------------------------------------------------------ VIDEO GAME -------------------------------------------->
 
-    <div class="div-row" style="justify-content: center;">
-        <a class="btn1" href="">WORK</a>
-        <a class="btn1" href="">JAM</a>
+    <div class="div-row" id="filter-btn-container" style="justify-content: flex-start;">
+        <a class="btn1 filter-active-btn" onclick="filterSelection('all')">ALL</a>        
+        <a class="btn1" onclick="filterSelection('work')">WORK</a>
+        <a class="btn1" onclick="filterSelection('jam')">JAM</a>
     </div><br>
     <section id="video-game-section" class="div-row">
         <div class="div-wrap" id="video-game-container"></div>
@@ -49,12 +50,10 @@
         <div class="grid grid-footer"></div>
         <p>Made by Alvina Damasio--Razafiarizaka</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/gijsroge/tilt.js/38991dd7/dest/tilt.jquery.js"></script>
     <script src="../../data/video-games.js"></script>
-
-    <script src="../../js/mouse-cursor.js"></script>
     <script src="../../js/video-game-system.js"></script>
+    <script src="../../js/mouse-cursor.js"></script>
+    <script src="../../js/filter-games.js"></script>
 
 </body>
 </html>
