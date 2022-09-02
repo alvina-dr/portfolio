@@ -16,6 +16,24 @@
     align-items: center;
 }
 
+@media screen and (max-width: 1500px) {
+    .div-wrap {
+        grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .div-wrap {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .div-wrap {
+        grid-template-columns: 100%;
+    }
+}
+
 .video-game-card {
     background-color: transparent;
     position: relative;
