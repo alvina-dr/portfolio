@@ -71,3 +71,10 @@
     width: calc(3vw*30 + .1em);
     height: calc(3vw * 26 + .1em);
 }
+
+.grid-sandwalkers {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: calc(3vw*30 + .1em);
+    height: calc(3vw * 21 + .1em);
+}

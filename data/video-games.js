@@ -9,7 +9,7 @@ var videoGameDatas =
     {
         "name" : "Sandwalkers",
         "image1": "../../img/video-games/sandwalkers.jpg",
-        "link": "../../index.html",
+        "link": "video-games/sandwalkers.html",
         "filter-type": "work"
     },    
     {
