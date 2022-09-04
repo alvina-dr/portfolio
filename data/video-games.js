@@ -15,7 +15,7 @@ var videoGameDatas =
     {
         "name" : "Protectors of pomelo",
         "image1": "../../img/video-games/protectors-of-pomelo.jpg",
-        "link": "../../index.html",
+        "link": "video-games/pop.html",
         "filter-type": "work"
     },   
     {
