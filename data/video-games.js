@@ -15,7 +15,7 @@ var videoGameDatas =
     {
         "name" : "Protectors of pomelo",
         "image1": "../../img/video-games/protectors-of-pomelo.jpg",
-        "link": "video-games/pop.html",
+        "link": "video-games/protectors-of-pomelo.html",
         "filter-type": "work"
     },   
     {
@@ -27,26 +27,26 @@ var videoGameDatas =
     {
         "name" : "Thief tales",
         "image1": "../../img/video-games/thief-tales.jpg",
-        "link": "../../index.html",
+        "link": "video-games/thief-tales.html",
         "filter-type": "jam"
     },
     {
         "name" : "Chloé au musée",
         "image1": "../../img/video-games/chloe-au-musee.jpg",
         "link": "../../html/about.html",
-        "filter-type": "jam"
+        "filter-type": "school"
     },
     {
         "name" : "Pokemon memory",
         "image1": "../../img/video-games/pokemon-memory.jpg",
         "link": "../../html/about.html",
-        "filter-type": "jam"
+        "filter-type": "school"
     },
     {
         "name" : "Golden pumpkin",
         "image1": "../../img/video-games/golden-pumpkin.jpg",
         "link": "../../index.html",
-        "filter-type": "jam"
+        "filter-type": "school"
     }, 
     // {
     //     "name" : "Samedi 10 heures !",
@@ -58,7 +58,7 @@ var videoGameDatas =
         "name" : "Those who remain",
         "image1": "../../img/video-games/those-who-remain.jpg",
         "link": "../../html/about.html",
-        "filter-type": "jam"
+        "filter-type": "school"
     },
     {
         "name" : "Nanimo",
@@ -70,7 +70,7 @@ var videoGameDatas =
         "name" : "Crystal's quest",
         "image1": "../../img/video-games/crystals-quest.jpg",
         "link": "../../html/about.html",
-        "filter-type": "jam"
+        "filter-type": "school"
     },
     // {
     //     "name" : "Room 203",
