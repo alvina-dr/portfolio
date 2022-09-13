@@ -92,3 +92,10 @@
     width: calc(3vw*30 + .1em);
     height: calc(3vw * 15 + .1em);
 }
+
+.grid-chloe-au-musee {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: calc(3vw*30 + .1em);
+    height: calc(3vw * 20 + .1em);
+}

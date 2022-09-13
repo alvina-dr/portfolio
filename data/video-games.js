@@ -33,7 +33,7 @@ var videoGameDatas =
     {
         "name" : "Chloé au musée",
         "image1": "../../img/video-games/chloe-au-musee.jpg",
-        "link": "../../html/about.html",
+        "link": "video-games/chloe-au-musee.html",
         "filter-type": "school"
     },
     {
