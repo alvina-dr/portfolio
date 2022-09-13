@@ -39,7 +39,7 @@ var videoGameDatas =
     {
         "name" : "Pokemon memory",
         "image1": "../../img/video-games/pokemon-memory.jpg",
-        "link": "../../html/about.html",
+        "link": "video-games/pokemon-memory.html",
         "filter-type": "school"
     },
     {

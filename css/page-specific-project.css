@@ -85,3 +85,10 @@
     width: calc(3vw*30 + .1em);
     height: calc(3vw * 23 + .1em);
 }
+
+.grid-pokemon-memory {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: calc(3vw*30 + .1em);
+    height: calc(3vw * 15 + .1em);
+}
