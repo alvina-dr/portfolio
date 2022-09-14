@@ -61,7 +61,7 @@
 
 /*FIND THE WAY BACK*/
 
-#ftwb-section {
+#vg-section {
     margin-bottom: 100px;
 }
 
@@ -98,4 +98,11 @@
     margin-bottom: 100px;
     width: calc(3vw*30 + .1em);
     height: calc(3vw * 20 + .1em);
+}
+
+.grid-golden-pumpkin {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: calc(3vw*30 + .1em);
+    height: calc(3vw * 15 + .1em); 
 }

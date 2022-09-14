@@ -45,7 +45,7 @@ var videoGameDatas =
     {
         "name" : "Golden pumpkin",
         "image1": "../../img/video-games/golden-pumpkin.jpg",
-        "link": "../../index.html",
+        "link": "video-games/golden-pumpkin.html",
         "filter-type": "school"
     }, 
     // {
