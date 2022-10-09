@@ -8,6 +8,7 @@ function filterSelection(c) {
     w3RemoveClass(x[i], "filter-show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "filter-show");
   }
+  SetGridSizeFromRowNumber();
 }
 
 // Show filtered elements
@@ -44,4 +45,19 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace("filter-active-btn", " ");
     this.className += " filter-active-btn";
   });
+}
+
+function SetGridSizeFromRowNumber() {
+  var x = document.getElementsByClassName("filter-show");
+  var rowNumber = x.length/4;
+  var grid = document.getElementsByClassName("grid-video-game-1");
+  if (rowNumber <= 1) {
+    grid[0].style.height = "calc(3vw * 11 + .1em)";
+  } else if (rowNumber <= 2 && rowNumber > 1) {
+    grid[0].style.height = "calc(3vw * 17 + .1em)";
+  } else if (rowNumber <= 3 && rowNumber >2) {
+    grid[0].style.height = "calc(3vw * 24 + .1em)";
+  } else if (rowNumber <= 4 && rowNumber > 3) {
+    grid[0].style.height = "calc(3vw * 26 + .1em)";
+  } 
 }
