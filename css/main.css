@@ -82,6 +82,12 @@ section {
     width: 100%;
 }
 
+.div-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*BUTTONS*/
 
 button {

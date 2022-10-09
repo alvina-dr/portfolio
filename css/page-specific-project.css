@@ -113,3 +113,16 @@
     width: calc(3vw*30 + .1em);
     height: calc(3vw * 19 + .1em); 
 }
+
+#photography-container {
+    width: 90%;
+    margin: auto;
+    gap: 0;
+}
+
+.grid-photography {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: calc(3vw*30 + .1em);
+    height: calc(3vw * 60 + .1em); 
+}

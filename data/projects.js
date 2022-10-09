@@ -37,7 +37,7 @@ var projects =
         "projectID": "3",
         "image": "img/cover-photograph.jpg",
         "projectText": "Photography allows me to capture moments of life and I really love the story that it can convey.",
-        "projectLink": "html/projects/photomontage.html",
+        "projectLink": "html/projects/photography.html",
         "new": false
     },
     {
