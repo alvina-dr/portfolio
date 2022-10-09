@@ -57,7 +57,7 @@ var videoGameDatas =
     {
         "name" : "Those who remain",
         "image1": "../../img/video-games/those-who-remain.jpg",
-        "link": "../../html/about.html",
+        "link": "video-games/those-who-remain.html",
         "filter-type": "school"
     },
     {
