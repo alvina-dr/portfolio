@@ -9,7 +9,7 @@
     margin-bottom: 100px;
 }
 
-.div-wrap {
+.div-grid {
     display: grid;
     justify-content: center;
     grid-template-columns: 25% 25% 25% 25%;
@@ -17,19 +17,19 @@
 }
 
 @media screen and (max-width: 1500px) {
-    .div-wrap {
+    .div-grid {
         grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .div-wrap {
+    .div-grid {
         grid-template-columns: 50% 50%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .div-wrap {
+    .div-grid {
         grid-template-columns: 100%;
     }
 }

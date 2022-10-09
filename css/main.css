@@ -75,10 +75,10 @@ section {
     flex-direction: column;
 }
 
-.div-wrap {
+.div-grid {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100%;
 }
 
