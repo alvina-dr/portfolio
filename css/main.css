@@ -170,6 +170,8 @@ button:hover {
     font-family: Barlow;
     font-weight: 700;
     animation: text-rotation 7.5s linear infinite;
+    left: 50%;
+    top: 50%;
 }
 
 @keyframes text-rotation {
@@ -184,9 +186,9 @@ button:hover {
 #text-to-copy span {
     position: absolute;
     text-transform: uppercase;
-    top: -60px;
+    top: -55px;
     display: inline-block;
-    transform-origin: 0 60px;
+    transform-origin: 0 55px;
 }
 
 .btn1 {

@@ -8,17 +8,17 @@ var projects =
         "projectLink": "html/projects/video-games/find-the-way-back.html",
         "new": true
     },
-    {
-        "projectTitle": "Internship at TavroxGames",
-        "projectID": "1",
-        "image": "img/cover-tavrox-games.jpg",
-        "projectText": "To validate my Diploma of Higher Education I had to do an internship. I was accepted at Tavrox Games in Toulouse. There I started to do gameplay programming on a game named Protectors of Pomelo. It was the best experience ever and I got to meet truly wonderful people !",
-        "projectLink": "html/projects/photomontage.html",
-        "new": true
-    },
+    // {
+    //     "projectTitle": "Internship at TavroxGames",
+    //     "projectID": "1",
+    //     "image": "img/cover-tavrox-games.jpg",
+    //     "projectText": "To validate my Diploma of Higher Education I had to do an internship. I was accepted at Tavrox Games in Toulouse. There I started to do gameplay programming on a game named Protectors of Pomelo. It was the best experience ever and I got to meet truly wonderful people !",
+    //     "projectLink": "html/projects/photomontage.html",
+    //     "new": true
+    // },
     {
         "projectTitle": "Video game",
-        "projectID": "2",
+        "projectID": "1",
         "image": "img/cover-video-game.jpg",
         "projectText": "I've been making video games for a while (since I was eleven) and I love gameplay programming.",
         "projectLink": "html/projects/video-games.html",
@@ -26,7 +26,7 @@ var projects =
     },
     {
         "projectTitle": "Photomontage",
-        "projectID": "3",
+        "projectID": "2",
         "image": "img/cover-photoshop.jpg",
         "projectText": "I've been using photoshop since I was eleven. With time I started making illustration. Each piece of art I realise is made to tell a story and put the spectator's imagination at work.",
         "projectLink": "html/projects/photomontage.html",
@@ -34,7 +34,7 @@ var projects =
     },
     {
         "projectTitle": "Photography",
-        "projectID": "4",
+        "projectID": "3",
         "image": "img/cover-photograph.jpg",
         "projectText": "Photography allows me to capture moments of life and I really love the story that it can convey.",
         "projectLink": "html/projects/photomontage.html",
@@ -42,26 +42,26 @@ var projects =
     },
     {
         "projectTitle": "3D",
-        "projectID": "5",
+        "projectID": "4",
         "image": "img/cover-3d.jpg",
         "projectText": "I started 3D modelisation when I first discovered Unity and wanted to make my own assets. Then it became a real interest for a while and I still love composing a picture or modelising objects.",
         "projectLink": "html/projects/3d.html",
         "new": false
     },
-    {
-        "projectTitle": "Web",
-        "projectID": "6",
-        "image": "img/cover-web.jpg",
-        "projectText": "I discovered web development during my DipHE in Bordeaux. It quickly became a hobby and led to me learning JS among other things.",
-        "projectLink": "html/projects/photomontage.html",
-        "new": false
-    },
-    {
-        "projectTitle": "Graphisme",
-        "projectID": "7",
-        "image": "img/cover-graphisme.jpg",
-        "projectText": "There you can see a few visuals I've designed during the two last years.",
-        "projectLink": "html/projects/photomontage.html",
-        "new": false
-    }
+    // {
+    //     "projectTitle": "Web",
+    //     "projectID": "6",
+    //     "image": "img/cover-web.jpg",
+    //     "projectText": "I discovered web development during my DipHE in Bordeaux. It quickly became a hobby and led to me learning JS among other things.",
+    //     "projectLink": "html/projects/photomontage.html",
+    //     "new": false
+    // },
+    // {
+    //     "projectTitle": "Graphisme",
+    //     "projectID": "7",
+    //     "image": "img/cover-graphisme.jpg",
+    //     "projectText": "There you can see a few visuals I've designed during the two last years.",
+    //     "projectLink": "html/projects/photomontage.html",
+    //     "new": false
+    // }
 ] 
