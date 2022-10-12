@@ -20,7 +20,7 @@ var projects =
         "projectTitle": "Video game",
         "projectID": "1",
         "image": "img/cover-video-game.jpg",
-        "projectText": "I've been making video games for a while (since I was eleven) and I love gameplay programming.",
+        "projectText": "I've been making video games for a while and I really love gameplay programming.",
         "projectLink": "html/projects/video-games.html",
         "new": false
     },
