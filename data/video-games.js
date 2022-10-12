@@ -7,6 +7,12 @@ var videoGameDatas =
     //     "filter-type": "work"
     // },   
     {
+        "name" : "Chase tag",
+        "image1": "../../img/video-games/chase-tag.jpg",
+        "link": "video-games/chase-tag.html",
+        "filter-type": "prototype"
+    }, 
+    {
         "name" : "Sandwalkers",
         "image1": "../../img/video-games/sandwalkers.jpg",
         "link": "video-games/sandwalkers.html",
@@ -60,18 +66,18 @@ var videoGameDatas =
         "link": "video-games/those-who-remain.html",
         "filter-type": "school"
     },
-    {
-        "name" : "Nanimo",
-        "image1": "../../img/video-games/nanimo.jpg",
-        "link": "../../html/about.html",
-        "filter-type": "jam"
-    },
-    {
-        "name" : "Crystal's quest",
-        "image1": "../../img/video-games/crystals-quest.jpg",
-        "link": "../../html/about.html",
-        "filter-type": "school"
-    },
+    // {
+    //     "name" : "Nanimo",
+    //     "image1": "../../img/video-games/nanimo.jpg",
+    //     "link": "../../html/about.html",
+    //     "filter-type": "jam"
+    // },
+    // {
+    //     "name" : "Crystal's quest",
+    //     "image1": "../../img/video-games/crystals-quest.jpg",
+    //     "link": "../../html/about.html",
+    //     "filter-type": "school"
+    // },
     // {
     //     "name" : "Room 203",
     //     "image1": "../../img/video-games/room-203.jpg",
