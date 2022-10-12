@@ -40,14 +40,14 @@ var projects =
         "projectLink": "html/projects/photography.html",
         "new": false
     },
-    {
-        "projectTitle": "3D",
-        "projectID": "4",
-        "image": "img/cover-3d.jpg",
-        "projectText": "I started 3D modelisation when I first discovered Unity and wanted to make my own assets. Then it became a real interest for a while and I still love composing a picture or modelising objects.",
-        "projectLink": "html/projects/3d.html",
-        "new": false
-    },
+    // {
+    //     "projectTitle": "3D",
+    //     "projectID": "4",
+    //     "image": "img/cover-3d.jpg",
+    //     "projectText": "I started 3D modelisation when I first discovered Unity and wanted to make my own assets. Then it became a real interest for a while and I still love composing a picture or modelising objects.",
+    //     "projectLink": "html/projects/3d.html",
+    //     "new": false
+    // },
     // {
     //     "projectTitle": "Web",
     //     "projectID": "6",
