@@ -12,7 +12,7 @@ var videoGameDatas =
         "link": "video-games/chase-tag.html",
         "filter-type": "prototype"
     }, 
-    {
+  /*{
         "name" : "Sandwalkers",
         "image1": "../../img/video-games/sandwalkers.jpg",
         "link": "video-games/sandwalkers.html",
@@ -23,7 +23,7 @@ var videoGameDatas =
         "image1": "../../img/video-games/protectors-of-pomelo.jpg",
         "link": "video-games/protectors-of-pomelo.html",
         "filter-type": "work"
-    },   
+    },   */
     {
         "name" : "Find the way back",
         "image1": "../../img/video-games/find-the-way-back.jpg",
