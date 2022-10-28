@@ -18,12 +18,12 @@ var videoGameDatas =
         "link": "video-games/sandwalkers.html",
         "filter-type": "work"
     },    
-    /*{
+    {
         "name" : "Protectors of pomelo",
         "image1": "../../img/video-games/protectors-of-pomelo.jpg",
         "link": "video-games/protectors-of-pomelo.html",
         "filter-type": "work"
-    },   */
+    },   
     {
         "name" : "Find the way back",
         "image1": "../../img/video-games/find-the-way-back.jpg",
