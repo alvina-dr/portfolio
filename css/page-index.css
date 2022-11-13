@@ -71,6 +71,9 @@
     #project-section {
         padding: 0 10px;
     }
+    .grid-index-1 {
+        height: calc(3vw * 13 * 5 + .1em);
+    }
 }
 
 .scroll-text-div {
