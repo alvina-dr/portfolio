@@ -31,3 +31,9 @@
     width: calc(3vw*30 + .1em);
     height: calc(3vw * 10 + .1em);
 }
+
+@media screen and (max-width: 1000px) {
+    .project-window1 {
+        display: none;
+    }
+}
