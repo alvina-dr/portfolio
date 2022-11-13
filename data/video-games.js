@@ -12,7 +12,7 @@ var videoGameDatas =
         "link": "video-games/chase-tag.html",
         "filter-type": "prototype"
     }, 
-    {
+  {
         "name" : "Sandwalkers",
         "image1": "../../img/video-games/sandwalkers.jpg",
         "link": "video-games/sandwalkers.html",
