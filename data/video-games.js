@@ -1,11 +1,11 @@
 var videoGameDatas = 
 [
-    // {
-    //     "name" : "Deck on the nile",
-    //     "image1": "../../img/video-games/deck-on-the-nile.jpg",
-    //     "link": "../../index.html",
-    //     "filter-type": "work"
-    // },   
+    {
+        "name" : "Creeping Deck : Pharaoh's curse",
+        "image1": "../../img/video-games/deck-on-the-nile.jpg",
+        "link": "video-games/creeping-deck.html",
+        "filter-type": "work"
+    },   
     {
         "name" : "Chase tag",
         "image1": "../../img/video-games/chase-tag.jpg",
@@ -65,23 +65,5 @@ var videoGameDatas =
         "image1": "../../img/video-games/those-who-remain.jpg",
         "link": "video-games/those-who-remain.html",
         "filter-type": "school"
-    },
-    // {
-    //     "name" : "Nanimo",
-    //     "image1": "../../img/video-games/nanimo.jpg",
-    //     "link": "../../html/about.html",
-    //     "filter-type": "jam"
-    // },
-    // {
-    //     "name" : "Crystal's quest",
-    //     "image1": "../../img/video-games/crystals-quest.jpg",
-    //     "link": "../../html/about.html",
-    //     "filter-type": "school"
-    // },
-    // {
-    //     "name" : "Room 203",
-    //     "image1": "../../img/video-games/room-203.jpg",
-    //     "link": "../../html/about.html",
-    //     "filter-type": "jam"
-    // },
+    }
 ]
