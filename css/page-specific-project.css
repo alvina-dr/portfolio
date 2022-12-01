@@ -121,6 +121,13 @@
     height: calc(3vw * 13 + .1em); 
 }
 
+.grid-eba-effect {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: calc(3vw*30 + .1em);
+    height: calc(3vw * 32 + .1em); 
+}
+
 #photography-container {
     width: 90%;
     margin: auto;

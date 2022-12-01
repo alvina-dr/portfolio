@@ -1,6 +1,12 @@
 var videoGameDatas = 
 [
     {
+        "name" : "EBA Effect",
+        "image1": "../../img/video-games/eba-effect.jpg",
+        "link": "video-games/eba-effect.html",
+        "filter-type": "school"
+    },  
+    {
         "name" : "Creeping Deck : Pharaoh's curse",
         "image1": "../../img/video-games/deck-on-the-nile.jpg",
         "link": "video-games/creeping-deck.html",
