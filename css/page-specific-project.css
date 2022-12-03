@@ -141,3 +141,28 @@
     height: calc(3vw * 60 + .1em); 
 }
 
+.other-projects {
+    background-color: var(--background-color);
+    border: solid 2px var(--secondary-color); 
+    width: calc(3vw*30 + .1em); 
+    height: 50px;
+}
+
+.next-project-button {
+    height: 100%; 
+    width: 100px; 
+    background: linear-gradient(to left, var(--background-color), var(--secondary-color)); 
+    font-size: 20px;
+    text-decoration: none;
+    transform: .3s;
+}
+
+.next-project-button:hover {
+    color: var(--primary-color);
+}
+
+.next-project-title {
+    font-family: Barlow; 
+    font-weight:700; 
+    font-size:20px;
+}

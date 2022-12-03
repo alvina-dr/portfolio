@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alvina DR - Portfolio | EBA Effect</title>
+    <title>Alvina DR | EBA Effect</title>
 
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/text.css">
     <link rel="stylesheet" href="../../../css/navbar.css">
     <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="../../../css/page-specific-project.css">
-
+    <link rel="stylesheet" href="../../../css/page-specific-project.css">
 </head>
 <body>
     <div class="cursor-default cursor-hidden"></div>
@@ -36,36 +36,47 @@
 <!------------------------------------------------------ PHOTOMONTAGES -------------------------------------------->
 
     <section id="vg-section" class="div-row">
-            <div class="div-column" style="width: 70%;">
-                <h3>EBA Effect</h3>
-                <p>EBA effect is a VR game inspired by Elite Beat Agents. We had five weeks spreaded from October to November 2022 to create it. Our team of four was well equilibrated and we had a level/game designer, a sound/music designer, a 3D artist and myself who worked on the programming side of the game.</p><br>
-                <p>EBA Effect is a first person shooter where you need to put down targets in rhythm with the music, a bit like Elite Beat Agents but in 3D. I learned a lot making this game, and we faced multiple challenges.</p><br>
-                <p>Two other inspirations we had were OSU and Beat Saber. In both those games, people are able to create their levels and play them which was a feature we really wanted in our game, both for our level designers and futur players. We couldn't go placing all our targets directly in Unity which would have taken too much time and been super non-efficient.</p><br>
-                <div class="div-row" style="width: 100%;">
-                    <img src="../../../img/video-games/eba-effect/ee-csv1.jpg" style="width: 49%;">
-                    <img src="../../../img/video-games/eba-effect/ee-target-data.jpg" style="width: 49%;">
-                </div><br>
-                <div class="div-row" style="width: 100%;">
-                    <img src="../../../img/video-games/eba-effect/ee-prototype1.gif" style="width: 49%;">
-                    <img src="../../../img/video-games/eba-effect/ee-gameplay1.jpg" style="width: 49%;">
-                </div><br>
-                <p>Now, never having done a game in virtual reality before EBA Effect (nor played one, which led to my discovering of a profound addiction to Beat Saber), the setup of the game was also quite a challenge. Making the guns in game follow the controllers, turning the camera with the headset, clicking on UI with lasers, etc. It can be quite a pain knowing there are different types of VR headsets, multiple packages with their own specificities and several ways of getting input with Unity. When you don't have any experience with all that, you just dive in with what seems the best on internet, not fully knowing why it works this or that way or if it's compatible with what your really want to do.</p><br>
-                <p>Well it worked out in the end didn't it ?</p><br>
-                <p>Another big problem that we faced was performance. With the Oculus Quest 2 you can either launch a game on a computer and link the headset to it (and then you have the computer's performances) or build an apk in Unity and import it on the Oculus (and then play without a cable in the way). With the first solution everything worked pretty well but when we went to do an APK it was an absolute nightmare. About five fps, impossible to play, especially when you are making a rhythm game. Which is how I started making research on how to optimise a lot of stuff.</p><br>
-                <p>We didn't have a lot of time so a lot of the environment was badly organised, prefab multiplied, objects invisible but still there, it wasn't pretty. Cleaning up this mess was the first step. Then I started to look into the clouds that I had done weeks earlier with the Unity particle system. Reducing the number of particles and making them bigger instead, making the particles life time longer and looping, pausing them when out of the player's view (culling). Quickly enough we got to a pretty good fps.</p><br>
-      </div>
-            <div class="div-column" style="width: 60%; margin-left : 10px;">
-                <img src="../../../img/video-games/eba-effect/ee-menu.gif"><br>
-                <p>One of the first things we did was design a .csv file, basically a table you can open in excel. We thought of three columns : spawn time, life duration and spawn position. In other words : the time in the music at which the target should spawn, how long the target would stay on screen (if you don't shoot it in time it disapears and you loose life) and where it should spawn in the scene. Of course, this organisation would change a lot in the future but those were the basics we needed.</p><br>
-                <p>I then made a script in Unity that would read the .csv file and put each line of the table in a TargetData scriptable object. Then, when I had the list of all targets data in the file (which happens when you launch the level), the chrono would start. Each time the chrono was above or equal to the spawn time of a target, the target would spawn.</p><br>
-                <p>You can shoot with both hands (which usually amounts to a grand total of two) and to make the game more difficult, some targets give double the points if shot by the good hand. The target's good side was added to the csv file making it a column larger. In the game, the side is indicated by a color, red for left, blue for right.</p><br>
-                <p>Each .csv file is an entire level, putted in the "Resources" folder of the Assets. Now, just the targets data wasn't enough, we also needed the name of the music to play, how long it would last, the bpm and a bunch of stuff like that. All those unique informations were written at the start of the .csv file, always in the same order and then interpreted in Unity.</p><br>
-                <div class="div-row" style="width: 100%;">
-                    <img src="../../../img/video-games/eba-effect/ee-pause-ui.jpg" style="width: 49%;">
-                    <img src="../../../img/video-games/eba-effect/ee-prototype2.gif" style="width: 49%;">
-                </div><br>            
-                <a class="btn1" href="https://najouille.itch.io/eba-effect" target="_blank">Discover the game</a>
-            </div>
+        <div class="div-column" style="width: 70%;">
+            <h3>EBA Effect</h3>
+            <p>EBA effect is a VR game inspired by Elite Beat Agents. We had five weeks spreaded from October to November 2022 to create it. Our team of four was well equilibrated and we had a level/game designer, a sound/music designer, a 3D artist and myself who worked on the programming side of the game.</p><br>
+            <p>EBA Effect is a first person shooter where you need to put down targets in rhythm with the music, a bit like Elite Beat Agents but in 3D. I learned a lot making this game, and we faced multiple challenges.</p><br>
+            <p>Two other inspirations we had were OSU and Beat Saber. In both those games, people are able to create their levels and play them which was a feature we really wanted in our game, both for our level designers and futur players. We couldn't go placing all our targets directly in Unity which would have taken too much time and been super non-efficient.</p><br>
+            <div class="div-row" style="width: 100%;">
+                <img src="../../../img/video-games/eba-effect/ee-csv1.jpg" style="width: 49%;">
+                <img src="../../../img/video-games/eba-effect/ee-target-data.jpg" style="width: 49%;">
+            </div><br>
+            <div class="div-row" style="width: 100%;">
+                <img src="../../../img/video-games/eba-effect/ee-prototype1.gif" style="width: 49%;">
+                <img src="../../../img/video-games/eba-effect/ee-gameplay1.jpg" style="width: 49%;">
+            </div><br>
+            <p>Now, never having done a game in virtual reality before EBA Effect (nor played one, which led to my discovering of a profound addiction to Beat Saber), the setup of the game was also quite a challenge. Making the guns in game follow the controllers, turning the camera with the headset, clicking on UI with lasers, etc. It can be quite a pain knowing there are different types of VR headsets, multiple packages with their own specificities and several ways of getting input with Unity. When you don't have any experience with all that, you just dive in with what seems the best on internet, not fully knowing why it works this or that way or if it's compatible with what your really want to do.</p><br>
+            <p>Well it worked out in the end didn't it ?</p><br>
+            <p>Another big problem that we faced was performance. With the Oculus Quest 2 you can either launch a game on a computer and link the headset to it (and then you have the computer's performances) or build an apk in Unity and import it on the Oculus (and then play without a cable in the way). With the first solution everything worked pretty well but when we went to do an APK it was an absolute nightmare. About five fps, impossible to play, especially when you are making a rhythm game. Which is how I started making research on how to optimise a lot of stuff.</p><br>
+            <p>We didn't have a lot of time so a lot of the environment was badly organised, prefab multiplied, objects invisible but still there, it wasn't pretty. Cleaning up this mess was the first step. Then I started to look into the clouds that I had done weeks earlier with the Unity particle system. Reducing the number of particles and making them bigger instead, making the particles life time longer and looping, pausing them when out of the player's view (culling). Quickly enough we got to a pretty good fps.</p>
+        </div>
+        <div class="div-column" style="width: 60%; margin-left : 10px;">
+            <img src="../../../img/video-games/eba-effect/ee-menu.gif"><br>
+            <p>One of the first things we did was design a .csv file, basically a table you can open in excel. We thought of three columns : spawn time, life duration and spawn position. In other words : the time in the music at which the target should spawn, how long the target would stay on screen (if you don't shoot it in time it disapears and you loose life) and where it should spawn in the scene. Of course, this organisation would change a lot in the future but those were the basics we needed.</p><br>
+            <p>I then made a script in Unity that would read the .csv file and put each line of the table in a TargetData scriptable object. Then, when I had the list of all targets data in the file (which happens when you launch the level), the chrono would start. Each time the chrono was above or equal to the spawn time of a target, the target would spawn.</p><br>
+            <p>You can shoot with both hands (which usually amounts to a grand total of two) and to make the game more difficult, some targets give double the points if shot by the good hand. The target's good side was added to the csv file making it a column larger. In the game, the side is indicated by a color, red for left, blue for right.</p><br>
+            <p>Each .csv file is an entire level, putted in the "Resources" folder of the Assets. Now, just the targets data wasn't enough, we also needed the name of the music to play, how long it would last, the bpm and a bunch of stuff like that. All those unique informations were written at the start of the .csv file, always in the same order and then interpreted in Unity.</p><br>
+            <div class="div-row" style="width: 100%;">
+                <img src="../../../img/video-games/eba-effect/ee-pause-ui.jpg" style="width: 49%;">
+                <img src="../../../img/video-games/eba-effect/ee-prototype2.gif" style="width: 49%;">
+            </div><br>            
+            <a class="btn1" href="https://najouille.itch.io/eba-effect" target="_blank">Discover the game</a>
+        </div>
+    </section>
+
+    <section class="div-row other-projects">
+        <button id='left-project-button' class="next-project-button">◄</button>
+        <div style="width: 50%; height: 100%; display: flex; justify-content: center; align-items: center;">
+            <p id="left-project" class="next-project-title">Project1</p>
+        </div>
+        <div style="width: 50%;  height: 100%; display: flex; justify-content: center; align-items: center;">
+            <p id="right-project" class="next-project-title">Project2</p>
+        </div>
+        <button id='right-project-button' class="next-project-button" style="background: linear-gradient(to left, var(--secondary-color), var(--background-color));">►</button>
     </section>
 
     <!-- FOOTER -->
@@ -74,6 +85,7 @@
         <p>Made by Alvina Damasio--Razafiarizaka</p>
     </footer>
     <script src="../../../js/mouse-cursor.js"></script>
-
+    <script src="../../../data/video-games.js"></script>
+    <script src="../../../js/next-vg.js"></script>
 </body>
 </html>

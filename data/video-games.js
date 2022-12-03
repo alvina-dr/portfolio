@@ -1,4 +1,4 @@
-var videoGameDatas = 
+const videoGameDatas = 
 [
     {
         "name" : "EBA Effect",
