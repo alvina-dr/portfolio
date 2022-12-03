@@ -1,4 +1,4 @@
-var projects = 
+const projects = 
 [
     {
         "projectTitle": "Find the way back",
@@ -8,14 +8,6 @@ var projects =
         "projectLink": "html/projects/video-games/find-the-way-back.html",
         "new": true
     },
-    // {
-    //     "projectTitle": "Internship at TavroxGames",
-    //     "projectID": "1",
-    //     "image": "img/cover-tavrox-games.jpg",
-    //     "projectText": "To validate my Diploma of Higher Education I had to do an internship. I was accepted at Tavrox Games in Toulouse. There I started to do gameplay programming on a game named Protectors of Pomelo. It was the best experience ever and I got to meet truly wonderful people !",
-    //     "projectLink": "html/projects/photomontage.html",
-    //     "new": true
-    // },
     {
         "projectTitle": "Video game",
         "projectID": "1",

@@ -1,7 +1,6 @@
 let mouseCursor = document.querySelector(".cursor-default");
 let links = document.querySelectorAll("a, button");
 window.addEventListener("mousemove", cursor);
-console.log(links);
 
 function cursor(e) {
     mouseCursor.style.top = e.clientY + 'px';

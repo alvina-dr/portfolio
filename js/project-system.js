@@ -19,8 +19,38 @@ projects.forEach( project =>  {
 function ShowProject (id) {
     buttonArray.forEach (button => {
         button.setAttribute("class", "");
+        button.animate([
+            {height: '10px'},
+            { height : '10px' }
+          ], {
+            duration: 2000,
+            iterations: Infinity,
+            delay: parseInt(button.getAttribute('id')) * 150
+          });
     })
     document.getElementById(id).setAttribute("class", "active");
+    buttonArray.forEach(button => {
+        if (!button.classList.contains('active')) {
+            button.animate([
+                {height: '10px'},
+                { height : 30 + 'px'},
+                { height : '10px' }
+              ], {
+                duration: 2000,
+                iterations: Infinity,
+                delay: parseInt(button.getAttribute('id')) * 2000/4
+              });
+        } else {
+            button.animate([
+                {height: '10px'},
+                { height : '10px' }
+              ], {
+                duration: 2000,
+                iterations: Infinity,
+                delay: parseInt(button.getAttribute('id')) * 150
+              });
+        }
+    })
     projectTitle.innerText = projects[id].projectTitle; 
     projectNavTitle.innerText = projects[id].projectTitle; 
     projectText.innerText = projects[id].projectText; 
@@ -32,7 +62,19 @@ function ShowProject (id) {
     } else {
         newTag.classList.add("new-tag-hidden");
     }
-
+    if (parseInt(id) === 0) {
+      document.getElementById("left-button").setAttribute('style', 'display: none');
+    } else {
+      document.getElementById("left-button").removeAttribute('style');
+    }
+    var length = projects.length - 1;
+    if (parseInt(id) === length) {
+      document.getElementById("right-button").setAttribute('style', 'display: none');
+    } else {
+      document.getElementById("right-button").removeAttribute('style');
+    }
+    document.getElementById('left-button').setAttribute("onclick", "ShowProject('"+(parseInt(id)-1)+"');")
+    document.getElementById('right-button').setAttribute("onclick", "ShowProject('"+(parseInt(id)+1)+"');")
 };
 
 ShowProject(0);

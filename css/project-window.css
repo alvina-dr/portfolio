@@ -59,8 +59,9 @@
     width: 100%;
     position: relative;
     display: flex;
+    height: 10px;
     padding: 0 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #project-menu button {
@@ -71,6 +72,8 @@
 #project-menu button:hover {
     border: solid 1px var(--light-color);
     background-color: var(--light-color);
+    padding-bottom: 20px;
+    height: 30px;
 }
 
 .project-window2 {
@@ -131,4 +134,14 @@
         margin-top: 10px;
         padding-left: 0;
     }
+}
+
+#left-button, #right-button {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+#left-button:hover, #right-button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
 }
