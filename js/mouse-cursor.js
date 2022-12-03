@@ -44,7 +44,13 @@ if (mailZone !== null) {
         mailCursor.classList.remove("cursor-hidden");
     })
     mailZone.addEventListener('click', () => {
-        console.log("click on mail zone");
+        mailCursor.animate([
+            {transform: 'scale(1)'},
+            {transform: 'scale(1.2) rotate(360deg)'},
+            {transform: 'scale(1) rotate(360deg)'}
+          ], {
+            duration: 500,
+          });
         CopyText();
     })
 }

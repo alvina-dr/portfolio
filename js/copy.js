@@ -8,11 +8,11 @@ function CopyText() {
     tooltip.animate([
         {color: 'transparent'},
         {color: 'var(--primary-color)',
-    backgroundColor: 'var(--light-color)' },
+    backgroundColor: 'var(--dark-color)' },
     {color: 'var(--primary-color)',
-    backgroundColor: 'var(--light-color)' },
+    backgroundColor: 'var(--dark-color)' },
         {color: 'transparent'}
       ], {
-        duration: 500,
+        duration: 1000,
       });
     }
