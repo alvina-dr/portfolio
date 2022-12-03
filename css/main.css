@@ -170,6 +170,10 @@ button:hover {
     display: none;
 }
 
+.cursor-hidden2 {
+    display: none;
+}
+
 #text-to-copy {
     position: absolute;
     user-select: none;
