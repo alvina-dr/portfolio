@@ -63,18 +63,16 @@ function ShowProject (id) {
         newTag.classList.add("new-tag-hidden");
     }
     if (parseInt(id) === 0) {
-      document.getElementById("left-button").setAttribute('style', 'display: none');
+      document.getElementById('left-button').setAttribute("onclick", "ShowProject('"+(projects.length-1)+"');")
     } else {
-      document.getElementById("left-button").removeAttribute('style');
+      document.getElementById('left-button').setAttribute("onclick", "ShowProject('"+(parseInt(id)-1)+"');")
     }
     var length = projects.length - 1;
     if (parseInt(id) === length) {
-      document.getElementById("right-button").setAttribute('style', 'display: none');
+      document.getElementById('right-button').setAttribute("onclick", "ShowProject('"+0+"');")
     } else {
-      document.getElementById("right-button").removeAttribute('style');
+      document.getElementById('right-button').setAttribute("onclick", "ShowProject('"+(parseInt(id)+1)+"');")
     }
-    document.getElementById('left-button').setAttribute("onclick", "ShowProject('"+(parseInt(id)-1)+"');")
-    document.getElementById('right-button').setAttribute("onclick", "ShowProject('"+(parseInt(id)+1)+"');")
 };
 
 ShowProject(0);
