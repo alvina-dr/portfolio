@@ -36,4 +36,55 @@
     .project-window1 {
         display: none;
     }
+    .grid-about-1 {
+        margin-top: 120px;
+        margin-bottom: 100px;
+        width: calc(3vw*30 + .1em);
+        height: calc(3vw * 25 + .1em);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .grid-about-1 {
+        margin-top: 120px;
+        margin-bottom: 100px;
+        width: calc(3vw*30 + .1em);
+        height: calc(3vw * 35 + .1em);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid-about-1 {
+        margin-top: 120px;
+        margin-bottom: 100px;
+        width: calc(3vw*30 + .1em);
+        height: calc(3vw * 45 + .1em);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-about-1 {
+        margin-top: 120px;
+        margin-bottom: 100px;
+        width: calc(3vw*30 + .1em);
+        height: calc(3vw * 57 + .1em);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .grid-about-1 {
+        margin-top: 120px;
+        margin-bottom: 100px;
+        width: calc(3vw*30 + .1em);
+        height: calc(3vw * 70 + .1em);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .grid-about-1 {
+        margin-top: 120px;
+        margin-bottom: 100px;
+        width: calc(3vw*30 + .1em);
+        height: calc(3vw * 95 + .1em);
+    }
 }
