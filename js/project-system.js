@@ -3,11 +3,11 @@ var projectTitle = document.getElementById("project-title");
 var projectText = document.getElementById("project-text");
 var projectId = document.getElementById("project-id");
 var projectLink = document.getElementById("project-link");
-var projectImage = document.getElementById("project-image");
+var projectImageA = document.getElementById("project-image-a");
 var newTag = document.getElementById("new-tag");
 var buttonArray = [];
 var projectMenu = document.getElementById("project-menu");
-
+var circleText = document.getElementById("text-to-copy");
 
 projects.forEach( project =>  {
     var projectButton = projectMenu.appendChild(document.createElement('button'))
@@ -56,7 +56,8 @@ function ShowProject (id) {
     projectText.innerText = projects[id].projectText; 
     projectId.innerText = "[00" + projects[id].projectID + "]"; 
     projectLink.setAttribute("href", projects[id].projectLink);
-    projectImage.src = projects[id].image;
+    projectImageA.src = projects[id].image;
+    projectLink.style.display = "none";
     if (projects[id].new) {
         newTag.classList.remove("new-tag-hidden");
     } else {
@@ -76,3 +77,7 @@ function ShowProject (id) {
 };
 
 ShowProject(0);
+
+function GoToLink() {
+  window.location = projectLink.getAttribute("href");
+}

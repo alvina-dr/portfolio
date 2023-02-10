@@ -17,6 +17,9 @@
 <body>
 
     <div class="cursor-default cursor-hidden"></div>
+    <div class="mail-div" id="text-cursor">
+        <p id="text-to-copy">Have a look•Have a look•</p>
+    </div>
     <!-- NAVBAR -->
     <div class="grid grid-header"></div>
     <navbar>
@@ -40,7 +43,7 @@
         <section id="about-section">
             <div>
                 <h3>About me</h3>
-                <p>Hi there ! I'm a french student, working part time at TavroxGames in Toulouse. I enjoy making video games and programming in general. Big Doctor Who and Percy Jackson fan, I also love playing narrative video games such as Life Is Strange or Detroit Become Human. Writing stories and learning are two big aspects of my life and I think that both these things can mix in video games and that's something I really want to convey in what I do.</p>   
+                <p>Hi there ! I'm a French student, working part time at TavroxGames in Toulouse. I enjoy making video games and programming in general. Big Doctor Who and Percy Jackson fan, I also love playing narrative video games such as Life Is Strange, Disco Elysium or Detroit Become Human. Writing stories and learning are two big aspects of my life and I think that both these things can mix in video games and that's something I really want to convey in what I do.</p>   
                 <a href="html/about.html#about-me-section" class="btn-more">More &#10151;</a>
             </div>
             <br>
@@ -56,7 +59,7 @@
         <section id="project-section">
             <div class="div-row project-div">
                 <div class="project-window1" >
-                   <img class="project-window1-image" id='project-image' src="./img/cover-favorite.jpg" />
+                    <img class="project-window1-image text-zone" id='project-image-a' src="./img/cover-favorite.jpg" />
                     <a class="btn1 project-window-btn-more" id='project-link'>Discover</a>
                     <div class="project-card-data">
                         <div class="project-card-content">
@@ -116,5 +119,6 @@
     <script src="data/projects.js"></script>
     <script src="js/project-system.js"></script>
     <script src="js/mouse-cursor.js"></script>
+    <script src="js/circle-text.js"></script>
 </body>
 </html>

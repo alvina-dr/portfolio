@@ -9,7 +9,7 @@ const projects =
         "new": true
     },
     {
-        "projectTitle": "Video game",
+        "projectTitle": "Video games",
         "projectID": "1",
         "image": "img/cover-video-game.jpg",
         "projectText": "I've been making video games for a while and I really love gameplay programming.",
