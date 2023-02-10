@@ -70,7 +70,6 @@ p {
     color: var(--primary-color);
     text-decoration: none;
     align-self: center;
-    /* margin-bottom: 15px; */
     text-transform: uppercase;
 }
 

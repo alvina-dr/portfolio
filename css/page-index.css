@@ -125,3 +125,7 @@
     padding: 7px 0;
     padding-bottom: 6px;
 }
+
+.scroll-text span {
+    color: var(--primary-color);
+}
