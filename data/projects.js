@@ -1,24 +1,24 @@
 const projects = 
 [
-    {
-        "projectTitle": "Find the way back",
-        "projectID": "0",
-        "image": "img/cover-favorite.jpg",
-        "projectText": "Find The Way Back is the result of my last game jam ! It's a puzzle game and I'm really proud of the mechanics and the story that it allowed us to tell.",
-        "projectLink": "html/projects/video-games/find-the-way-back.html",
-        "new": true
-    },
+    // {
+    //     "projectTitle": "Find the way back",
+    //     "projectID": "0",
+    //     "image": "img/cover-favorite.jpg",
+    //     "projectText": "Find The Way Back is the result of my last game jam ! It's a puzzle game and I'm really proud of the mechanics and the story that it allowed us to tell.",
+    //     "projectLink": "html/projects/video-games/find-the-way-back.html",
+    //     "new": true
+    // },
     {
         "projectTitle": "Video games",
-        "projectID": "1",
+        "projectID": "0",
         "image": "img/cover-video-game.jpg",
-        "projectText": "I've been making video games for a while and I really love gameplay programming.",
+        "projectText": "I have a genuine passion for creating video games through programming, and whether it's for my job or personal projects, I find great joy in crafting immersive experiences that entertain people.",
         "projectLink": "html/projects/video-games.html",
         "new": false
     },
     {
         "projectTitle": "Photomontage",
-        "projectID": "2",
+        "projectID": "1",
         "image": "img/cover-photoshop.jpg",
         "projectText": "I've been using photoshop since I was eleven. With time I started making illustration. Each piece of art I realise is made to tell a story and put the spectator's imagination at work.",
         "projectLink": "html/projects/photomontage.html",
@@ -26,7 +26,7 @@ const projects =
     },
     {
         "projectTitle": "Photography",
-        "projectID": "3",
+        "projectID": "2",
         "image": "img/cover-photograph.jpg",
         "projectText": "Photography allows me to capture moments of life and I really love the story that it can convey.",
         "projectLink": "html/projects/photography.html",
