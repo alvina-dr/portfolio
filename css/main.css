@@ -148,59 +148,6 @@ button:hover {
     left: -60%; 
 }
 
-.cursor-default {
-    width: 10px;
-    background-color: var(--light-color);
-    border-radius: 50%;
-    height: 10px;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    z-index: 10;
-    transition: all .2s ease;
-    transition-property: background, transform;
-    transform-origin: 100% 100%;
-}
-
-.cursor-pointer {
-    transform: scale(2);
-}
-
-.cursor-hidden {
-    display: none;
-}
-
-.cursor-hidden2 {
-    display: none;
-}
-
-#text-to-copy {
-    position: absolute;
-    user-select: none;
-    font-family: Barlow;
-    font-weight: 700;
-    animation: text-rotation 7.5s linear infinite;
-    left: 50%;
-    top: 50%;
-}
-
-@keyframes text-rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-#text-to-copy span {
-    position: absolute;
-    text-transform: uppercase;
-    top: -55px;
-    display: inline-block;
-    transform-origin: 0 55px;
-}
-
 .btn1 {
     border: solid 2px var(--light-color);
     background-color: var(--light-color);
@@ -217,16 +164,4 @@ button:hover {
 .btn1:hover { 
     background-color: transparent;
     color: var(--light-color);
-}
-
-
-.mail-div {
-    position: absolute;
-    width: 120px;
-    height: 110px;
-    padding-bottom: 10px;
-    margin-left: -60px;
-    margin-top: -55px;
-    z-index: 100;
-    pointer-events: none;
 }

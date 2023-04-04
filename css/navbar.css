@@ -52,12 +52,12 @@ navbar {
     transform: none;
   }
   100% {
-    transform: translate(100%, 0);
+    transform: translate(110%, 0);
   }
 }
 @keyframes slide-in {
   0% {
-    transform: translate(-100%, 0);
+    transform: translate(-110%, 0);
   }
   100% {
     transform: none;

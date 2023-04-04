@@ -68,15 +68,18 @@ if (mailZone !== null) {
 
 if (textZones.length > 0) {
     for (let i = 0; i < textZones.length; i++) {
+        var index = i;
         textZones[i].addEventListener('mouseleave', () => {
             mouseCursor.classList.remove("cursor-hidden2");
             textCursor.classList.add("cursor-hidden");
-            
         })
+
         textZones[i].addEventListener('mouseover', () => {
             mouseCursor.classList.add("cursor-hidden2");
             textCursor.classList.remove("cursor-hidden");
         })
+
+
         textZones[i].addEventListener('click', () => {
             textCursor.animate([
                 {transform: 'scale(1)'},
@@ -85,8 +88,17 @@ if (textZones.length > 0) {
               ], {
                 duration: 500,
               });
-              GoToLink();
+              GoToLink(textZones[i].id);
+              console.log(index);
         })
     }
-
 }
+
+function GoToLink(_index) {
+    if (typeof projectLink === "undefined") {
+        window.location = videoGameLinks[_index].getAttribute("href");
+        console.log(_index);
+    } else {
+      window.location = projectLink.getAttribute("href");
+    }
+  }

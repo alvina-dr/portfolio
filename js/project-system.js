@@ -58,11 +58,15 @@ function ShowProject (id) {
     projectLink.setAttribute("href", projects[id].projectLink);
     projectImageA.src = projects[id].image;
     projectLink.style.display = "none";
+
+    //new tag
     if (projects[id].new) {
         newTag.classList.remove("new-tag-hidden");
     } else {
         newTag.classList.add("new-tag-hidden");
     }
+
+    //arrows
     if (parseInt(id) === 0) {
       document.getElementById('left-button').setAttribute("onclick", "ShowProject('"+(projects.length-1)+"');")
     } else {
@@ -78,6 +82,3 @@ function ShowProject (id) {
 
 ShowProject(0);
 
-function GoToLink() {
-  window.location = projectLink.getAttribute("href");
-}
