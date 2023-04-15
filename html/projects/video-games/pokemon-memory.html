@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="../../../css/page-specific-project.css">
     <link rel="stylesheet" href="../../../css/pointer.css">
+    <link rel="stylesheet" href="../../../css/blog.css">
 </head>
 <body>
     <div class="cursor-default cursor-hidden"></div>
 
     <!-- NAVBAR -->
-    <div class="grid grid-header"></div>
-    <navbar>
+    <div class="grid grid-header grid-navbar-blog"></div>
+    <navbar id="blog-navbar">
         <ul class="nav-ul">
             <li class="nav-link"><a href="../../../index.html">Home</a></li>
             <li class="nav-link"><a href="../../about.html">About</a></li>
@@ -26,18 +27,16 @@
         </ul>
     </navbar>  
     
-    <div class="grid grid-pokemon-memory"></div>
-    <section id="landing-section">
-        <h1>Alvina</h1>
-        <p>2022</p>
-        <br>
+    <div class="grid grid-blog"></div>
+    <section id="landing-blog-section">
+        <h1>Pokemon Memory</h1>
     </section>
 
 <!------------------------------------------------------ PHOTOMONTAGES -------------------------------------------->
 
-    <section id="vg-section" class="div-row">
+    <section id="blog-section" class="div-row">
             <div class="div-column">
-                <h3>Pokemon memory</h3>
+                <p><b>#React</b></p><br>
                 <p>In November 2021, we had a React workshop during my DHE. As I already had learned a bit of JS thanks to freeCodeCamp, I decided to realise a pokemon memory with my partner.</p><br>
 
                 <img src="../../../img/video-games/pokemon-memory/pm-gameplay1.gif" style="width: 100%;"><br>
@@ -63,7 +62,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="grid grid-footer"></div>
+        <div class="grid grid-footer grid-footer-blog"></div>
         <p>Made by Alvina Damasio--Razafiarizaka</p>
     </footer>
     <script src="../../../js/mouse-cursor.js"></script>

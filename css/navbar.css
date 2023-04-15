@@ -81,3 +81,11 @@ navbar {
     height: calc(3vw * 3 + .1em);
   }
 }
+
+#blog-navbar {
+  width: 80%;
+}
+
+.grid-navbar-blog {
+  width: calc(3vw*26 + .1em); 
+}

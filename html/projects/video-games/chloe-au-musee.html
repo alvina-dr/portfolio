@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="../../../css/page-specific-project.css">
     <link rel="stylesheet" href="../../../css/pointer.css">
+    <link rel="stylesheet" href="../../../css/blog.css">
 </head>
 <body>
     <div class="cursor-default cursor-hidden"></div>
 
     <!-- NAVBAR -->
-    <div class="grid grid-header"></div>
-    <navbar>
+    <div class="grid grid-header grid-navbar-blog"></div>
+    <navbar id="blog-navbar">
         <ul class="nav-ul">
             <li class="nav-link"><a href="../../../index.html">Home</a></li>
             <li class="nav-link"><a href="../../about.html">About</a></li>
@@ -26,31 +27,29 @@
         </ul>
     </navbar>  
     
-    <div class="grid grid-chloe-au-musee"></div>
-    <section id="landing-section">
-        <h1>Alvina</h1>
-        <p>2022</p>
-        <br>
+    <div class="grid grid-blog" style="height: calc(3vw * 10 + .1em);"></div>
+    <section id="landing-blog-section">
+        <h1>Chloé au Musée</h1>
     </section>
 
 <!------------------------------------------------------ PHOTOMONTAGES -------------------------------------------->
 
-    <section id="vg-section" class="div-row">
-            <div class="div-column">
-                <h3>Chloé au musée</h3>
-                <p>During the project "Rêve et Ville" ("Dream and City") at the beginning of year 2022, I had the opportunity to create an interactive experience about the Musée des Beaux-Arts of Bordeaux. We worked in team of five and I specialized in the JS development using Phaser3. It was a completely new tech for me and I learned a lot in little time. Then again, the freeCodeCamp JS formation was pretty useful.</p><br>
-                <img src="../../../img/video-games/chloe-au-musee/cam-gameplay1.gif" style="width: 100%;"><br>
-                <p>One of the peculiarities of this game was that it needed to be playable from a phone since it was made for the visitors of the museum (who didn't have a computer access). So we had to make sure that it was as responsive as possible.</p><br>
-                <p>Only con was that the sound design was sketchy as it had been done at the last moment and under hard time constraints.</p><br>
-                <a class="btn1" href="https://chloe-au-musee.netlify.app/" target="_blank">Discover the game</a>
-            </div>
-            <div class="div-column" style="width: 40%; margin-left : 10px;">
-                <div class="div-row" style="width: 100%;">
-                    <img src="../../../img/video-games/chloe-au-musee/chloe-au-musee-phone1.jpg" style="width: 49%;">
-                    <img src="../../../img/video-games/chloe-au-musee/chloe-au-musee-phone2.jpg" style="width: 49%;">
-                </div><br>
-                <img src="../../../img/video-games/chloe-au-musee/chloe-au-musee1.png"><br>
-            </div>
+    <section id="blog-section" class="div-row">
+        <div class="div-column">
+            <p><b>#Phaser 3</b></p><br>
+            <p>During the project "Rêve et Ville" ("Dream and City") at the beginning of year 2022, I had the opportunity to create an interactive experience about the Musée des Beaux-Arts of Bordeaux. We worked in team of five and I specialized in the JS development using Phaser3. It was a completely new tech for me and I learned a lot in little time. Then again, the freeCodeCamp JS formation was pretty useful.</p><br>
+            <img src="../../../img/video-games/chloe-au-musee/cam-gameplay1.gif" style="width: 100%;"><br>
+            <p>One of the peculiarities of this game was that it needed to be playable from a phone since it was made for the visitors of the museum (who didn't have a computer access). So we had to make sure that it was as responsive as possible.</p><br>
+            <p>Only con was that the sound design was sketchy as it had been done at the last moment and under hard time constraints.</p><br>
+            <a class="btn1" href="https://chloe-au-musee.netlify.app/" target="_blank">Discover the game</a>
+        </div>
+        <div class="div-column" style="width: 40%; margin-left : 10px;">
+            <div class="div-row" style="width: 100%;">
+                <img src="../../../img/video-games/chloe-au-musee/chloe-au-musee-phone1.jpg" style="width: 49%;">
+                <img src="../../../img/video-games/chloe-au-musee/chloe-au-musee-phone2.jpg" style="width: 49%;">
+            </div><br>
+            <img src="../../../img/video-games/chloe-au-musee/chloe-au-musee1.png"><br>
+        </div>
     </section>
 
     <section class="div-row other-projects">
@@ -66,7 +65,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="grid grid-footer"></div>
+        <div class="grid grid-footer grid-footer-blog"></div>
         <p>Made by Alvina Damasio--Razafiarizaka</p>
     </footer>
     <script src="../../../js/mouse-cursor.js"></script>

@@ -8,7 +8,7 @@
 body {
     /*FIRST SET OF COLOR*/
     --primary-color: rgb(60, 153, 145);
-    --secondary-color:rgb(20, 71, 100);
+    --highlight-color:rgb(20, 71, 100);
     --background-color: rgb(7, 30, 36);
     --light-color: rgb(209, 246, 255);
     --dark-color: rgb(13, 22, 24);
@@ -18,6 +18,7 @@ body {
     --primary-color:rgb(156, 190, 198);
     --secondary-color: rgb(37, 37, 37);
     --background-color: rgb(19, 19, 19);
+    --square-size: 100px;
 }
 
 body {
@@ -164,4 +165,17 @@ button:hover {
 .btn1:hover { 
     background-color: transparent;
     color: var(--light-color);
+}
+
+#blog-section {
+    width: 75%;
+    margin-bottom: 90px;
+}
+
+#landing-section {
+    margin-bottom: 30px;
+}
+
+#landing-blog-section {
+    width: 75%;
 }

@@ -1,6 +1,31 @@
 const videoGameDatas = 
 [
     {
+        "name" : "Overboss",
+        "image1": "../../img/video-games/overboss.jpg",
+        "link": "video-games/overboss.html",
+        "filter-type": "work"
+        // "tags": ["#Unity", "#DOTween"],
+    },  
+    {
+        "name" : "Hall Family's Christmas",
+        "image1": "../../img/video-games/hfc.jpg",
+        "link": "video-games/hfc.html",
+        "filter-type": "school"
+    },
+    {
+        "name" : "Dynasty",
+        "image1": "../../img/video-games/dynasty.jpg",
+        "link": "video-games/dynasty.html",
+        "filter-type": "school"
+    },   
+    // {
+    //     "name" : "Seed Rail",
+    //     "image1": "../../img/video-games/eba-effect.jpg",
+    //     "link": "video-games/eba-effect.html",
+    //     "filter-type": "jam"
+    // },  
+    {
         "name" : "EBA Effect",
         "image1": "../../img/video-games/eba-effect.jpg",
         "link": "video-games/eba-effect.html",
@@ -18,7 +43,7 @@ const videoGameDatas =
         "link": "video-games/chase-tag.html",
         "filter-type": "prototype"
     }, 
-  {
+    {
         "name" : "Sandwalkers",
         "image1": "../../img/video-games/sandwalkers.jpg",
         "link": "video-games/sandwalkers.html",

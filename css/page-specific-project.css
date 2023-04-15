@@ -121,11 +121,10 @@
     height: calc(3vw * 13 + .1em); 
 }
 
-.grid-eba-effect {
+.grid-blog {
     margin-top: 120px;
     margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 32 + .1em); 
+    width: calc(3vw*26 + .1em);
 }
 
 #photography-container {
@@ -144,7 +143,7 @@
 .other-projects {
     background-color: var(--background-color);
     border: solid 2px var(--secondary-color); 
-    width: calc(3vw*30 + .1em); 
+    width: calc(3vw*26 + .1em);
     height: 50px;
 }
 
