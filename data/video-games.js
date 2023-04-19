@@ -2,30 +2,30 @@ const videoGameDatas =
 [
     {
         "name" : "QATP",
-        "image1": "../../img/video-games/overboss.jpg",
-        "link": "video-games/overboss.html",
-        "filter-type": "work"
+        "image1": "../../img/video-games/qatp.jpg",
+        "link": "video-games/qatp.html",
+        "filter-type": "jam"
         // "tags": ["#Unity", "#DOTween"],
     }, 
-    {
-        "name" : "Overboss",
-        "image1": "../../img/video-games/overboss.jpg",
-        "link": "video-games/overboss.html",
-        "filter-type": "work"
-        // "tags": ["#Unity", "#DOTween"],
-    },  
-    {
-        "name" : "Hall Family's Christmas",
-        "image1": "../../img/video-games/hfc.jpg",
-        "link": "video-games/hfc.html",
-        "filter-type": "school"
-    },
-    {
-        "name" : "Dynasty",
-        "image1": "../../img/video-games/dynasty.jpg",
-        "link": "video-games/dynasty.html",
-        "filter-type": "school"
-    },   
+    // {
+    //     "name" : "Overboss",
+    //     "image1": "../../img/video-games/overboss.jpg",
+    //     "link": "video-games/overboss.html",
+    //     "filter-type": "work"
+    //     // "tags": ["#Unity", "#DOTween"],
+    // },  
+    // {
+    //     "name" : "Hall Family's Christmas",
+    //     "image1": "../../img/video-games/hfc.jpg",
+    //     "link": "video-games/hfc.html",
+    //     "filter-type": "school"
+    // },
+    // {
+    //     "name" : "Dynasty",
+    //     "image1": "../../img/video-games/dynasty.jpg",
+    //     "link": "video-games/dynasty.html",
+    //     "filter-type": "school"
+    // },   
     // {
     //     "name" : "Seed Rail",
     //     "image1": "../../img/video-games/eba-effect.jpg",
