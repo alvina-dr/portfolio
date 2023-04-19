@@ -65,13 +65,14 @@ p {
     margin-bottom: 1rem;
 }
 
-.project-card-title {
+.project-window-title {
     font-family: 'Barlow';
     font-weight: 550;
     color: var(--primary-color);
     text-decoration: none;
     align-self: center;
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 .project-card-text {

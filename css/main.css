@@ -43,6 +43,9 @@ body {
     background-image: linear-gradient(var(--secondary-color) .1em, transparent .1em), linear-gradient(90deg, var(--secondary-color) .1em, transparent .1em);
     background-size: 3vw 3vw; /*size of one square*/
     z-index: -1;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: calc(3vw*30 + .1em);
 }
 
 .grid-index-2 {
