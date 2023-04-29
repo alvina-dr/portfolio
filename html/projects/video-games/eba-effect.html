@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alvina DR | EBA Effect</title>
+    <title>Alvina DR | EBA Effects</title>
 
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/text.css">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../../css/page-specific-project.css">
     <link rel="stylesheet" href="../../../css/pointer.css">
     <link rel="stylesheet" href="../../../css/blog.css">
+    <link rel="stylesheet" href="../../../css/project-window.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -33,17 +34,17 @@
     
     <div class="grid grid-blog" style="height: calc(3vw * 45 + .1em);"></div>
     <section id="landing-blog-section">
-        <h1>EBA Effect</h1>
+        <h1>EBA Effects</h1>
     </section>
 
 <!------------------------------------------------------ PHOTOMONTAGES -------------------------------------------->
 
     <section id="blog-section" class="div-row">
         <div class="div-column" style="width: 70%;">
-            <p id="hashtags"><b>#Virtual Reality</b> <b>#Rhythm Game</b> <b>#Optimisation</b> <b>#Level Editor</b></p>
-            <p>EBA Effect is a VR game inspired by <a href="https://fr.wikipedia.org/wiki/Elite_Beat_Agents" target="_blank">Elite Beat Agents</a>. We had five weeks spreaded from October to November 2022 to create it. Our team of four was composed of a level/game designer, a sound/music designer, a 3D artist and myself who worked on the programming side of the game.</p>
-            <p>EBA Effect is a first person shooter where you need to put down targets in rhythm with the music, a bit like Elite Beat Agents but in 3D. I learned a lot making this game, and we faced multiple challenges.</p>
-            <p>Two other inspirations we had were <a href="https://fr.wikipedia.org/wiki/Osu!" target="_blank">OSU</a> and <a href="https://store.steampowered.com/app/620980/Beat_Saber/" target="_blank">Beat Saber</a>. In both those games, people are able to create their levels and play them which was a feature we really wanted in our game, both for our level designers and futur players. We couldn't go placing all our targets directly in Unity which would have taken too much time and been super non-efficient.</p>
+            <p><b>2022-23</b> <b>Oculus Quest 2</b> <b>Unity</b></p>
+            <p>EBA Effects is a VR game inspired by <a class="link-in-text" href="https://fr.wikipedia.org/wiki/Elite_Beat_Agents" target="_blank">Elite Beat Agents</a>. We had five weeks spreaded from October to November 2022 to create it. Our team of four was composed of a level/game designer, a sound/music designer, a 3D artist and myself who worked on the programming side of the game.</p>
+            <p>EBA Effects is a first person shooter where you need to put down targets in rhythm with the music, a bit like Elite Beat Agents but in 3D. I learned a lot making this game, and we faced multiple challenges.</p>
+            <p>Two other inspirations we had were <a class="link-in-text" href="https://fr.wikipedia.org/wiki/Osu!" target="_blank">OSU</a> and <a class="link-in-text" href="https://store.steampowered.com/app/620980/Beat_Saber/" target="_blank">Beat Saber</a>. In both those games, people are able to create their levels and play them which was a feature we really wanted in our game, both for our level designers and futur players. We couldn't go placing all our targets directly in Unity which would have taken too much time and been super non-efficient.</p>
             <img src="../../../img/video-games/eba-effect/ee-menu.gif">
             <h3>Level editor</h3>
             <p>One of the first things we did was design a .csv file, basically a table you can open in excel. We thought of three columns : spawn time, life duration and spawn position. In other words : the time in the music at which the target should spawn, how long the target would stay on screen (if you don't shoot it in time it disapears and you loose life) and where it should spawn in the scene. Of course, this organisation would change a lot in the future but those were the basics we needed.</p>
@@ -58,7 +59,7 @@
                 <img src="../../../img/video-games/eba-effect/ee-prototype1.gif" style="width: 49%;">
                 <img src="../../../img/video-games/eba-effect/ee-gameplay1.jpg" style="width: 49%;">
             </div>
-            <p>Now, never having done a game in virtual reality before EBA Effect (nor played one, which led to my discovering of a profound addiction to Beat Saber), the setup of the game was also quite a challenge. Making the guns in game follow the controllers, turning the camera with the headset, clicking on UI with lasers, etc. It can be quite a pain knowing there are different types of VR headsets, multiple packages with their own specificities and several ways of getting input with Unity. When you don't have any experience with all that, you just dive in with what seems the best on internet, not fully knowing why it works this or that way or if it's compatible with what your really want to do.</p>
+            <p>Now, never having done a game in virtual reality before EBA Effects (nor played one, which led to my discovering of a profound addiction to Beat Saber), the setup of the game was also quite a challenge. Making the guns in game follow the controllers, turning the camera with the headset, clicking on UI with lasers, etc. It can be quite a pain knowing there are different types of VR headsets, multiple packages with their own specificities and several ways of getting input with Unity. When you don't have any experience with all that, you just dive in with what seems the best on internet, not fully knowing why it works this or that way or if it's compatible with what your really want to do.</p>
             <p>Well it worked out in the end didn't it ?</p>
             <h3>Performance</h3>
             <p>Another big problem that we faced was performance. With the Oculus Quest 2 you can either launch a game on a computer and link the headset to it (and then you have the computer's performances) or build an apk in Unity and import it on the Oculus (and then play without a cable in the way). With the first solution everything worked pretty well but when we went to do an APK it was an absolute nightmare. About five fps, impossible to play, especially when you are making a rhythm game. Which is how I started making research on how to optimise a lot of stuff.</p>
@@ -70,9 +71,14 @@
         </div>
 
         <div class="div-column" style="width: 30%; margin-left : 50px;">
-            <p>2022-23 | 2 months | School Project | Oculus Quest 2</p>
-            <p>Tools : Unity</p>
-            <a class="btn1" href="https://atoxm.itch.io/dynasty" target="_blank">Discover the game</a>
+            <div class="project-window2" href="./html/index/jeu_video.html" style="height: fit-content; margin: 0;">
+                <div class="project-window-navbar">
+                    <p class="project-window-title" id="project-id">PLAY</p>
+                </div>
+                <div class="project-window-content" style="margin-top: 40px; width: fit-content;">
+                    <a class="external-link" href="https://najouille.itch.io/eba-effects" target="_blank">Discover the game</a>
+                </div>
+            </div>
         </div>
     </section>
 

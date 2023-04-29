@@ -65,62 +65,6 @@
     margin-bottom: 100px;
 }
 
-.grid-ftwb {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 25 + .1em);
-}
-
-.grid-sandwalkers {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 21 + .1em);
-}
-
-.grid-pop {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 23 + .1em);
-}
-
-.grid-pokemon-memory {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 14 + .1em);
-}
-
-.grid-chloe-au-musee {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 20 + .1em);
-}
-
-.grid-golden-pumpkin {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 14 + .1em); 
-}
-
-.grid-those-who-remain {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 19 + .1em); 
-}
-
-.grid-chase-tag {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 13 + .1em); 
-}
-
 .grid-blog {
     margin-top: 120px;
     margin-bottom: 100px;

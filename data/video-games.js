@@ -33,13 +33,13 @@ const videoGameDatas =
     //     "filter-type": "jam"
     // },  
     {
-        "name" : "EBA Effect",
+        "name" : "EBA Effects",
         "image1": "../../img/video-games/eba-effect.jpg",
         "link": "video-games/eba-effect.html",
         "filter-type": "school"
     },  
     {
-        "name" : "Creeping Deck : Pharaoh's curse",
+        "name" : "Creeping Deck",
         "image1": "../../img/video-games/deck-on-the-nile.jpg",
         "link": "video-games/creeping-deck.html",
         "filter-type": "work"
