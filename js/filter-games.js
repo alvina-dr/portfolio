@@ -58,6 +58,6 @@ function SetGridSizeFromRowNumber() {
   } else if (rowNumber <= 3 && rowNumber >2) {
     grid[0].style.height = "calc(3vw * 27 + .1em)";
   } else if (rowNumber <= 4 && rowNumber > 3) {
-    grid[0].style.height = "calc(3vw * 32 + .1em)";
+    grid[0].style.height = "calc(3vw * 35 + .1em)";
   } 
 }

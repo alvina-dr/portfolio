@@ -1,221 +1,224 @@
 .grid-video-game-1 {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 26 + .1em);
+  margin-top: 120px;
+  margin-bottom: 100px;
+  width: calc(3vw * 30 + 0.1em);
+  height: calc(3vw * 26 + 0.1em);
 }
 
 #video-game-section {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .div-grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 25% 25% 25% 25%;
-    align-items: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
 }
 
 @media screen and (max-width: 1500px) {
-    .div-grid {
-        grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
-    }
-    .grid-video-game-1 {
-        margin-top: 120px;
-        margin-bottom: 100px;
-        width: calc(6vw*30 + .1em);
-        height: calc(6vw * 26 + .1em);
-    }
+  .div-grid {
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  }
+  .grid-video-game-1 {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: calc(6vw * 30 + 0.1em);
+    height: calc(6vw * 26 + 0.1em);
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .div-grid {
-        grid-template-columns: 50% 50%;
-    }
+  .div-grid {
+    grid-template-columns: 50% 50%;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .div-grid {
-        grid-template-columns: 100%;
-    }
-    .grid-video-game-1 {
-        margin-top: 120px;
-        margin-bottom: 100px;
-        width: calc(10vw*30 + .1em);
-        height: calc(10vw * 26 + .1em);
-    }
+  .div-grid {
+    grid-template-columns: 100%;
+  }
+  .grid-video-game-1 {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: calc(10vw * 30 + 0.1em);
+    height: calc(10vw * 26 + 0.1em);
+  }
 }
 
 .video-game-card {
-    background-color: transparent;
-    position: relative;
-    width: 90%;
-    height: 100%;
-    transition: .5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    /* margin-bottom: 5px; */
-    /* border-radius: 8px; */
-    transform-style: preserve-3d;
-    overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  /* margin-bottom: 5px; */
+  /* border-radius: 8px; */
+  transform-style: preserve-3d;
+  overflow: hidden;
 }
 
 .video-game-card:after {
-    content: '';
-    padding-bottom: 100%;
+  content: "";
+  padding-bottom: 100%;
 }
 
 .video-game-card-bottom {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
 }
 
 .video-game-title {
-    position: relative;
-    width: fit-content;
-    margin-bottom: 30px;
-    margin-top: 5px;
-    font-family: 'titleFont', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: var(--dark-color);
-    background-color: var(--light-color);
-    padding: 5px;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  font-family: "titleFont", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  padding: 5px;
 }
 
 .video-game-card-arrow {
-    position: relative;
-    /* background-color:var(--light-color); */
-    width: fit-content;
-    margin-bottom: 30px;
-    margin-top: 5px;
-    font-family: 'titleFont', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    text-transform: uppercase;
-    color: var(--light-color);
-    padding: 5px;
-    /* padding-right: 0; */
-    /* bottom: 5.5%;
+  position: relative;
+  /* background-color:var(--light-color); */
+  width: fit-content;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  font-family: "titleFont", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: var(--light-color);
+  padding: 5px;
+  /* padding-right: 0; */
+  /* bottom: 5.5%;
     right: 5%;
     width: 10%;
     height: 8%; */
-    /* clip-path: polygon(0 30%, 30% 30%, 30% 0%, 100% 50%, 30% 100%, 30% 70%, 0% 70%); */
+  /* clip-path: polygon(0 30%, 30% 30%, 30% 0%, 100% 50%, 30% 100%, 30% 70%, 0% 70%); */
 }
 
 .video-game-card:hover .video-game-card-arrow {
-    background-color: var(--light-color);
-    animation: blink 1s infinite;
+  background-color: var(--light-color);
+  animation: blink 1s infinite;
 }
 
 @keyframes blink {
-    0% {background-color: var(--dark-color);}
-    50% {background-color: var(--light-color);}
+  0% {
+    background-color: var(--dark-color);
+  }
+  50% {
+    background-color: var(--light-color);
+  }
 }
 
 .video-game-scroll-div {
-    background-color: var(--dark-color);
-    position: absolute;
-    z-index: 6;
-    top: 20%;
-    left: 3.5%;
-    height: 80%;
-    overflow: hidden;
-    width: 8%;
-    display: flex;
-    justify-content: center;
+  background-color: var(--dark-color);
+  position: absolute;
+  z-index: 6;
+  top: 20%;
+  left: 3.5%;
+  height: 80%;
+  overflow: hidden;
+  width: 8%;
+  display: flex;
+  justify-content: center;
 }
 
 .video-game-scroll-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .video-game-card h4 {
-    color: var(--light-color);
-    font-family: 'titleFont', sans-serif;
-    font-weight: 1000;
-    font-size: 15px;
-    transition: .3s;
-    text-transform: uppercase;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    white-space: nowrap;
-    animation: scroll-up 10s linear infinite; 
+  color: var(--light-color);
+  font-family: "titleFont", sans-serif;
+  font-weight: 1000;
+  font-size: 15px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  white-space: nowrap;
+  animation: scroll-up 10s linear infinite;
 }
 
 @keyframes scroll-up {
-    to {
-        transform: translateY(-100%);
-    }
+  to {
+    transform: translateY(-100%);
+  }
 }
 
 .video-game-card-img {
-    transition: .4s;
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    object-fit: cover;
-    filter: saturate(0.7) sepia(0.3) brightness(90%);;
-    margin: 0;
-    transform: scale(100%);
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  filter: saturate(0.7) sepia(0.3) brightness(90%);
+  margin: 0;
+  transform: scale(100%);
 }
 
 .video-game-card-img:hover {
-    filter: saturate(0.4) sepia(0.3) brightness(30%);;
-    transform: scale(110%);
+  filter: saturate(0.4) sepia(0.3) brightness(30%);
+  transform: scale(110%);
 }
 
 .video-game-card a {
-    background-color:var(--light-color);
-    color: var(--primary-color);
-    padding: 5px 7px;
-    text-decoration: none;
-    transition: .3s;
-    z-index: 6;
-    position: absolute;
-    right: -5px;
-    bottom: 5%;
-    font-size: 20px;
-    cursor: none;
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  padding: 5px 7px;
+  text-decoration: none;
+  transition: 0.3s;
+  z-index: 6;
+  position: absolute;
+  right: -5px;
+  bottom: 5%;
+  font-size: 20px;
+  cursor: none;
 }
 
 .video-game-card a:hover {
-    background-color:var(--primary-color);
-    color:var(--secondary-color);
-    right: 0px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  right: 0px;
 }
 
 .video-game-card-container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: flex-start;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-bottom: 30px;
 }
 
 .object-to-filter {
-    display: none;
+  display: none;
 }
 
 .filter-show {
-    display: flex;
+  display: flex;
 }
 
 .filter-active-btn {
-    background-color: transparent;
-    color: var(--light-color);
+  background-color: transparent;
+  color: var(--light-color);
 }
-
