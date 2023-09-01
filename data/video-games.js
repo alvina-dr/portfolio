@@ -105,10 +105,10 @@ const videoGameDatas =
     //     "link": "../../html/about.html",
     //     "filter-type": "work"
     // },
-    {
-        "name" : "Those who remain",
-        "image1": "../../img/video-games/those-who-remain.jpg",
-        "link": "video-games/those-who-remain.html",
-        "filter-type": "school"
-    }
+    // {
+    //     "name" : "Those who remain",
+    //     "image1": "../../img/video-games/those-who-remain.jpg",
+    //     "link": "video-games/those-who-remain.html",
+    //     "filter-type": "school"
+    // }
 ]
