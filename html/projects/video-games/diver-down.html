@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvina DR | Diver Down</title>
+
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/text.css">
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="stylesheet" href="../../../css/page-specific-project.css">
+    <link rel="stylesheet" href="../../../css/page-specific-project.css">
+    <link rel="stylesheet" href="../../../css/pointer.css">
+    <link rel="stylesheet" href="../../../css/blog.css">
+    <link rel="stylesheet" href="../../../css/project-window.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-default cursor-hidden"></div>
+
+    <!-- NAVBAR -->
+    <div class="grid grid-header grid-navbar-blog"></div>
+    <navbar id="blog-navbar">
+        <ul class="nav-ul">
+            <li class="nav-link"><a href="../../../index.html">Home</a></li>
+            <li class="nav-link"><a href="../../about.html">About</a></li>
+            <li class="nav-link"><a href="../../contact.html">Contact</a></li>
+        </ul>
+    </navbar>  
+    
+    <div class="grid grid-blog" style="height: calc(3vw * 20 + .1em); "></div>
+    <section id="landing-blog-section">
+        <h1>Diver Down</h1>
+    </section>
+
+<!------------------------------------------------------ PHOTOMONTAGES -------------------------------------------->
+
+    <section id="blog-section" class="div-row">
+        <div class="div-column" style="width: 70%;">
+            <p><b>#Unity</b> <b>#Zenject</b> <b>#HDRP</b></p>
+            <p>Diver Down is the result of my third EMMI Jam (a jam that we organise between MMI and the ENSEIRB which is an engineer school in Bordeaux). We had a team of five and were two devs, which allowed me to focus on the graphic side of the game.</p>
+            <p>The initial game was already looking pretty good for a 48 hours jam and it caught the eye of the jury (composed from video game developers from Asobo, Ubisoft, Shiro Games and more). We ranked first place and won pretty <a class="link-in-text" href="https://store.steampowered.com/app/1182900/A_Plague_Tale_Requiem/" target="_blank">A Plague Tale : Requiem</a> artbooks.</p>
+            <p></p>
+            <div class="div-row" style="width: 100%; height: 30rem; margin-bottom: 1rem;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/x7fhf7v0gUM?si=LZGMtZXwB7isp0jE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p>This game was a great opportunity to improve my technical art skills so after the jam was over I kept working on it. I switched the whole project to HDRP and learned how to use volumetric lights and fog or make a see through wall shader. On top of the gameplay programming, I did a bit of 3d modeling with Blender which I had tried a few time already and I really enjoy.</p>
+            <p>It's one of the games I'm the most proud to show people and to this day I'm still adding bits here and there to make it better.</p>
+        </div>
+        
+        <div class="div-column" style="width: 30%; margin-left : 50px;">
+            <div class="project-window2" href="./html/index/jeu_video.html" style="height: fit-content; margin: 0;">
+                <div class="project-window-navbar">
+                    <p class="project-window-title" id="project-id">PLAY</p>
+                </div>
+                <div class="project-window-content" style="margin-top: 40px; width: fit-content; display: flex; flex-direction: column;">
+                    <a class="external-link" href="https://marchosias6.itch.io/diver-down" target="_blank">Discover the game</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="div-row other-projects">
+        <button id='left-project-button' class="next-project-button">◄</button>
+        <div style="width: 50%; height: 100%; display: flex; justify-content: center; align-items: center;">
+            <p id="left-project" class="next-project-title">Project1</p>
+        </div>
+        <div style="width: 50%;  height: 100%; display: flex; justify-content: center; align-items: center;">
+            <p id="right-project" class="next-project-title">Project2</p>
+        </div>
+        <button id='right-project-button' class="next-project-button" style="background: linear-gradient(to left, var(--secondary-color), var(--background-color));">►</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="grid grid-footer grid-footer-blog"></div>
+        <p>Made by Alvina Damasio--Razafiarizaka</p>
+    </footer>
+    <script src="../../../js/mouse-cursor.js"></script>
+    <script src="../../../data/video-games.js"></script>
+    <script src="../../../js/next-vg.js"></script>
+</body>
+</html>

@@ -1,6 +1,13 @@
 const videoGameDatas = 
 [
     {
+        "name" : "Diver Down",
+        "image1": "../../img/video-games/diver-down.jpg",
+        "link": "video-games/diver-down.html",
+        "filter-type": "jam"
+        // "tags": ["#Unity", "#DOTween"],
+    }, 
+    {
         "name" : "QATP",
         "image1": "../../img/video-games/qatp.jpg",
         "link": "video-games/qatp.html",
