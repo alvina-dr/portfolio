@@ -1,6 +1,48 @@
 const videoGameDatas = 
 [
     {
+        "name" : "Rolling Food Chain",
+        "image1": "../../img/video-games/rolling-food-chain.jpg",
+        "link": "video-games/diver-down.html",
+        "filter-type": "jam"
+        // "tags": ["#Unity", "#DOTween"],
+    }, 
+    {
+        "name" : "Nadir Giant Hunter",
+        "image1": "../../img/video-games/nadir.jpg",
+        "link": "video-games/diver-down.html",
+        "filter-type": "school"
+        // "tags": ["#Unity", "#DOTween"],
+    }, 
+    {
+        "name" : "Luminar Expedition",
+        "image1": "../../img/video-games/luminar-expedition.jpg",
+        "link": "video-games/diver-down.html",
+        "filter-type": "prototype"
+        // "tags": ["#Unity", "#DOTween"],
+    }, 
+    {
+        "name" : "Throw Teleport",
+        "image1": "../../img/video-games/throw-teleport.jpg",
+        "link": "video-games/diver-down.html",
+        "filter-type": "prototype"
+        // "tags": ["#Unity", "#DOTween"],
+    }, 
+    {
+        "name" : "Space, Love and Blouge",
+        "image1": "../../img/video-games/blouge.jpg",
+        "link": "video-games/diver-down.html",
+        "filter-type": "school"
+        // "tags": ["#Unity", "#DOTween"],
+    }, 
+    {
+        "name" : "Overboss",
+        "image1": "../../img/video-games/overboss.jpg",
+        "link": "video-games/overboss.html",
+        "filter-type": "work"
+        // "tags": ["#Unity", "#DOTween"],
+    },  
+    {
         "name" : "Diver Down",
         "image1": "../../img/video-games/diver-down.jpg",
         "link": "video-games/diver-down.html",
@@ -14,13 +56,6 @@ const videoGameDatas =
         "filter-type": "jam"
         // "tags": ["#Unity", "#DOTween"],
     }, 
-    {
-        "name" : "Overboss",
-        "image1": "../../img/video-games/overboss.jpg",
-        "link": "video-games/overboss.html",
-        "filter-type": "work"
-        // "tags": ["#Unity", "#DOTween"],
-    },  
     // {
     //     "name" : "Hall Family's Christmas",
     //     "image1": "../../img/video-games/hfc.jpg",
@@ -33,12 +68,6 @@ const videoGameDatas =
     //     "link": "video-games/dynasty.html",
     //     "filter-type": "school"
     // },   
-    {
-        "name" : "Seed Rail",
-        "image1": "../../img/video-games/eba-effect.jpg",
-        "link": "video-games/eba-effect.html",
-        "filter-type": "jam"
-    },  
     {
         "name" : "EBA Effects",
         "image1": "../../img/video-games/eba-effect/ee-menu.gif",
@@ -75,12 +104,12 @@ const videoGameDatas =
         "link": "video-games/find-the-way-back.html",
         "filter-type": "jam"
     },
-    {
-        "name" : "Thief tales",
-        "image1": "../../img/video-games/thief-tales.jpg",
-        "link": "video-games/thief-tales.html",
-        "filter-type": "jam"
-    },
+    // {
+    //     "name" : "Thief tales",
+    //     "image1": "../../img/video-games/thief-tales.jpg",
+    //     "link": "video-games/thief-tales.html",
+    //     "filter-type": "jam"
+    // },
     {
         "name" : "Chloé au musée",
         "image1": "../../img/video-games/chloe-au-musee.jpg",
@@ -93,12 +122,12 @@ const videoGameDatas =
         "link": "video-games/pokemon-memory.html",
         "filter-type": "school"
     },
-    {
-        "name" : "Golden pumpkin",
-        "image1": "../../img/video-games/golden-pumpkin.jpg",
-        "link": "video-games/golden-pumpkin.html",
-        "filter-type": "school"
-    }, 
+    // {
+    //     "name" : "Golden pumpkin",
+    //     "image1": "../../img/video-games/golden-pumpkin.jpg",
+    //     "link": "video-games/golden-pumpkin.html",
+    //     "filter-type": "school"
+    // }, 
     // {
     //     "name" : "Samedi 10 heures !",
     //     "image1": "../../img/video-games/those-who-remain.jpg",

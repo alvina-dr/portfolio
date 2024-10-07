@@ -83,9 +83,9 @@ navbar {
 }
 
 #blog-navbar {
-  width: 80%;
+  /* width: 80%; */
 }
 
 .grid-navbar-blog {
-  width: calc(3vw*26 + .1em); 
+  /* width: calc(3vw*26 + .1em);  */
 }
