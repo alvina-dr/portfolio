@@ -17,7 +17,7 @@ const videoGameDatas =
     {
         "name" : "Luminar Expedition",
         "image1": "../../img/video-games/luminar-expedition.jpg",
-        "link": "video-games/diver-down.html",
+        "link": "video-games/luminar-expedition.html",
         "filter-type": "prototype"
         // "tags": ["#Unity", "#DOTween"],
     }, 
