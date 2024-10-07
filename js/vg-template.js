@@ -1,7 +1,6 @@
 var MainTitle = document.getElementById("main-title");
 var hashtags = document.getElementById("hashtags");
 
-
 FillTemplate(0);
 
 function FillTemplate(index) {

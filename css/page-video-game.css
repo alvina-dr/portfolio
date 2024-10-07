@@ -1,12 +1,14 @@
 .grid-video-game-1 {
+  margin: auto;
   margin-top: 120px;
   margin-bottom: 100px;
-  width: calc(3vw * 30 + 0.1em);
+  width: calc(3vw*26 + .1em);
   height: calc(3vw * 26 + 0.1em);
 }
 
 #video-game-section {
   margin-bottom: 100px;
+  width: 75%;
 }
 
 .div-grid {
@@ -23,7 +25,7 @@
   .grid-video-game-1 {
     margin-top: 120px;
     margin-bottom: 100px;
-    width: calc(6vw * 30 + 0.1em);
+    width: calc(6vw * 26 + 0.1em);
     height: calc(6vw * 26 + 0.1em);
   }
 }
@@ -41,7 +43,7 @@
   .grid-video-game-1 {
     margin-top: 120px;
     margin-bottom: 100px;
-    width: calc(10vw * 30 + 0.1em);
+    width: calc(10vw * 26 + 0.1em);
     height: calc(10vw * 26 + 0.1em);
   }
 }

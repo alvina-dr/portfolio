@@ -14,13 +14,13 @@ const videoGameDatas =
         "filter-type": "jam"
         // "tags": ["#Unity", "#DOTween"],
     }, 
-    // {
-    //     "name" : "Overboss",
-    //     "image1": "../../img/video-games/overboss.jpg",
-    //     "link": "video-games/overboss.html",
-    //     "filter-type": "work"
-    //     // "tags": ["#Unity", "#DOTween"],
-    // },  
+    {
+        "name" : "Overboss",
+        "image1": "../../img/video-games/overboss.jpg",
+        "link": "video-games/overboss.html",
+        "filter-type": "work"
+        // "tags": ["#Unity", "#DOTween"],
+    },  
     // {
     //     "name" : "Hall Family's Christmas",
     //     "image1": "../../img/video-games/hfc.jpg",
@@ -33,15 +33,15 @@ const videoGameDatas =
     //     "link": "video-games/dynasty.html",
     //     "filter-type": "school"
     // },   
-    // {
-    //     "name" : "Seed Rail",
-    //     "image1": "../../img/video-games/eba-effect.jpg",
-    //     "link": "video-games/eba-effect.html",
-    //     "filter-type": "jam"
-    // },  
+    {
+        "name" : "Seed Rail",
+        "image1": "../../img/video-games/eba-effect.jpg",
+        "link": "video-games/eba-effect.html",
+        "filter-type": "jam"
+    },  
     {
         "name" : "EBA Effects",
-        "image1": "../../img/video-games/eba-effect.jpg",
+        "image1": "../../img/video-games/eba-effect/ee-menu.gif",
         "link": "video-games/eba-effect.html",
         "filter-type": "school"
     },  

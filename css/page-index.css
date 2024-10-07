@@ -24,12 +24,16 @@
 }
 
 #about-section h3 {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .grid-index-1 {
-
     height: calc(3vw * 13 + .1em);
+}
+
+#index-main-section {
+    width: 75%;
+    margin-bottom: 5vw;
 }
 
 @media screen and (max-width: 1000px) {
@@ -71,7 +75,7 @@
 }
 
 .scroll-text-div {
-    width: 90%;
+    width: 75%;
     margin: auto;
     position: relative;
     overflow: hidden;

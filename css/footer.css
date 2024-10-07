@@ -10,9 +10,9 @@ footer {
 }
 
 .grid-footer {
-    width: 100%;
+    width: 75%;
     margin:auto;
-    width: calc(3vw*30 + .1em);
+    width: calc(3vw*26 + .1em);
     height: calc(3vw * 2 + .1em);
     background-color: var(--dark-color);
     align-self: center;
