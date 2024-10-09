@@ -145,11 +145,17 @@ button:hover {
     background-color: var(--primary-color);
     color: transparent;
     left: -100%;
+    z-index: -500;
 }
 
 .btn-more:hover:before
 {
-    left: -60%; 
+    left: 0%; 
+}
+
+.btn-more:hover {
+    color: var(--background-color);
+    font-weight: 500;
 }
 
 .btn1 {

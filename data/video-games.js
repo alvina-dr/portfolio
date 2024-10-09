@@ -10,7 +10,7 @@ const videoGameDatas =
     {
         "name" : "Nadir Giant Hunter",
         "image1": "../../img/video-games/nadir.jpg",
-        "link": "video-games/diver-down.html",
+        "link": "video-games/nadir-giant-hunter.html",
         "filter-type": "school"
         // "tags": ["#Unity", "#DOTween"],
     }, 

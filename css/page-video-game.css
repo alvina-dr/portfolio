@@ -25,7 +25,6 @@
   .grid-video-game-1 {
     margin-top: 120px;
     margin-bottom: 100px;
-    width: calc(6vw * 26 + 0.1em);
     height: calc(6vw * 26 + 0.1em);
   }
 }
@@ -43,7 +42,6 @@
   .grid-video-game-1 {
     margin-top: 120px;
     margin-bottom: 100px;
-    width: calc(10vw * 26 + 0.1em);
     height: calc(10vw * 26 + 0.1em);
   }
 }
@@ -223,4 +221,8 @@
 .filter-active-btn {
   background-color: transparent;
   color: var(--light-color);
+}
+
+#filter-btn-container {
+  flex-wrap: wrap;
 }
