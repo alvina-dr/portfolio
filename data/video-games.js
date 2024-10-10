@@ -3,7 +3,7 @@ const videoGameDatas =
     {
         "name" : "Rolling Food Chain",
         "image1": "../../img/video-games/rolling-food-chain.jpg",
-        "link": "video-games/diver-down.html",
+        "link": "video-games/rolling-food-chain.html",
         "filter-type": "jam"
         // "tags": ["#Unity", "#DOTween"],
     }, 
