@@ -1,8 +1,8 @@
 .cursor-default {
     width: 10px;
+    height: 10px;
     background-color: var(--light-color);
     border-radius: 50%;
-    height: 10px;
     position: fixed;
     transform: translate(-50%, -50%);
     pointer-events: none;
@@ -10,6 +10,21 @@
     transition: all .2s ease;
     transition-property: background, transform;
     transform-origin: 100% 100%;
+}
+
+.cursor-follow {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 10;
+    transition: all .2s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    border: solid var(--light-color) 1px;
 }
 
 .cursor-pointer {

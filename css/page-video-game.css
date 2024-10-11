@@ -52,8 +52,8 @@
   height: 100%;
   transition: 0.5s;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: right;
   margin: auto;
   /* margin-bottom: 5px; */
   /* border-radius: 8px; */
@@ -89,24 +89,19 @@
   padding: 5px;
 }
 
-.video-game-card-arrow {
+.video-game-card-technical {
   position: relative;
-  /* background-color:var(--light-color); */
+  background-color:var(--light-color);
+  color: var(--dark-color);
   width: fit-content;
-  margin-bottom: 30px;
-  margin-top: 5px;
-  font-family: "titleFont", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: small;
   text-transform: uppercase;
-  color: var(--light-color);
   padding: 5px;
-  /* padding-right: 0; */
-  /* bottom: 5.5%;
-    right: 5%;
-    width: 10%;
-    height: 8%; */
-  /* clip-path: polygon(0 30%, 30% 30%, 30% 0%, 100% 50%, 30% 100%, 30% 70%, 0% 70%); */
+  margin: 5px;
+  line-height: 7px;
+  animation: blink 1s infinite;
 }
 
 .video-game-card:hover .video-game-card-arrow {
@@ -116,10 +111,12 @@
 
 @keyframes blink {
   0% {
-    background-color: var(--dark-color);
+    /* background-color: var(--dark-color); */
+    content: "!!!";
   }
   50% {
-    background-color: var(--light-color);
+    /* background-color: var(--light-color); */
+    content: "TECH";
   }
 }
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alvina DR | Overboss</title>
+    <title>Alvina DR | Space, Love and Blouge</title>
 
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/text.css">
@@ -35,25 +35,30 @@
     
     <div class="grid grid-blog"></div>
     <section id="landing-blog-section">
-        <h1>Overboss</h1>
+        <h1>Space, Love and Blouge</h1>
     </section>
 
     <section id="blog-section" class="div-row">
         <div class="div-column">
-            <p id="hashtags"><b>2023</b> <b>Unity</b> <b>Board-game adaptation</b> <b>Gamepad</b> <b>Localization</b> <b>Tutorial</b></p>
-            <p>Overboss is originally a board-game published by Brotherwise Games. To play, the players place tiles and tokens on their board. The goal is to be the one to make the most points. The video game adaptation was made at BlanketGames (formerly TavroxGames) and published by GoblinzStudio. I personnaly worked around six months on the project during my work-study program and the engine used was Unity.</p>
+            <p id="hashtags"><b>2023</b> <b>Unity</b> <b>Alternative Output</b> <b>Alternative Controller</b></p>
+            <p>For our end of the year project, we had the idea to make a sort of mix between Spiderman and Shadow of the Colossus. In other words, a really dynamic controller and huge creatures to take down quickly.</p>
+            <p>We had three months to make the game with a team of seven. We were two programmers, and while I was working full time on the project, the other dev could only be there half of the time as they were working on two games.</p>
             <div class="div-row" style="width: 100%; height: 30rem; margin-bottom: 1rem;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jnkFhjtR9LQ?si=XGipy0GDgKqMvZ13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/envc8_SKGg4?si=FSxHPLorRDLAoSTd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <p>We were a really small team, with at the peak of the development three programmers but otherwise two. I started on the project by making the whole campaign part, which consists of several menus but also goals to achieve and side quests in game.</p>
+            <p>This game used physic much more than any other game I had done before and led to lots of pretty complex actions. The first thing to design was the swinging part.</p>
+            <h3>Swinging</h3>
+            <p>For this part, I first tried to look into what Spiderman actually does. One of the big questions I had, was how do we know which point to use to swing. After searching a bit on the internet I found this conference that at some points explains how the swinging points are defined : <a class="link-in-text" href="https://youtu.be/5T1hnau158M?si=UZ7K8-DZiZsFD34D" target="_blank">Classic Game Design Postmortem: Swinging with Spider-Man (GDC)</a>.</p>
+            <p>Basically what you do is you trace a cone of raycast. If a raycast hits something, it saves the collided object and the point of collision in a list. Once all collisions have been saved, we then calculate the distance between each one and a defined point that we call "perfect swinging point" which the game designers can move around to influence how we want our average swing curve to feel like.</p>
+            <p>Now, in our game we had two raycast cone like this, which means that calculation done every frame was huge. To help with performance, what we did was to divide this calculation on several frame instead of just one. The calculation of the swinging point would be less precise but we would get more FPS.</p>
+            <p>To do that we </p>
             <div class="div-row" style="width: 100%;">
-                <img src="../../../img/video-games/overboss/overboss-campaign.jpg" style="width: 49%;">
+                <img src="../../../img/video-games/nadir/ngh-gdc-explanation.jpg" style="width: 49%;">
                 <img src="../../../img/video-games/overboss/overboss-sidequest.jpg" style="width: 49%;">
             </div> 
             <p>I added a few things to the gameplay like Command Cards for example (bonuses that you can use when you make the pattern indicated on them with your tiles), but mostly had a part in the UI side of the game. There was a lot to rework (things had been done quickly before my arrival to fit the demo release deadline) and we had to make it gamepad compatible as the game would release on several consoles. Overboss would also be translated in many languages (spanish, german, korean, japanese, etc...) which means that all UI needed to accomodate to longer or shorter texts.</p>
             <p>Gamepad and localization being added afterward and not during the development was a huge slowdown and made the task much more laborious.</p>
             <p>Overboss was also the occasion to participate to the debug phase. There was a lot of work to do on this part, and it took several months (and was still ongoing when I left). But I learned a lot about the debugging process and it has helped me greatly in the long run.</p>
-            <p>It was also my first time programming a tutorial, and seeing how specific we actually have to be if we guide a player through a defined set of actions, step by step for example.</p>
         </div>
 
         <div class="div-column">
@@ -62,8 +67,14 @@
                     <p class="project-window-title" id="project-id">PLAY</p>
                 </div>
                 <div class="project-window-content" style="margin-top: 40px; width: fit-content; display: flex; flex-direction: column;">
-                    <a class="external-link" href="https://store.steampowered.com/app/2109390/Overboss/" target="_blank">Discover the game</a>
+                    <a class="external-link" href="https://nonogg.itch.io/space-love-and-blouge" target="_blank">Discover the game</a>
                 </div>
+            </div>
+            <div style="margin-top: 1rem;">
+                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">A look back at our first year project, from our very first prototypes to the final game ! 🪄<br><br>Swing and slice through giant monsters as fast as possible to try and beat the world record of 50 enemies in 2:56 🥇 (gg by the way)<br><br>Available on itch in my bio !<a href="https://twitter.com/hashtag/madewithunity?src=hash&amp;ref_src=twsrc%5Etfw">#madewithunity</a> <a href="https://t.co/5cervSS2Iu">pic.twitter.com/5cervSS2Iu</a></p>&mdash; Alvina (@alvina_dr_) <a href="https://twitter.com/alvina_dr_/status/1822969923028627933?ref_src=twsrc%5Etfw">August 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div style="margin-top: 1rem;">
+                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Quick look at our first year project, a few months later. One week left before it&#39;s over but it&#39;s been quite the adventure and we are super proud !<br><br>The game is available on itch if you want to try it out and tell us what you think :)<br><br>Link in my bio 🔥<a href="https://twitter.com/Cnam_Enjmin?ref_src=twsrc%5Etfw">@Cnam_Enjmin</a> <a href="https://twitter.com/SartonJules?ref_src=twsrc%5Etfw">@SartonJules</a> <a href="https://t.co/LvqPsYQCfo">pic.twitter.com/LvqPsYQCfo</a></p>&mdash; Alvina (@alvina_dr_) <a href="https://twitter.com/alvina_dr_/status/1800863358129975597?ref_src=twsrc%5Etfw">June 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
     </section>

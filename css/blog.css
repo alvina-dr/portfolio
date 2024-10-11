@@ -10,3 +10,29 @@
 #blog-section {
     margin-bottom: 7vw;
 }
+
+#blog-section .div-column:nth-child(1) {
+    width: 70%;
+}
+
+#blog-section .div-column:nth-child(2) {
+    width: 30%;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+    #blog-section {
+        flex-direction: column;
+    }
+    #blog-section .div-column {
+        width: 100%;
+    }
+}
+  
+@media screen and (max-width: 1000px) {
+
+}
+  
+@media screen and (max-width: 600px) {
+
+}

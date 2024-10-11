@@ -14,7 +14,7 @@ const projects =
         "image": "img/cover-video-game.jpg",
         "projectText": "I have a genuine passion for creating video games through programming, and whether it's for my job or personal projects, I find great joy in crafting immersive experiences that entertain people.",
         "projectLink": "html/projects/video-games.html",
-        "new": false
+        "new": true
     },
     {
         "projectTitle": "Photomontage",

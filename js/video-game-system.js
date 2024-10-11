@@ -35,13 +35,16 @@ for (let i = 0; i < videoGameDatas.length; i++) {
       innerHTML: videoGameDatas[i].name,
     })
   );
-  //   _videoGameCardDiv.appendChild(
-  //     Object.assign(
-  //       document.createElement("p"),
-  //       { classList: "video-game-card-arrow" },
-  //       { innerHTML: "►" }
-  //     )
-  //   );
+  if (videoGameDatas[i]["tags"] != "") {
+    _videoGameProject.appendChild(
+      Object.assign(
+        document.createElement("p"),
+        { classList: "video-game-card-technical" },
+        { innerHTML: videoGameDatas[i]["tags"] }
+      )
+    );
+  }
+
   var videoGameLink = _videoGameProject.appendChild(
     Object.assign(document.createElement("a"), {
       href: videoGameDatas[i].link,
