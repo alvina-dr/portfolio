@@ -52,18 +52,19 @@
                 <img src="../../../img/video-games/luminar-expedition/le-trophy.jpg" style="width: 49%;">
             </div> 
             <h3>Camera</h3>
-            <p>Since this was an exploration game I wanted the player to be able to move around quite far. So I decided to implement a camera system from zero. What happens is that I created a simmple movement system, and then substracted the position of the player to all the sprites on the screen. That way, the sprite of the player always stays in the center, and the whole environment moves.</p>
+            <p>Since this was an exploration game I wanted the player to be able to move around quite far. So I decided to implement a camera system from zero. What happens is that I created a simple movement system, and then substracted the position of the player to all the sprites on the screen. That way, the sprite of the player always stays in the center, and the whole environment moves.</p>
             <p>This was simple but allowed for much more possibilities in terms of gameplay and exploration (the theme of the program was "space exploration" so it's quite handy). For the UI, all I had to do was to no substract the player position, and it would stay in place like normal.</p>
             <h3>Lighting system</h3>
             <p>Another interesting part of this project was the programming of the light. When you display a sprite with the API you can precise the color of the sprite, like some kind of filter. If you want it to look exactly like your image, you just display it with the color white. But if you want to show the player red when they get hit for example, then you can use a red filter.</p>
+            <p></p>
             <h3>Collisions</h3>
             <p>The API didn't have a collision system ready, so I also had to code my own.</p>
             <h3>Contextual input</h3>
-            <p>One of the rule of this challenge was that we could only have two inputs, a Vector2 one for the 2D movement, and another one for whatever we wanted. But for what I had in mind the player could do three actions : mine, attack with a sword and build torches. Depending on the context, using the action button would make one of those actions. If the player was looking at a wall they would mine. If there was nothing in front of them they would attack. And if the player holds the button for a while then </p>
+            <p>One of the rule of this challenge was that we could only have two inputs, a Vector2 one for the 2D movement, and another one for whatever we wanted. But for what I had in mind the player could do three actions : mine, attack with a sword and build torches. Depending on the context, using the action button would make one of those actions. If the player was looking at a wall they would mine. If there was nothing in front of them they would attack. And if the player holds the button for a while then a torch is built on the floor in front of them.</p>
             <h3>Procedural generation</h3>
             <p>Since I didn't have a level editor, it was easier for me to just generate the environment procedurally. I didn't do anything fancy as I didn't have much time left.</p>
-            <h3>Autotiling system</h3>
-            <p></p>
+            <h3>Grid and autotiling system</h3>
+            <p>I made two layers, one for the ground and another for stuff on it, like torches and ores.</p>
         </div>
 
         <div class="div-column" style="width: 30%; margin-left : 50px;">
