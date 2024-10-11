@@ -36,11 +36,46 @@ for (let i = 0; i < videoGameDatas.length; i++) {
     })
   );
   if (videoGameDatas[i]["tags"] != "") {
-    _videoGameProject.appendChild(
+    var _tagDiv = _videoGameProject.appendChild(
       Object.assign(
-        document.createElement("p"),
-        { classList: "video-game-card-technical" },
-        { innerHTML: videoGameDatas[i]["tags"] }
+        document.createElement("div"),
+        { classList: "video-game-tag-div" }
+      )
+    );
+    var _scrollDiv = _tagDiv.appendChild(
+      Object.assign(
+        document.createElement("div"),
+        { classList: "scroll-text-new-div" }
+      )
+    );
+    var _sizeDiv =_scrollDiv.appendChild(
+      Object.assign(
+        document.createElement("div"),
+        { style: "width: 1000px;" }
+      )
+    );
+    var _textDivA =_sizeDiv.appendChild(
+      Object.assign(
+        document.createElement("div"),
+        { classList: "scroll-text-new" }
+      )
+    );
+    _textDivA.appendChild(
+      Object.assign(
+        document.createElement("h5"),
+        { innerHTML: videoGameDatas[i]["tags"] + " • " + videoGameDatas[i]["tags"] + " • " +  videoGameDatas[i]["tags"] + " • " +  videoGameDatas[i]["tags"] + " • " + videoGameDatas[i]["tags"] + " • " + videoGameDatas[i]["tags"] + " • " + videoGameDatas[i]["tags"] + " • " + videoGameDatas[i]["tags"] + " • "}
+      )
+    );
+    var _textDivB =_sizeDiv.appendChild(
+      Object.assign(
+        document.createElement("div"),
+        { classList: "scroll-text-new" }
+      )
+    );
+    _textDivB.appendChild(
+      Object.assign(
+        document.createElement("h5"),
+        { innerHTML: videoGameDatas[i]["tags"] + " • " + videoGameDatas[i]["tags"] + " • " +  videoGameDatas[i]["tags"] + " • " +  videoGameDatas[i]["tags"] + " • " + videoGameDatas[i]["tags"] + " • " + videoGameDatas[i]["tags"] + " • " + videoGameDatas[i]["tags"] + " • " + videoGameDatas[i]["tags"] + " • "}
       )
     );
   }

@@ -73,7 +73,7 @@ const videoGameDatas =
         "image1": "../../img/video-games/eba-effect/ee-menu.gif",
         "link": "video-games/eba-effect.html",
         "filter-type": "school",
-        "tags": ""
+        "tags": "Tech"
     },  
     {
         "name" : "Creeping Deck",
