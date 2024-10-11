@@ -28,12 +28,13 @@
 }
 
 .grid-index-1 {
-    height: calc(3vw * 13 + .1em);
+    bottom: 6vw;
+    border-bottom: solid var(--secondary-color) 1.5px;
 }
 
 #index-main-section {
     width: 75%;
-    margin-bottom: 5vw;
+    margin-bottom: 6vw;
 }
 
 @media screen and (max-width: 1000px) {
@@ -68,9 +69,6 @@
     }
     #project-section {
         padding: 0 10px;
-    }
-    .grid-index-1 {
-        height: calc(3vw * 13 * 5 + .1em);
     }
 }
 

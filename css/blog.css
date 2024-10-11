@@ -1,3 +1,12 @@
 .grid-footer-blog {
     width: calc(3vw*26 + .1em);
 }
+
+.grid-blog {
+    margin-bottom: 9vw;
+    border-bottom: solid var(--secondary-color) 1.5px;
+}
+
+#blog-section {
+    margin-bottom: 7vw;
+}

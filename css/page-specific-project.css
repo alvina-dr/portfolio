@@ -89,6 +89,11 @@
     border: solid 2px var(--secondary-color); 
     width: calc(3vw*26 + .1em);
     height: 50px;
+    position: absolute;
+    bottom: 5.5vw;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
 
 .next-project-button {

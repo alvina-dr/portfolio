@@ -53,21 +53,26 @@ function SetGridSizeFromRowNumber() {
   var x = document.getElementsByClassName("filter-show");
   var rowNumber = x.length/4;
   var grid = document.getElementsByClassName("grid-video-game-1");
-  grid[0].style.height = "calc(3vw * 1 + .1em)";
+  // grid[0].style.height = "calc(3vw * 1 + .1em)";
   console.log(document.getElementById("video-game-section").offsetHeight);
   var lineCount = document.getElementById("video-game-section").offsetHeight / (.03 * window.innerWidth);
   lineCount = Math.round(lineCount) + 3;
+  var paddingBottom = "5vw";
   if (rowNumber <= 1) 
   {
     console.log("here doing thing : " + window.innerHeight);
     lineCount = (window.innerHeight - (window.innerHeight * 0.5)) / (.03 * window.innerWidth);
     lineCount = Math.round(lineCount) + 4;
-    var paddingBottom = window.innerHeight - (window.innerHeight * 0.35) - document.getElementById("video-game-section").offsetHeight;
+    paddingBottom = window.innerHeight - (window.innerHeight * 0.35) - document.getElementById("video-game-section").offsetHeight;
     document.getElementById("video-game-section").style.marginBottom = paddingBottom.toString() + "px";
+  } else {
+    document.getElementById("video-game-section").style.marginBottom = paddingBottom.toString();
   }
+
+    
   var text = 'calc(3vw *' + lineCount + ' + .1em)';
   console.log(lineCount);
-  grid[0].style.height = text;
+  // grid[0].style.height = text;
   console.log(grid[0].style.height);
 
   // if (rowNumber <= 1) {

@@ -42,7 +42,7 @@
             <p id="hashtags"><b>C++</b> <b>No engine</b></p>
             <p>At the end of 2023, I had the chance to participate in the <a class="link-in-text" href="https://www.ubisoft.com/en-us/company/careers/interns-graduates/develop-at-ubisoft" target="_blank">Develop At Ubisoft Program</a>.</p>
             <p>For this project we had no engine, just a library (NextAPI) given by Ubisoft that allowed us to display sprites, read inputs and play sounds in a window. This was a solo project done in a few months, only working in the evening and the weekend (all sounds and music are done by Mael Heurard though, big thanks to him).</p>
-            <p>Your goal as the player is to secure most of the map to avoid slime spawn and free the caves. I wanted to convey the same feeling that I had playing Minecraft, a sense of safeness linked to the light.</p>
+            <p>Your goal as the player is to secure most of the map to avoid slime spawn and free the caves. I wanted to convey the same feeling that I had playing </a> on the subject that was really interesting and helpful : <a class="link-in-text" href="https://www.minecraft.net/fr-fr" target="_blank">Minecraft</a>, a sense of safeness linked to the light.</p>
             <div class="div-row" style="width: 100%; height: 30rem; margin-bottom: 1rem;">
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yLAeb2AkPhU?si=Kb5dK7Uc2LRO36s2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
@@ -52,21 +52,33 @@
                 <img src="../../../img/video-games/luminar-expedition/le-trophy.jpg" style="width: 49%;">
             </div> 
             <h3>Camera</h3>
-            <p>Since this was an exploration game I wanted the player to be able to move around quite far. So I decided to implement a camera system from zero. What happens is that I created a simple movement system, and then substracted the position of the player to all the sprites on the screen. That way, the sprite of the player always stays in the center, and the whole environment moves.</p>
-            <p>This was simple but allowed for much more possibilities in terms of gameplay and exploration (the theme of the program was "space exploration" so it's quite handy). For the UI, all I had to do was to not substract the player position, and it would stay in place like normal.</p>
+
+            <div class="div-row" style="width: 100%;">
+                <img src="../../../img/video-games/luminar-expedition/le-camera.gif" style="width: 49%;">
+                <div class="div-column" style="width: 49%;">
+                    <p>Since this was an exploration game I wanted the player to be able to move around quite far. So I decided to implement a camera system from zero. What happens is that I created a simple movement system, and then substracted the position of the player to all the sprites on the screen. That way, the sprite of the player always stays in the center, and the whole environment moves.</p>
+                    <p>This was simple but allowed for much more possibilities in terms of gameplay and exploration (the theme of the program was "space exploration" so it's quite handy).</p>
+                    <p>For the UI, all I had to do was to not substract the player position, and it would stay in place like normal.</p>
+                </div>
+            </div> 
             <h3>Grid and collision</h3>
             <p>I created a Grid class that contains a list of Cell and different functions to find cells using their sprite position or directly the cells coordinates. A Cell is a class composed of two sprites : one for the ground, another for stuff on it like torches and ores. It also has a boolean to indicate whether it is collidable or not (which is used to know when the player can walk on a cell).</p>
             <p>The API didn't have a collision system ready, so I also had to code my own. Using the boolean it was easy to know which cell was walkable or not. All I had to do was to find the one in front of the player depending on the direction they are moving (which was done by calculating the future potential position).</p>
             <h3>Lighting system</h3>
-            <p>Another interesting part of this project was the programming of the light. When you display a sprite with the API you can precise the color of the sprite, like some kind of filter. If you want it to look exactly like your image, you just display it with the color white. But if you want to show the player red when they get hit for example, then you can use a red filter.</p>
-            <p>That's exactly what I used for my light system. Everything that is not in the light is going to have a black filter (which will make every tile look the same). Everything that is in the light will get a certain degree of white/black filter, being a little visible if far from light or fully white if next to it.</p>
-            <p>Since the game was using a grid, I needed to find a way of making a circle on it. I found a detailed article by <a class="link-in-text" href="https://www.redblobgames.com/" target="_blank">Red Blob Games
-            </a> on the subject that was really interesting and helpful : <a class="link-in-text" href="https://www.redblobgames.com/grids/circle-drawing/" target="_blank">Circle fill on a grid
-            </a></p>
+            <div class="div-row" style="width: 100%;">
+                <div class="div-column" style="width: 49%;">
+                    <p>Another interesting part of this project was the programming of the light. When you display a sprite with the API you can precise the color of the sprite, like some kind of filter. If you want it to look exactly like your image, you just display it with the color white. But if you want to show the player red when they get hit for example, then you can use a red filter.</p>
+                    <p>That's exactly what I used for my light system. Everything that is not in the light is going to have a black filter (which will make every tile look the same). Everything that is in the light will get a certain degree of white/black filter, being a little visible if far from light or fully visible if next to it.</p>
+                    <p>Since the game was using a grid, I needed to find a way of making a circle on it. I found a detailed article by <a class="link-in-text" href="https://www.redblobgames.com/" target="_blank">Red Blob Games
+                    </a> on the subject that was really interesting and helpful : <a class="link-in-text" href="https://www.redblobgames.com/grids/circle-drawing/" target="_blank">Circle fill on a grid
+                    </a>. </p>
+                </div>
+                <img src="../../../img/video-games/luminar-expedition/le-light-circle.jpg" style="width: 49%;">
+            </div> 
             <h3>Contextual input</h3>
             <p>One of the rule of this challenge was that we could only have two inputs, a Vector2 one for the 2D movement, and another one for whatever we wanted. But for what I had in mind the player could do three actions : mine, attack with a sword and build torches. Depending on the context, using the action button would make one of those actions. If the player was looking at a wall they would mine. If there was nothing in front of them they would attack. And if the player holds the button for a while then a torch is built on the floor in front of them.</p>
             <h3>Procedural generation and autotiling system</h3>
-            <p>Since I didn't have a level editor, it was easier for me to just generate the environment procedurally. I didn't do anything fancy as I didn't have much time left.</p>
+            <p>Since I didn't have a level editor, it was easier for me to just generate the environment procedurally. I didn't do anything fancy as I didn't have much time left. There's a percentage of each type of tiles, walls, iron ore, gold, diamond and charcoal... And they are placed randomly on the map.</p>
             <p>A system I really wanted for the game was autotiling. It makes the environment looks much more coherent. Since everyting was generated procedurally, it was an important feature to have a "clean" look. I did it with something approaching a flag system. Each wall tile check if their neighbor is also a wall. If that's the case for the tile on the left, we add 1. If it's the case for the tile above we add 2. If it's both you then get 3. Each combination of neighbors gives back a precise number, from which you can determine which sprite would fit best to this precise case.</p>
             <div class="div-row" style="width: 100%;">
                 <img src="../../../img/video-games/luminar-expedition/le-autotile.jpg" style="width: 49%;">

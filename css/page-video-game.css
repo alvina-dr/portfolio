@@ -1,9 +1,10 @@
 .grid-video-game-1 {
   margin: auto;
   margin-top: 120px;
-  margin-bottom: 100px;
+  margin-bottom: 5vw;
   width: calc(3vw*26 + .1em);
-  height: calc(3vw * 26 + 0.1em);
+  /* height: calc(3vw * 26 + 0.1em); */
+  border-bottom: solid var(--secondary-color) 1.5px;
 }
 
 #video-game-section {
@@ -25,7 +26,6 @@
   .grid-video-game-1 {
     margin-top: 120px;
     margin-bottom: 100px;
-    height: calc(6vw * 26 + 0.1em);
   }
 }
 
@@ -42,7 +42,6 @@
   .grid-video-game-1 {
     margin-top: 120px;
     margin-bottom: 100px;
-    height: calc(10vw * 26 + 0.1em);
   }
 }
 
