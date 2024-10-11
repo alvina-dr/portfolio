@@ -4,7 +4,6 @@
   margin-bottom: 5vw;
   width: calc(3vw*26 + .1em);
   /* height: calc(3vw * 26 + 0.1em); */
-  border-bottom: solid var(--secondary-color) 1.5px;
 }
 
 #video-game-section {
