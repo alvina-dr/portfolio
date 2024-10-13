@@ -45,7 +45,7 @@ for (let i = 0; i < videoGameDatas.length; i++) {
     var _scrollDiv = _tagDiv.appendChild(
       Object.assign(
         document.createElement("div"),
-        { classList: "scroll-text-new-div" }
+        { classList: "video-game-tag-scroll-text-div" }
       )
     );
     var _sizeDiv =_scrollDiv.appendChild(

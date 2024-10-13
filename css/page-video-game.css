@@ -225,10 +225,26 @@
 .video-game-tag-div {
   height: 25px;
   line-height: 10px;
-  width: 40px;
-  overflow: hidden;
+  width: 60px;
   margin: 5px;
-  position: relative;
+  overflow: hidden;
+  position: absolute;
   color: var(--primary-color);
   text-transform: uppercase;
+  background-color: var(--secondary-color);
+}
+
+.video-game-tag-scroll-text-div {
+  width: 60px;
+  position: absolute;
+  margin: 0;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.video-game-tag-scroll-text-div div {
+  display: flex;
+  flex-direction: row;
 }

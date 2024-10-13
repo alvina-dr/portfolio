@@ -12,14 +12,14 @@ const videoGameDatas =
         "image1": "../../img/video-games/nadir.jpg",
         "link": "video-games/nadir-giant-hunter.html",
         "filter-type": "school",
-        "tags": "Tech"
+        "tags": "Technical"
     }, 
     {
         "name" : "Luminar Expedition",
         "image1": "../../img/video-games/luminar-expedition.jpg",
         "link": "video-games/luminar-expedition.html",
         "filter-type": "prototype",
-        "tags": "Tech"
+        "tags": "Technical"
     }, 
     {
         "name" : "Throw Teleport",
@@ -73,7 +73,7 @@ const videoGameDatas =
         "image1": "../../img/video-games/eba-effect/ee-menu.gif",
         "link": "video-games/eba-effect.html",
         "filter-type": "school",
-        "tags": "Tech"
+        "tags": "Technical"
     },  
     {
         "name" : "Creeping Deck",

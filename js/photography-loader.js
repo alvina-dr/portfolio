@@ -5,15 +5,21 @@ var container3 = document.getElementById("photography-container3");
 LoadPhoto();
 
 function LoadPhoto() {
-    for (var i = 0; i < 30; i++) {
+    for (var i = 0; i < 29; i++) 
+    {
         var _photography = document.createElement("img");
         _photography.src = "../../img/photography/" + i + ".jpg";
         _photography.style.width = "100%";
-        if (i < 11) {
+        if (i < 11) 
+        {
             container1.appendChild(_photography);
-        }else if (i < 21){
+        }
+        else if (i < 20)
+        {
             container2.appendChild(_photography);
-        }else {
+        }
+        else 
+        {
             container3.appendChild(_photography);
         }
     }

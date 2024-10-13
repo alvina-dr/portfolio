@@ -16,17 +16,17 @@ const projects =
         "projectLink": "html/projects/video-games.html",
         "new": true
     },
-    {
-        "projectTitle": "Photomontage",
-        "projectID": "1",
-        "image": "img/cover-photoshop.jpg",
-        "projectText": "I've been using photoshop since I was eleven. With time I started making illustration. Each piece of art I realise is made to tell a story and put the spectator's imagination at work.",
-        "projectLink": "html/projects/photomontage.html",
-        "new": false
-    },
+    // {
+    //     "projectTitle": "Photomontage",
+    //     "projectID": "1",
+    //     "image": "img/cover-photoshop.jpg",
+    //     "projectText": "I've been using photoshop since I was eleven. With time I started making illustration. Each piece of art I realise is made to tell a story and put the spectator's imagination at work.",
+    //     "projectLink": "html/projects/photomontage.html",
+    //     "new": false
+    // },
     {
         "projectTitle": "Photography",
-        "projectID": "2",
+        "projectID": "1",
         "image": "img/cover-photograph.jpg",
         "projectText": "Photography allows me to capture moments of life and I really love the story that it can convey.",
         "projectLink": "html/projects/photography.html",
