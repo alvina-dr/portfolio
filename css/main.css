@@ -100,7 +100,7 @@ button {
     background-color: var(--secondary-color);
     color: var(--light-color);
     border-radius: 0;
-    transition: .3s;
+    /* transition: .3s; */
     padding: 10px;
     cursor: none;
 }
