@@ -31,7 +31,7 @@ const videoGameDatas =
     {
         "name" : "Space, Love and Blouge",
         "image1": "../../img/video-games/blouge.jpg",
-        "link": "video-games/blouge.html",
+        "link": "video-games/space-love-blouge.html",
         "filter-type": "school",
         "tags": ""
     }, 
