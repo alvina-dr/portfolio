@@ -41,24 +41,16 @@
     <section id="blog-section" class="div-row">
         <div class="div-column">
             <p id="hashtags"><b>2023</b> <b>Unity</b> <b>Alternative Output</b> <b>Alternative Controller</b></p>
-            <p>For our end of the year project, we had the idea to make a sort of mix between Spiderman and Shadow of the Colossus. In other words, a really dynamic controller and huge creatures to take down quickly.</p>
-            <p>We had three months to make the game with a team of seven. We were two programmers, and while I was working full time on the project, the other dev could only be there half of the time as they were working on two games.</p>
-            <div class="div-row" style="width: 100%; height: 30rem; margin-bottom: 1rem;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/envc8_SKGg4?si=FSxHPLorRDLAoSTd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Throw Teleport is a really bad name but I never really took the time to find a good one. Basically the idea of the game was to make some sort of 3D metroidvania where the main player capacity is to "throw" some kind of weapon and call it back. Another important mechanic is the ability to "teleport" where the weapon is. That way you get a mix of dynamic combat and puzzle possibilities (as shown in the video below). I've worked on this game for a few weeks in my free time in summer 2023 and reused it in class for a level design exercice around january 2024.</p>
+            <div class="div-row" style="width: 100%; height: 40rem; margin-bottom: 1rem;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/u7tbHlEt7Zw?si=xNFv4dEFcEjHRZ1T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <p>This game used physic much more than any other game I had done before and led to lots of pretty complex actions. The first thing to design was the swinging part.</p>
-            <h3>Swinging</h3>
-            <p>For this part, I first tried to look into what Spiderman actually does. One of the big questions I had, was how do we know which point to use to swing. After searching a bit on the internet I found this conference that at some points explains how the swinging points are defined : <a class="link-in-text" href="https://youtu.be/5T1hnau158M?si=UZ7K8-DZiZsFD34D" target="_blank">Classic Game Design Postmortem: Swinging with Spider-Man (GDC)</a>.</p>
-            <p>Basically what you do is you trace a cone of raycast. If a raycast hits something, it saves the collided object and the point of collision in a list. Once all collisions have been saved, we then calculate the distance between each one and a defined point that we call "perfect swinging point" which the game designers can move around to influence how we want our average swing curve to feel like.</p>
-            <p>Now, in our game we had two raycast cone like this, which means that calculation done every frame was huge. To help with performance, what we did was to divide this calculation on several frame instead of just one. The calculation of the swinging point would be less precise but we would get more FPS.</p>
-            <p>To do that we </p>
-            <div class="div-row" style="width: 100%;">
-                <img src="../../../img/video-games/nadir/ngh-gdc-explanation.jpg" style="width: 49%;">
-                <img src="../../../img/video-games/overboss/overboss-sidequest.jpg" style="width: 49%;">
-            </div> 
-            <p>I added a few things to the gameplay like Command Cards for example (bonuses that you can use when you make the pattern indicated on them with your tiles), but mostly had a part in the UI side of the game. There was a lot to rework (things had been done quickly before my arrival to fit the demo release deadline) and we had to make it gamepad compatible as the game would release on several consoles. Overboss would also be translated in many languages (spanish, german, korean, japanese, etc...) which means that all UI needed to accomodate to longer or shorter texts.</p>
-            <p>Gamepad and localization being added afterward and not during the development was a huge slowdown and made the task much more laborious.</p>
-            <p>Overboss was also the occasion to participate to the debug phase. There was a lot of work to do on this part, and it took several months (and was still ongoing when I left). But I learned a lot about the debugging process and it has helped me greatly in the long run.</p>
+            <p>This is a solo project and all the features were programmed by me. I really like this game because it was the occasion for me to spend time on mechanics that I hadn't done before, even though they are quite common in many video games ! Great training.</p>
+            <div class="div-row" style="width: 100%; height: 25rem; margin-bottom: 1rem;">
+                <iframe width="49%" height="100%" src="https://www.youtube.com/embed/R_n7Duiiips?si=GaTPyPi2ava4k2sq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="49%" height="100%" src="https://www.youtube.com/embed/5JBpU9MtERM?si=uJWo8-GEIa8b3jFy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </div>
         </div>
 
         <div class="div-column">
@@ -67,14 +59,12 @@
                     <p class="project-window-title" id="project-id">PLAY</p>
                 </div>
                 <div class="project-window-content" style="margin-top: 40px; width: fit-content; display: flex; flex-direction: column;">
-                    <a class="external-link" href="https://nonogg.itch.io/space-love-and-blouge" target="_blank">Discover the game</a>
+                    <a class="external-link" href="https://alvina-dr.itch.io/throw-teleport" target="_blank">Discover the game</a>
                 </div>
             </div>
             <div style="margin-top: 1rem;">
-                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">A look back at our first year project, from our very first prototypes to the final game ! 🪄<br><br>Swing and slice through giant monsters as fast as possible to try and beat the world record of 50 enemies in 2:56 🥇 (gg by the way)<br><br>Available on itch in my bio !<a href="https://twitter.com/hashtag/madewithunity?src=hash&amp;ref_src=twsrc%5Etfw">#madewithunity</a> <a href="https://t.co/5cervSS2Iu">pic.twitter.com/5cervSS2Iu</a></p>&mdash; Alvina (@alvina_dr_) <a href="https://twitter.com/alvina_dr_/status/1822969923028627933?ref_src=twsrc%5Etfw">August 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-            <div style="margin-top: 1rem;">
-                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Quick look at our first year project, a few months later. One week left before it&#39;s over but it&#39;s been quite the adventure and we are super proud !<br><br>The game is available on itch if you want to try it out and tell us what you think :)<br><br>Link in my bio 🔥<a href="https://twitter.com/Cnam_Enjmin?ref_src=twsrc%5Etfw">@Cnam_Enjmin</a> <a href="https://twitter.com/SartonJules?ref_src=twsrc%5Etfw">@SartonJules</a> <a href="https://t.co/LvqPsYQCfo">pic.twitter.com/LvqPsYQCfo</a></p>&mdash; Alvina (@alvina_dr_) <a href="https://twitter.com/alvina_dr_/status/1800863358129975597?ref_src=twsrc%5Etfw">June 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Made a level for a game I started this summer and completely forgot to talk about it so here&#39;s a small extract from the full video I made on youtube :)<br><br>(The full level is also playable on itch) <a href="https://t.co/1fVMJg4Etc">pic.twitter.com/1fVMJg4Etc</a></p>&mdash; Alvina (@alvina_dr_) <a href="https://twitter.com/alvina_dr_/status/1782324094739857800?ref_src=twsrc%5Etfw">April 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Been working on this game for a few weeks now and recently tried to add sounds (which happens to be really hard). All feedbacks are welcomed 😁<a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://twitter.com/hashtag/madewithunity?src=hash&amp;ref_src=twsrc%5Etfw">#madewithunity</a> <a href="https://twitter.com/hashtag/solodev?src=hash&amp;ref_src=twsrc%5Etfw">#solodev</a> <a href="https://t.co/zVAIg9yqA8">pic.twitter.com/zVAIg9yqA8</a></p>&mdash; Alvina (@alvina_dr_) <a href="https://twitter.com/alvina_dr_/status/1706720797392249232?ref_src=twsrc%5Etfw">September 26, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            </div>
             </div>
         </div>
     </section>
