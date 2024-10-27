@@ -28,7 +28,7 @@ const projects =
         "projectTitle": "Photography",
         "projectID": "1",
         "image": "img/cover-photograph.jpg",
-        "projectText": "Photography is a hobby that allows me to capture moments of life. I really love the story that it can convey.",
+        "projectText": "Photography is a hobby that allows me to capture moments of life. I really love the story that it can convey. Here's some of the photographs I took over the last few years if you want to check it out :)",
         "projectLink": "html/projects/photography.html",
         "new": false
     },

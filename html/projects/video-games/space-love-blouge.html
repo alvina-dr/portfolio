@@ -42,21 +42,17 @@
         <div class="div-column">
             <p id="hashtags"><b>2023</b> <b>Unity</b> <b>Alternative Output</b> <b>Alternative Controller</b></p>
             <p>In october 2023 we took up the challenge to make a game in a week that used an alternative output (something that was not simply a screen). It was a project included in the curriculum of our school (ENJMIN) and we were a team of ten. I was the main programmer on the Unity project while the other programmer worked on the Arduino side of the game.</p>
-            <p>We had three months to make the game with a team of seven. We were two programmers, and while I was working full time on the project, the other dev could only be there half of the time as they were working on two games.</p>
+            <p>The idea we had was to make a two player cooperation game where each player wears glasses. One has red glasses and the other has blue ones. That way, both players will see different things based on the color they have (for example blue light will look the same as "no light / black" for the player wearing red glasses cause it will be absorbed by the color filter).</p>
+            <p>Based on this concept, we designed a game where each player see enemies that they can't shoot themselves. Instead, they are forced to communicate the enemies' positions to the other player and cooperate to defend the planet in the middle of the screen. For example : red can see red but can only shoot blue !</p>
             <div class="div-row" style="width: 100%; height: 40rem; margin-bottom: 1rem;">
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sa6amw7IkfU?si=LAH26X4pU59kYhW3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <p>This game used physic much more than any other game I had done before and led to lots of pretty complex actions. The first thing to design was the swinging part.</p>
-            <p>Basically what you do is you trace a cone of raycast. If a raycast hits something, it saves the collided object and the point of collision in a list. Once all collisions have been saved, we then calculate the distance between each one and a defined point that we call "perfect swinging point" which the game designers can move around to influence how we want our average swing curve to feel like.</p>
-            <p>Now, in our game we had two raycast cone like this, which means that calculation done every frame was huge. To help with performance, what we did was to divide this calculation on several frame instead of just one. The calculation of the swinging point would be less precise but we would get more FPS.</p>
-            <p>To do that we </p>
+            <p>Now, there's no huge technical aspect to this game but we were able to exhibit it at Safra'Numériques in Amiens, Game in Noisy, IdeenExpo in Hannover and A MAZE in Berlin (we even got the chance to go there, visit the city and meet many cool game developers !).</p>
+            <p>Just for that I think it's worth writing a few words about Space, Love and Blouge :)</p>
             <div class="div-row" style="width: 100%;">
                 <img src="../../../img/video-games/space-love-blouge/slb-amaze1.jpg" style="width: 49%;">
                 <img src="../../../img/video-games/space-love-blouge/slb-amaze2.jpg" style="width: 49%;">
             </div> 
-            <p>I added a few things to the gameplay like Command Cards for example (bonuses that you can use when you make the pattern indicated on them with your tiles), but mostly had a part in the UI side of the game. There was a lot to rework (things had been done quickly before my arrival to fit the demo release deadline) and we had to make it gamepad compatible as the game would release on several consoles. Overboss would also be translated in many languages (spanish, german, korean, japanese, etc...) which means that all UI needed to accomodate to longer or shorter texts.</p>
-            <p>Gamepad and localization being added afterward and not during the development was a huge slowdown and made the task much more laborious.</p>
-            <p>Overboss was also the occasion to participate to the debug phase. There was a lot of work to do on this part, and it took several months (and was still ongoing when I left). But I learned a lot about the debugging process and it has helped me greatly in the long run.</p>
         </div>
 
         <div class="div-column">
