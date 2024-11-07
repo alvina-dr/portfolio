@@ -107,6 +107,11 @@ b::after {
   box-shadow: 0px 10px var(--highlight-color);
 }
 
+.text-highlight {
+  font-weight: bold;
+  background-color: var(--secondary-color);
+}
+
 .info-text {
   position: relative;
   width: fit-content;
