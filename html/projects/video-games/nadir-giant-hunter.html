@@ -64,14 +64,21 @@
             <p><i><span class="text-highlight">Side note :</span> Since in our game the player would be able to grapple at moving objects like the enemies, we needed to save not only the position but also the object that we wanted to connect with. That way we make our hanging point a children of the object we want to use to swing - and it will follow the movement of its parent.</i></p>
             <p>The thing is - as explained in the conference - if you only do one simple cone raycast then you miss lots of opportunities to grapple at stuff in the environment. For example, you might <span class="text-highlight">miss the ceiling right above your head since it's in the middle of the cone</span>. That's why Energy Hook's system is so interesting, if your <span class="text-highlight">cone raycast don't detect anything, its radius expands</span> and you get to look at a wider area. Since the cone starts with a really small radius you catch all the points near the ceiling WHILE also being able to catch hanging points on the sides if you have nothing above your head. That way we include many more possibilities.</p>
             <p>At first that's what we did. But after a few weeks of playing around with the character controller, <span class="text-highlight">something just felt off</span>. 
-            The thing with this technique is that we actually <span class="span text-highlight">still might miss a lot of more interesting points</span>. Since the cone grows with time, if we detect a point right above the player's head, that's the point we will immediatly grapple. The distance check with the perfect point is only calculated for a given radius AND if nothing is returned, THEN the radius grows. That means that <span class="text-highlight">if we detect at least a point at the minimum radius, we won't even bother checking all the other possible radius</span>.</p>
-            <p>The problem is that in our case, a point detected near the ceiling might not be closer to the perfect point than a point taken on the right of the player (for example).</p>
+            The thing with this technique is that we actually <span class="span text-highlight">still might miss a lot of more interesting points</span>. Since the cone grows with time, if we detect a point right above the player's head, that's the point we will immediatly grapple. The distance check with the perfect point is only calculated for a given radius AND <span class="text-highlight">if nothing is returned, THEN the radius grows</span>. That means that <span class="text-highlight">if we detect at least a point at the minimum radius, we won't even bother checking all the other possible radius</span>.</p>
+            <p>The problem is that in our case, a point detected near the ceiling might not be closer to the perfect point than a point taken in front of the player (see "Perfect Swinging Point example" below).</p>
             <div class="div-row" style="width: 100%;">
-                <img src="../../../img/video-games/nadir/ngh-cone-raycast-example.gif" style="width: 32%;">
-                <img src="../../../img/video-games/nadir/ngh-cone-raycast-perfect-point.png" style="width: 32%;">
+                <div style="width: 32%;">
+                    <img src="../../../img/video-games/nadir/ngh-cone-raycast-example.gif" style="width: 100%; margin-bottom: 0;">
+                    <p><i>Cone raycast placement on the player</i></p>
+                </div>
+                <div style="width: 32%;">
+                    <img src="../../../img/video-games/nadir/ngh-cone-raycast-perfect-point.png" style="width: 100%; margin-bottom: 0;">
+                    <p><i>Perfect Swinging Point example</i></p>
+                </div>
+
                 <div style="width: 32%;">
                     <img style="width: 100%; margin-bottom: 0;" src="../../../img/video-games/nadir/ngh-cone-raycast-radius-step.png"> 
-                    <p><i>Example of radius step</i></p>
+                    <p><i>Example of several radius step</i></p>
                 </div>
             </div> 
             <p>Now, in our game we had two raycast cone like this, which means that calculation done every frame was huge. To help with <span class="text-highlight">performance</span>, what we did was to <span class="text-highlight">divide this calculation on several frames</span> instead of just one. The calculation of the swinging point would be less precise but we would get more FPS.</p>
@@ -83,8 +90,13 @@
             <span class="text-highlight">Radius Precision</span> : The number of step between the Minimum Radius and the Maximum Radius. The higher it is, the more precise the collision detection will be, but it will also cost more performance.</p>
             <h3>Interaction</h3>
             <p>In Nadir the player can interact with three types of "spots" when they are close enough. The enemis' weak spot, the dash spot and the bumpers. </p>
+            <h3>Gamepad and UI</h3>
             <p>Nadir is a gamepad first game, with fully remappable inputs.</p>
             <p>Since we wanted to participate to the Busan Indie Connect Festival, I set up the Unity Localization System on the project. That way the game was playable in English, French and Korean.</p>
+            <p>Below a quick video that shows the UI of the main menu and the available settings : </p>
+            <div class="div-row" style="width: 100%; height: 30rem; margin-bottom: 1rem;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cwqaQXGEpMw?si=dLFjcijnUp664nSq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </div>
 
         <div class="div-column">
