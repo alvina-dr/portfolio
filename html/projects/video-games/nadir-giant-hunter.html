@@ -63,14 +63,15 @@
             </div> 
             <p>Basically, what they did is they <span class="text-highlight">trace a cone of raycast that detects all the possible hanging points</span>. In Energy Hook, <span class="text-highlight">the cone expands the longer the input to swing is held</span>, in order to catch more possible points. At first, we decided to go with something pretty similar and just <span class="text-highlight">trace a cone of raycast</span>. If a raycast hits something, it <span class="text-highlight">saves the collided object and the point of collision</span> in a list. Once all collisions have been saved, we then calculate the distance between each one and a defined point that we call <span class="text-highlight">"perfect swinging point"</span> - which the game designers can move around to influence how we want our average swing curve to feel like (see "Perfect Swinging Point example" below). <span class="text-highlight">The point that the player will use to swing is the one that's the closest to our perfect swinging point</span>.</p>
             <div class="div-row" style="width: 100%;">
-                <div class="div-column" style="width: 59%;">
+                <div style="width: 39%;">
+                    <img src="../../../img/video-games/nadir/ngh-cone-raycast-opening.gif" style="width: 100%; margin: 0; height: 20vw; object-fit: cover;">
+                    <p><i>Cone raycast opening</i></p>
+                </div>
+                <div style="width: 59%;">
                     <p><i><span class="text-highlight">Side note :</span> Since in our game the player would be able to grapple at moving objects like the enemies, we needed to save not only the position but also the object that we wanted to connect with. That way we make our hanging point a children of the object we want to use to swing - and it will follow the movement of its parent.</i></p>
                     <p>The thing is - as explained in the conference - if you only do one simple cone raycast then you miss lots of opportunities to grapple at stuff in the environment. For example, you might <span class="text-highlight">miss the ceiling right above your head since it's in the middle of the cone</span>. That's why Energy Hook's system is so interesting, if your <span class="text-highlight">cone raycast don't detect anything, its radius expands</span> and you get to look at a wider area. Since the cone starts with a really small radius you catch all the points near the ceiling WHILE also being able to catch hanging points on the sides if you have nothing above your head. That way we include many more possibilities.</p>
                 </div>
-                <div style="width: 39%;">
-                    <img src="../../../img/video-games/nadir/ngh-cone-raycast-opening.gif" style="width: 100%; margin-bottom: 0;">
-                    <p><i>Cone raycast opening</i></p>
-                </div>
+
             </div> 
 
             <h3>Opening radius or radius step</h3>
@@ -145,7 +146,8 @@
                     <p class="project-window-title" id="project-id">PLAY</p>
                 </div>
                 <div class="project-window-content" style="margin-top: 40px; width: fit-content; display: flex; flex-direction: column;">
-                    <a class="external-link" href="https://boolti.itch.io/nadir" target="_blank">Discover the game</a>
+                    <a class="external-link" href="https://boolti.itch.io/nadir" target="_blank" style="width: fit-content; margin: auto;">Discover the game</a>
+                    <p style="margin: 10px;">-----------------------------</p>
                     <a class="external-link" href="https://alvina-dr.itch.io/chase-tag-online" target="_blank" style="width: fit-content; margin: auto;">REPOSITORY</a>
 
                 </div>
