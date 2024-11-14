@@ -40,7 +40,7 @@
 
     <section id="blog-section" class="div-row">
         <div class="div-column">
-            <p id="hashtags"><b>2024</b> <b>Unity</b> <b>Gamepad</b> <b>Localization</b> <b>Remapping</b></p>
+            <p id="hashtags"><b>2024</b> <b>Unity</b> <b>Gamepad</b> <b>Localization</b> <b>Remapping</b> <b>Wwise</b></p>
             <p>For our end of the year project (<span class="text-highlight">master 1st year</span>), we had the idea to make a sort of <span class="text-highlight">mix between Spiderman and Shadow of the Colossus</span>. In other words, a really <span class="text-highlight">dynamic controller</span> and <span class="text-highlight">huge creatures to take down quickly</span>.</p>
             <p>We had <span class="text-highlight">three months</span> to make the game with a <span class="text-highlight">team of seven</span>. We were <span class="text-highlight">two programmers</span>, and while I was working full time on the project, the other dev could only be there half of the time as they were working on two games.</p>
             <p>At first, <span class="text-highlight">I mainly took charge of the whole gameplay (character controller, critical path, UI)</span> while the other programmer did the procedural animation and the enemy movement. Then <span class="text-highlight">once all the basics were set up, we shared the rest of the workload and used this rough base to polish the movement gamefeel together</span>.</p>
@@ -48,6 +48,7 @@
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/envc8_SKGg4?si=FSxHPLorRDLAoSTd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <p>This game used <span class="text-highlight">physics</span> much more than any other game I had done before and led to lots of pretty complex actions. The first thing to design was the swinging part.</p>
+
             <h3>Swinging and cone raycast</h3>
             <p>For this part, I first tried to <span class="text-highlight">look into what Spiderman actually does</span>. One of the big questions I had, was how do we know <span class="text-highlight">which point to use to swing</span>. After searching a bit on the internet I found this conference that at some point explains how the developers of Spiderman themselves got inspired by <a class="link-in-text" href="https://store.steampowered.com/app/378070/Energy_Hook/" target="_blank">Energy Hook</a>'s way of doing things : <a class="link-in-text" href="https://youtu.be/5T1hnau158M?si=UZ7K8-DZiZsFD34D" target="_blank">Classic Game Design Postmortem: Swinging with Spider-Man (GDC)</a>.</p>
             <div class="div-row" style="width: 100%;">
@@ -71,6 +72,7 @@
                     <p><i>Cone raycast opening</i></p>
                 </div>
             </div> 
+
             <h3>Opening radius or radius step</h3>
             <p>At first that's what we did. But after a few weeks of playing around with the character controller, <span class="text-highlight">something just felt off</span>. 
             The thing with this technique is that we actually <span class="span text-highlight">still might miss a lot of more interesting points</span>. Since the cone grows with time, if we detect a point right above the player's head, that's the point we will immediatly grapple. The distance check with the perfect point is only calculated for a given radius AND <span class="text-highlight">if nothing is returned, THEN the radius grows</span>. That means that <span class="text-highlight">if we detect at least a point at the minimum radius, we won't even bother checking all the other possible radius</span>.</p>
@@ -96,11 +98,15 @@
                 <span class="text-highlight">Maximum Radius</span> : The maximum size of the cone radius.<br>
                 <span class="text-highlight">Radius Precision</span> : The number of step between the Minimum Radius and the Maximum Radius. The higher it is, the more precise the collision detection will be, but it will also cost more performance (see "Example of several radius step" above).<br>
                 <span class="text-highlight">Raycast Length</span> : This parameter was not in the ConeRaycast script but in the swinging parameters (in the player data). Still, it was a really important variable for the cone behavior.</p>
+
             <h3>Optimization</h3>
             <p>Now, in our game we had two raycast cone like this, one for each hand of the player. And the <span class="text-highlight">calculation of a single raycast cone every frame was already huge</span>. To <span class="text-highlight">help with performance</span>, what we did was to <span class="text-highlight">divide this calculation on several frames</span> instead of just one. The calculation of the swinging point would be less precise but we would get more FPS. For example, we would <span class="text-highlight">use a frame for each radius step</span>, and once all radius step have been checked (Radius precision was of around four or five in the game) then we decide to look at which collision point is the closest to the perfect swinging point. We also select a much <span class="text-highlight">lower Angle Precision</span> than in the screens above (more like 90 so 1 raycast for each 4 degrees of the circle). With those few modifications we get a <span class="text-highlight">better framerate</span>.</p>
             <p>Looking back on it, it <span class="text-highlight">might have been a good idea</span> to do the raycast on a <span class="text-highlight">separate thread with batch raycasting</span> like in this video : <a class="link-in-text" href="https://www.youtube.com/watch?v=WrzrtMxLgpc" target="_blank">RAYCASTING Made Insanely Fast for Collision Detection !</a>. Hopefully I'll have the occasion to look into that in another project.</p>
-            <h3>Interaction</h3>
+
+            <h3>Gameplay</h3>
+            <p>For the swinging of the player itself, we used a <a class="link-in-text" href="https://store.steampowered.com/app/378070/Energy_Hook/" target="_blank">SpringJoint</a> and added an impulse on start and end of the swing. We tweaked a lot of stuff to try and get a more juicy movement - still inspiring ourselves from Spider-Man. If you want to try it out, you can play the game on the <a class="link-in-text" href="https://boolti.itch.io/nadirgianthunter" target="_blank">itch.io page</a>.</p>
             <p>In Nadir the player can interact with three types of "spots" when they are close enough. The enemis' weak spot, the dash spot and the bumpers. </p>
+
             <h3>Gamepad and UI</h3>
             <p>Nadir is a gamepad first game, with fully remappable inputs.</p>
             <p>Since we wanted to participate to the Busan Indie Connect Festival, I set up the Unity Localization System on the project. That way the game was playable in English, French and Korean.</p>
@@ -112,12 +118,14 @@
         </div>
 
         <div class="div-column">
-            <div class="project-window2" href="./html/index/jeu_video.html" style="height: fit-content; margin: 0;">
+            <div class="project-window2" href="./html/index/jeu_video.html" style="height: fit-content; margin: 0; margin-bottom: 10px;">
                 <div class="project-window-navbar">
                     <p class="project-window-title" id="project-id">PLAY</p>
                 </div>
                 <div class="project-window-content" style="margin-top: 40px; width: fit-content; display: flex; flex-direction: column;">
                     <a class="external-link" href="https://boolti.itch.io/nadir" target="_blank">Discover the game</a>
+                    <a class="external-link" href="https://alvina-dr.itch.io/chase-tag-online" target="_blank" style="width: fit-content; margin: auto;">REPOSITORY</a>
+
                 </div>
             </div>
             <div style="margin-top: 1rem;">
