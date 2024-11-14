@@ -229,16 +229,16 @@
   margin: 5px;
   overflow: hidden;
   position: absolute;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-transform: uppercase;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .video-game-tag-scroll-text-div {
   width: 60px;
   position: absolute;
   margin: 0;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   overflow: hidden;
   display: flex;
   flex-direction: row;

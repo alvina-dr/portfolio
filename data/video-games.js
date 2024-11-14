@@ -1,6 +1,13 @@
 const videoGameDatas = 
 [
     {
+        "name" : "Saudade",
+        "image1": "../../img/video-games/saudade.jpg",
+        "link": "video-games/saudade.html",
+        "filter-type": "school technical",
+        "tags": "Technical"
+    }, 
+    {
         "name" : "Rolling Food Chain",
         "image1": "../../img/video-games/rolling-food-chain.jpg",
         "link": "video-games/rolling-food-chain.html",
@@ -11,14 +18,14 @@ const videoGameDatas =
         "name" : "Nadir Giant Hunter",
         "image1": "../../img/video-games/nadir.jpg",
         "link": "video-games/nadir-giant-hunter.html",
-        "filter-type": "school",
+        "filter-type": "school technical",
         "tags": "Technical"
     }, 
     {
         "name" : "Luminar Expedition",
         "image1": "../../img/video-games/luminar-expedition.jpg",
         "link": "video-games/luminar-expedition.html",
-        "filter-type": "prototype",
+        "filter-type": "prototype technical",
         "tags": "Technical"
     }, 
     {
@@ -72,7 +79,7 @@ const videoGameDatas =
         "name" : "EBA Effects",
         "image1": "../../img/video-games/eba-effect/ee-menu.gif",
         "link": "video-games/eba-effect.html",
-        "filter-type": "school",
+        "filter-type": "school technical",
         "tags": "Technical"
     },  
     {
