@@ -90,7 +90,7 @@ const videoGameDatas =
         "tags": ""
     },   
     {
-        "name" : "Chase tag",
+        "name" : "Chase tag (online)",
         "image1": "../../img/video-games/chase-tag.jpg",
         "link": "video-games/chase-tag.html",
         "filter-type": "prototype",
