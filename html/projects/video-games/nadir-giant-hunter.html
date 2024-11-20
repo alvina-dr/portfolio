@@ -76,7 +76,7 @@
 
             <h3>Opening radius or radius step</h3>
             <p>At first that's what we did. But after a few weeks of playing around with the character controller, <span class="text-highlight">something just felt off</span>. 
-            The thing with this technique is that we actually <span class="span text-highlight">still might miss a lot of more interesting points</span>. Since the cone grows with time, if we detect a point right above the player's head, that's the point we will immediatly grapple. The distance check with the perfect point is only calculated for a given radius AND <span class="text-highlight">if nothing is returned, THEN the radius grows</span>. That means that <span class="text-highlight">if we detect at least a point at the minimum radius, we won't even bother checking all the other possible radius</span>.</p>
+            The thing with this technique is that we actually <span class="text-highlight">still might miss a lot of more interesting points</span>. Since the cone grows with time, if we detect a point right above the player's head, that's the point we will immediatly grapple. The distance check with the perfect point is only calculated for a given radius AND <span class="text-highlight">if nothing is returned, THEN the radius grows</span>. That means that <span class="text-highlight">if we detect at least a point at the minimum radius, we won't even bother checking all the other possible radius</span>.</p>
             <p>The problem is that in our case, a point detected near the ceiling might not be closer to the perfect point than a point taken in front of the player (see "Perfect Swinging Point example" below). So what we did <span class="text-highlight">instead of opening the radius slowly</span>, is that we choose a number of radius we want to test, and <span class="text-highlight">go through each radius to find all the possible swinging points</span>. THEN we choose the one closest to the perfect point. That way we actually test many different radius (see "Example of several radius step" below).</p>
             <div class="div-row" style="width: 100%;">
                 <div style="width: 32%;">
@@ -149,7 +149,6 @@
                     <a class="external-link" href="https://boolti.itch.io/nadir" target="_blank" style="width: fit-content; margin: auto;">Discover the game</a>
                     <p style="margin: 10px;">-----------------------------</p>
                     <a class="external-link" href="https://github.com/alvina-dr/nadir-giant-hunter-public" target="_blank" style="width: fit-content; margin: auto;">REPOSITORY</a>
-
                 </div>
             </div>
             <div style="margin-top: 1rem;">
