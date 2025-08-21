@@ -20,14 +20,15 @@ navbar {
   overflow: hidden;
   text-align: center;
   height: fit-content;
-  margin: 0 20px;
+  margin: 0 15px;
   padding: 10px 0;
 }
 
 .nav-link a {
-  font-family: 'Barlow';
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
-  font-size: larger;
+  font-size: medium;
   font-weight: 600;
   transition: all 0.2s;
 }
@@ -88,4 +89,15 @@ navbar {
 
 .grid-navbar-blog {
   /* width: calc(3vw*26 + .1em);  */
+}
+
+#background-navbar {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  width: calc(0.1em + 78vw);
+  height: 50px;
+  background-color: var(--light-color);
+  border: solid var(--dark-color) 1.5px;
 }

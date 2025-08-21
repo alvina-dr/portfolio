@@ -1,7 +1,7 @@
 .cursor-default {
     width: 10px;
     height: 10px;
-    background-color: var(--light-color);
+    background-color: var(--primary-color);
     border-radius: 50%;
     position: fixed;
     transform: translate(-50%, -50%);
@@ -24,7 +24,7 @@
     transition: all .2s ease;
     transition-property: background, transform;
     transform-origin: 100% 100%;
-    border: solid var(--light-color) 1px;
+    border: solid var(--primary-color) 1px;
 }
 
 .cursor-pointer {
@@ -64,6 +64,8 @@
     top: -55px;
     display: inline-block;
     transform-origin: 0 55px;
+    color: var(--light-color);
+    text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color), 1px 0 var(--primary-color), 0 -1px var(--primary-color);
 }
 
 .mail-div {

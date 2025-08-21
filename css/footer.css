@@ -12,9 +12,23 @@ footer {
 .grid-footer {
     width: 75%;
     margin:auto;
+    margin-bottom: 0;
     width: calc(3vw*26 + .1em);
     height: calc(3vw * 2 + .1em);
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     align-self: center;
     bottom: 0;
+}
+
+#background-footer {
+    z-index: -5;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: calc(0.1em + 78vw);
+  height: 50px;
+  background-color: var(--light-color);
+  border: solid var(--dark-color) 1.5px;
 }

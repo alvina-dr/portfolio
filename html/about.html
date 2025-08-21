@@ -8,29 +8,19 @@
 
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/text.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/page-index.css">
     <link rel="stylesheet" href="../css/project-window.css">
     <link rel="stylesheet" href="../css/page-about.css">
     <link rel="stylesheet" href="../css/pointer.css">
     <link rel="stylesheet" href="../css/blog.css">
-    <link rel="stylesheet" href="../css/scroll-text.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 <body>
     <div class="cursor-default cursor-hidden"></div>
     <div class="cursor-follow"></div>
 
-    <!-- NAVBAR -->
     <div class="grid grid-header"></div>
-    <navbar>
-        <ul class="nav-ul">
-            <li class="nav-link"><a href="../index.html">Home</a></li>
-            <li class="nav-link"><a href="about.html">About</a></li>
-            <li class="nav-link"><a href="contact.html">Contact</a></li>
-        </ul>
-    </navbar>
+
+    <navbar id="navbar"></navbar>
     
     <div class="grid" style="bottom: 7vw;"></div>
     <section>
@@ -79,25 +69,13 @@
 
     </section>
 
-    <!-- SCROLLING TEXT -->
-    <div class="scroll-text-div">
-        <div style="width: 10000000px">
-            <div class="scroll-text" >
-                <h5>&nbsp;<span>GAMEPLAY PROGRAMMING</span> . TECH ART . TOOL DEVELOPMENT . PROTOTYPING . </h5>
-            </div>
-            <div class="scroll-text">
-                <h5>&nbsp;<span>GAMEPLAY PROGRAMMING</span> . TECH ART . TOOL DEVELOPMENT . PROTOTYPING . </h5>
-            </div>
-        </div>
-    </div>
+    <div id="scrolling-text" class="scroll-text-div"></div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="grid grid-footer"></div>
-        <p>Made by Alvina Damasio--Razafiarizaka</p>
-    </footer>
+    <footer id="footer"></footer>
 
-    <script src="../js/mouse-cursor.js"></script>
-
+    <script src="/js/mouse-cursor.js"></script>
+    <script src="/js/components/navbar.js"></script>
+    <script src="/js/components/scrolling-text.js"></script>
+    <script src="/js/components/footer.js"></script>
 </body>
 </html>

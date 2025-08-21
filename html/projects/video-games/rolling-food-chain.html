@@ -8,8 +8,6 @@
 
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/text.css">
-    <link rel="stylesheet" href="../../../css/navbar.css">
-    <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="../../../css/page-specific-project.css">
     <link rel="stylesheet" href="../../../css/page-specific-project.css">
     <link rel="stylesheet" href="../../../css/pointer.css">
@@ -17,25 +15,19 @@
     <link rel="stylesheet" href="../../../css/project-window.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="cursor-default cursor-hidden"></div>
     <div class="cursor-follow"></div>
 
-    <!-- NAVBAR -->
     <div class="grid grid-header grid-navbar-blog"></div>
-    <navbar id="blog-navbar">
-        <ul class="nav-ul">
-            <li class="nav-link"><a href="../../../index.html">Home</a></li>
-            <li class="nav-link"><a href="../../about.html">About</a></li>
-            <li class="nav-link"><a href="../../contact.html">Contact</a></li>
-        </ul>
-    </navbar>  
+
+    <navbar id="navbar"></navbar>  
     
     <div class="grid grid-blog"></div>
     <section id="landing-blog-section">
-        <h1>Rolling Food Chain</h1>
+        <h1>Gumboss</h1>
     </section>
 
     <section id="blog-section" class="div-row">
@@ -64,7 +56,7 @@
             </div>
 
             <div style="margin-top: 1rem;">
-                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Rolling Food Chain has ranked 184 out of 7000+ for the <a href="https://twitter.com/hashtag/GMTK2024?src=hash&amp;ref_src=twsrc%5Etfw">#GMTK2024</a> jam with <a href="https://twitter.com/hookariagames?ref_src=twsrc%5Etfw">@hookariagames</a> and @NamedZak. Got 60 ratings and 39 comments, thanks a lot to everyone that played the game :)<br><br>This was a good summer ☀️ <a href="https://t.co/VFNimMBHno">pic.twitter.com/VFNimMBHno</a></p>&mdash; Alvina (@alvina_dr_) <a href="https://twitter.com/alvina_dr_/status/1828715402270007804?ref_src=twsrc%5Etfw">August 28, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet" data-theme="light"><p lang="en" dir="ltr">Rolling Food Chain has ranked 184 out of 7000+ for the <a href="https://twitter.com/hashtag/GMTK2024?src=hash&amp;ref_src=twsrc%5Etfw">#GMTK2024</a> jam with <a href="https://twitter.com/hookariagames?ref_src=twsrc%5Etfw">@hookariagames</a> and @NamedZak. Got 60 ratings and 39 comments, thanks a lot to everyone that played the game :)<br><br>This was a good summer ☀️ <a href="https://t.co/VFNimMBHno">pic.twitter.com/VFNimMBHno</a></p>&mdash; Alvina (@alvina_dr_) <a href="https://twitter.com/alvina_dr_/status/1828715402270007804?ref_src=twsrc%5Etfw">August 28, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
     </section>
@@ -80,14 +72,13 @@
         <button id='right-project-button' class="next-project-button next-project-button-right">►</button>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="grid grid-footer grid-footer-blog"></div>
-        <p>Made by Alvina Damasio--Razafiarizaka</p>
-    </footer>
-    <script src="../../../js/mouse-cursor.js"></script>
+    <footer id="footer"></footer>
+
     <script src="../../../data/video-games.js"></script>
     <script src="../../../js/next-vg.js"></script>
     <script src="../../../js/vg-template.js"></script>
+    <script src="/js/mouse-cursor.js"></script>
+    <script src="/js/components/navbar.js"></script>
+    <script src="/js/components/footer.js"></script></body>
 </body>
 </html>

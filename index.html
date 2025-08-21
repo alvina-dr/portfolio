@@ -8,13 +8,12 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/text.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/scroll-text.css">
     <link rel="stylesheet" href="css/project-window.css">
     <link rel="stylesheet" href="css/page-index.css">
     <link rel="stylesheet" href="css/pointer.css">
-    <link rel="stylesheet" href="css/scroll-text.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="/font/CyGrotesk-WideBlack.otf">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -23,20 +22,12 @@
     <div class="mail-div" id="text-cursor">
         <p id="text-to-copy">Have a look•Have a look•</p>
     </div>
-    <!-- NAVBAR -->
-    <div class="grid grid-header"></div>
-    <navbar>
-        <ul class="nav-ul">
-            <li class="nav-link"><a href="index.html">Home</a></li>
-            <li class="nav-link"><a href="html/about.html">About</a></li>
-            <li class="nav-link"><a href="html/contact.html">Contact</a></li>
-        </ul>
-    </navbar>
+
+    <navbar id="navbar"></navbar>
     
     <div class="grid grid-index-1"></div>
-    <section id="landing-section" style="padding-left: 10px;">
-        <h1>Alvina</h1>
-        <h3 style="font-weight: 300; margin-top: 0; font-size:large;">Damasio--Razafiarizaka</h3>
+    <section id="landing-section">
+        <h1>Alvina Damasio--Razafiarizaka</h1>
     </section>
 
     <div class="div-row" id="index-main-section">
@@ -44,20 +35,13 @@
         <section id="about-section">
             <div>
                 <h3>About me</h3>
-                <p>Hi there ! I'm Alvina, a <span class="text-highlight">french student</span>, currently enrolled at <a class="link-in-text" href="https://enjmin.cnam.fr/enjmin/ecole-nationale-du-jeu-et-des-medias-interactifs-accueil-1126103.kjsp" target="_blank">ENJMIN</a> in Angoulême. I love playing narrative video games such as <span class="text-highlight">Outer Wilds</span> or <span class="text-highlight">Disco Elysium</span>.<br> <span class="text-highlight">Telling stories and learning</span> are two big aspects of my life and I think that both these things can <span class="text-highlight">mix in video games</span> which is something I really want to <span class="text-highlight">convey in what I do</span>.</p>   
+                <p>Hi there ! I'm Alvina, a <span class="text-highlight">freelance game programmer</span> living in Bordeaux. I love playing narrative video games such as <span class="text-highlight">Outer Wilds</span> or <span class="text-highlight">Disco Elysium</span>.<br> <span class="text-highlight">Telling stories and learning</span> are two big aspects of my life and I think that both these things can <span class="text-highlight">mix in video games</span> which is something I really want to <span class="text-highlight">convey in what I do</span>.</p>   
                 <a href="html/about.html#about-me-section" class="btn1 btn-more">More ►</a>
             </div>
-            
-            <div>
-                <h3>Experience</h3>
-                <p>I studied in Bordeaux for two years and got my <a class="link-in-text" href="https://www.mmibordeaux.com/" target="_blank">Diploma of Higher Education in Multimedia and Internet</a>. Then I started a <a class="link-in-text" href="https://miami.iut-tarbes.fr/" target="_blank">Vocational Degree about video games and Interactive Media</a> in Tarbes, while working at <a class="link-in-text" href="https://twitter.com/Blanket_Games" target="_blank">BlanketGames</a> in Toulouse. I'm currently enrolled at <a class="link-in-text" href="https://enjmin.cnam.fr/enjmin/ecole-nationale-du-jeu-et-des-medias-interactifs-accueil-1126103.kjsp" target="_blank">CNAM ENJMIN</a> in Angoulême and studying for my <span class="text-highlight">master's degree in game programming</span>. This summer I also had the chance to do a two months internship at <a class="link-in-text" href="https://www.virtuosgames.com/" target="_blank">Virtuos</a> Paris.</p>    
-                <a href="html/about.html#experience-section" class="btn1 btn-more">More ►</a>
-            </div>
-            
         </section>
 
         <!-- PROJET SECTION -->
-        <section id="project-section" style="margin-bottom: 120px;">
+        <section id="project-section">
             <div class="div-row project-div" >
                 <div class="project-window1" style="width:80%">
                     <img class="project-window1-image text-zone" id='project-image-a' src="./img/cover-favorite.jpg" />
@@ -98,27 +82,52 @@
             </div>
         </section>
     </div>
+        <div class="div-row" style="justify-content: flex-end">
 
-    <!-- SCROLLING TEXT -->
-    <div class="scroll-text-div">
-        <div style="width: 10000000px">
-            <div class="scroll-text" >
-                <h5>&nbsp;<span>GAMEPLAY PROGRAMMING</span> . TECH ART . TOOL DEVELOPMENT . PROTOTYPING . </h5>
-            </div>
-            <div class="scroll-text">
-                <h5>&nbsp;<span>GAMEPLAY PROGRAMMING</span> . TECH ART . TOOL DEVELOPMENT . PROTOTYPING . </h5>
-            </div>
+        <div class="project-window2" href="./html/index/jeu_video.html">
+          <div class="project-window-navbar">
+            <p class="project-window-title" id="project-id">Social media</p>
+          </div>
+          <div class="project-window-content div-row">
+            <a href="https://www.linkedin.com/in/alvina-dr/" target="_blank"
+              ><img src="../img/icons/linkedin.svg" class="icon-social-media"
+            /></a>
+            <a href="https://twitter.com/alvina_dr_" target="_blank"
+              ><img src="../img/icons/twitter.svg" class="icon-social-media"
+            /></a>
+            <a
+              href="https://www.youtube.com/channel/UCHbkynbDO8irEGk104XIbMA"
+              target="_blank"
+              ><img src="../img/icons/youtube.svg" class="icon-social-media"
+            /></a>
+          </div>
         </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="grid grid-footer"></div>
-        <p>Made by Alvina Damasio--Razafiarizaka</p>
-    </footer>
+    <div style="width: calc(3vw*26 + .1em); height: 10px; background-repeat: repeat;
+    margin: auto; background-image: url('/img/dash.png');"></div>
+
+    <div class="scroll-text-div">
+        <div style="width: 10000000px">
+            <div class="scroll-text" >
+            <div style="width: calc(3vw*26 + .7em); height: 10px; background-repeat: repeat;
+             background-image: url('/img/dash.png');"></div>    </div>
+            <div class="scroll-text">
+            <div style="width: calc(3vw*26 + .1em); height: 10px; background-repeat: repeat;
+             background-image: url('/img/dash.png');"></div>    </div>
+        </div>
+    </div>
+
+    <div id="scrolling-text" class="scroll-text-div"></div>
+
+    <footer id="footer"></footer>
+
     <script src="data/projects.js"></script>
     <script src="js/project-system.js"></script>
     <script src="js/mouse-cursor.js"></script>
     <script src="js/circle-text.js"></script>
+    <script src="/js/components/navbar.js"></script>
+    <script src="/js/components/scrolling-text.js"></script>
+    <script src="/js/components/footer.js"></script>
 </body>
 </html>

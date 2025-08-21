@@ -8,8 +8,6 @@
 
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/text.css">
-    <link rel="stylesheet" href="../../../css/navbar.css">
-    <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="../../../css/page-specific-project.css">
     <link rel="stylesheet" href="../../../css/page-specific-project.css">
     <link rel="stylesheet" href="../../../css/pointer.css">
@@ -17,21 +15,15 @@
     <link rel="stylesheet" href="../../../css/project-window.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="cursor-default cursor-hidden"></div>
     <div class="cursor-follow"></div>
 
-    <!-- NAVBAR -->
     <div class="grid grid-header grid-navbar-blog"></div>
-    <navbar id="blog-navbar">
-        <ul class="nav-ul">
-            <li class="nav-link"><a href="../../../index.html">Home</a></li>
-            <li class="nav-link"><a href="../../about.html">About</a></li>
-            <li class="nav-link"><a href="../../contact.html">Contact</a></li>
-        </ul>
-    </navbar>  
+
+    <navbar id="navbar"></navbar>  
     
     <div class="grid grid-blog"></div>
     <section id="landing-blog-section">
@@ -83,14 +75,12 @@
         <button id='right-project-button' class="next-project-button next-project-button-right">►</button>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="grid grid-footer grid-footer-blog"></div>
-        <p>Made by Alvina Damasio--Razafiarizaka</p>
-    </footer>
-    <script src="../../../js/mouse-cursor.js"></script>
+    <footer id="footer"></footer>
+
     <script src="../../../data/video-games.js"></script>
     <script src="../../../js/next-vg.js"></script>
     <script src="../../../js/vg-template.js"></script>
-</body>
+    <script src="/js/mouse-cursor.js"></script>
+    <script src="/js/components/navbar.js"></script>
+    <script src="/js/components/footer.js"></script></body>
 </html>

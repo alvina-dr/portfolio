@@ -58,6 +58,7 @@
   /* border-radius: 8px; */
   transform-style: preserve-3d;
   overflow: hidden;
+  border: solid 1.5px var(--dark-color);
 }
 
 .video-game-card:after {
@@ -215,7 +216,6 @@
 
 .filter-active-btn {
   background-color: transparent;
-  color: var(--light-color);
 }
 
 #filter-btn-container {

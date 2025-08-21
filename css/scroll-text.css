@@ -17,6 +17,7 @@
 .scroll-text {
     display: inline-block;
     animation: Scroll 40s forwards linear infinite;
+    margin: 0;
 }
 
 .scroll-text-new {
