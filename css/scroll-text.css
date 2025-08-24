@@ -35,9 +35,8 @@
     white-space: nowrap;
     color: var(--background-color);
     text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color), 1px 0 var(--primary-color), 0 -1px var(--primary-color);
-    font-weight: 900;
-    font-size: 10vh;
-    font-family: Barlow;
+    font-size: 8vh;
+    font-family: 'CyGrotesk Heavy';
 }
 
 .scroll-text-new h5 {
