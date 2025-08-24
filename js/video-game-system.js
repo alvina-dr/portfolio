@@ -13,10 +13,14 @@ for (let i = 0; i < videoGameDatas.length; i++) {
   clone.children[0].setAttribute("class", "div-row video-game-row object-to-filter text-zone " + videoGameDatas[i]["filter-type"]);
   if (videoGameDatas[i]["tags"] != "") 
   {
-    tag = document.createElement("b");
-    tag.innerHTML = "Technical";
-    tag.setAttribute("class", "technical-tag");
-    clone.querySelectorAll(".tag-list")[0].appendChild(tag);
+    for (let j = 0; j < videoGameDatas[i].tags.length; j++) 
+    {
+      tag = document.createElement("b");
+      tag.innerHTML = videoGameDatas[i].tags[j];
+      if (tag.innerHTML == "Technical") tag.setAttribute("class", "technical-tag");
+      if (tag.innerHTML == "Steam 🤖") tag.setAttribute("class", "steam-tag");
+      clone.querySelectorAll(".tag-list")[0].appendChild(tag);
+    }
   }
   videoGameContainer.appendChild(clone);
 

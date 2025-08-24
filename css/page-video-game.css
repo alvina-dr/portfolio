@@ -285,3 +285,8 @@
 {
   background-color: var(--background-color);
 }
+
+.steam-tag::after 
+{
+  background-color: #e88585;
+}
