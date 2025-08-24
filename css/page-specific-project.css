@@ -45,21 +45,11 @@
     object-position: center -20px;
 }
 
-/*------3D----------*/
-
-.grid-3d-1 {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*30 + .1em);
-    height: calc(3vw * 65 + .1em);
-}
 
 #td-section .content-line-showcase img {
     width: calc(100%/7);
     object-position: center -20px;
 }
-
-/*FIND THE WAY BACK*/
 
 #vg-section {
     margin-bottom: 100px;
@@ -100,7 +90,7 @@
     border-left: 0;
     border-right: 0;
     width: calc(3vw*26 + .1em);
-    height: 50px;
+    height: 30px;
     position: absolute;
     bottom: 5.5vw;
     margin: auto;
@@ -111,22 +101,27 @@
 .next-project-button {
     height: 100%; 
     width: 100px; 
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     transform: .3s;
     border: solid 1.5px var(--dark-color); 
     border-top: 0;
     border-bottom: 0;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    padding: 0;
 }
 
 .next-project-button:hover {
     color: var(--primary-color);
+    background-color: white;
 }
 
 .next-project-title {
-    font-family: Barlow; 
-    font-weight:700; 
-    font-size:20px;
+    font-family: 'Nunito', sans-serif; 
+    font-size:15px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 #right-project, #left-project {

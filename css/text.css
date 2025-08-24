@@ -60,12 +60,12 @@ a {
 }
 
 .link-in-text {
-  color: var(--light-color);
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
 .link-in-text:hover {
-  background-color: var(--primary-color);
+  background-color: var(--light-color);
 }
 
 menu a {
@@ -163,5 +163,5 @@ b::after {
 }
 
 .external-link:hover {
-  background-color: var(--primary-color);
+  background-color: var(--light-color);
 }

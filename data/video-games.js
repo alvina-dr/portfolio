@@ -9,14 +9,6 @@ const videoGameDatas =
         "description": "Explore and defend your mine against waves of monsters in this innovative roguelike survival game! Collect and manage your resources, discover buildings with unique effects and unleash mighty heroes to hold monsters out of the mine until the sun rises."
     }, 
     {
-        "name" : "Dumpster Racoon",
-        "image1": "/img/video-games/dumpster-racoon.png",
-        "link": "video-games/dumpster-racoon.html",
-        "filter-type": "jam",
-        "tags": ["2025 📆", "Unity"],
-        "description": "Working for the BigRacoon™️, a greedy old racoon, you scavenge around dumpsters every night to pay off your debt.  Make combos with the treasures you find to gain more money and hopefully survive to see the next day. Gain bonuses to maximize your score, throw garbage away and pay your bills like the hardworking racoon that you are !"
-    }, 
-    {
         "name" : "Saudade",
         "image1": "/img/video-games/saudade.jpg",
         "link": "video-games/saudade.html",
@@ -39,6 +31,14 @@ const videoGameDatas =
         "filter-type": "school technical",
         "tags": ["2024 📆", "Unity", "Gamepad 🎮", "Localization 🗣️", "Remapping", "Wwise 🎵", "HDRP", "Technical"],
         "description": "For our end of the year project (master 1st year), we had the idea to make a sort of mix between Spiderman and Shadow of the Colossus. In other words, a really dynamic controller and huge creatures to take down quickly. We had three months to make the game with a team of seven. We were two programmers, and while I was working full time on the project, the other dev could only be there half of the time as they were working on two games."
+    }, 
+    {
+        "name" : "Dumpster Racoon",
+        "image1": "/img/video-games/dumpster-racoon.png",
+        "link": "video-games/dumpster-racoon.html",
+        "filter-type": "jam",
+        "tags": ["2025 📆", "Unity"],
+        "description": "Working for the BigRacoon™️, a greedy old racoon, you scavenge around dumpsters every night to pay off your debt.  Make combos with the treasures you find to gain more money and hopefully survive to see the next day. Gain bonuses to maximize your score, throw garbage away and pay your bills like the hardworking racoon that you are !"
     }, 
     {
         "name" : "Luminar Expedition",

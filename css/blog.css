@@ -4,7 +4,7 @@
 
 .grid-blog {
     margin-bottom: 9vw;
-    border-bottom: solid var(--secondary-color) 1.5px;
+    border-bottom: solid var(--grid-color) 1.5px;
 }
 
 #blog-section {
