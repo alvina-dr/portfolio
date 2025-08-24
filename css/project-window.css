@@ -103,6 +103,7 @@
     transition: transform 0.3s;
     z-index: 1;
     background-color: var(--light-color);
+    border-bottom: solid var(--dark-color) 1.5px;
 }
 
 .project-window2 .project-window-content {

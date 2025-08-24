@@ -1,8 +1,27 @@
 let videoGameElements = [];
 let videoGameLinks = [];
 let videoGameContainer = document.getElementById("video-game-container");
+var videoGameTemplate = document.getElementById("video-game-row");
 
 for (let i = 0; i < videoGameDatas.length; i++) {
+  
+  var clone = document.importNode(videoGameTemplate.content, true);
+  clone.querySelectorAll("h3")[0].textContent = videoGameDatas[i].name; 
+  clone.querySelectorAll("p")[0].textContent = videoGameDatas[i].description; 
+  clone.querySelectorAll("img")[0].src = videoGameDatas[i].image1; 
+  clone.querySelectorAll("a")[0].href = videoGameDatas[i].link; 
+  clone.children[0].setAttribute("class", "div-row video-game-row object-to-filter text-zone " + videoGameDatas[i]["filter-type"]);
+  if (videoGameDatas[i]["tags"] != "") 
+  {
+    tag = document.createElement("b");
+    tag.innerHTML = "Technical";
+    tag.setAttribute("class", "technical-tag");
+    clone.querySelectorAll(".tag-list")[0].appendChild(tag);
+  }
+  videoGameContainer.appendChild(clone);
+
+  continue;
+
   var _videoGameCardContainer = document.createElement("div");
   _videoGameCardContainer.setAttribute(
     "class",
@@ -91,4 +110,9 @@ for (let i = 0; i < videoGameDatas.length; i++) {
 
   videoGameElements.push(_videoGameProject);
   videoGameLinks.push(videoGameLink);
+}
+
+function CreateVideoGameCard() {
+
+
 }

@@ -7,7 +7,7 @@
 }
 
 #video-game-section {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   width: 75%;
 }
 
@@ -160,21 +160,7 @@
   }
 }
 
-.video-game-card-img {
-  transition: 0.4s;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-  filter: saturate(0.7) sepia(0.3) brightness(90%);
-  margin: 0;
-  transform: scale(100%);
-}
 
-.video-game-card-img:hover {
-  filter: saturate(0.4) sepia(0.3) brightness(30%);
-  transform: scale(110%);
-}
 
 .video-game-card a {
   background-color: var(--light-color);
@@ -247,4 +233,55 @@
 .video-game-tag-scroll-text-div div {
   display: flex;
   flex-direction: row;
+}
+
+/*****************************************************/
+.video-game-row 
+{
+  text-decoration: none;  
+  height: 12vw; 
+  width: 100%; 
+  margin-bottom: 20px;
+}
+
+.vgr-text-column 
+{
+  width: 65%;
+}
+
+.vgr-text-column h3 
+{
+  margin: 0;
+  font-family: 'Cy Grotesk Heavy', sans-serif;
+  text-transform: uppercase;
+}
+
+.vgr-image-container 
+{
+  border: solid var(--dark-color) 1.5px;
+  width: 35%; 
+  height: 100%; 
+  position: relative;
+  overflow: hidden;
+}
+
+.video-game-card-img
+{
+  transition: 0.4s;
+  object-fit: cover;
+  margin: 0;
+  transform: scale(100%);
+  width: 100%; 
+  height: 100%; 
+  position: relative;
+}
+
+.video-game-card-img:hover {
+  filter: saturate(0.8) sepia(0.7) brightness(70%);
+  transform: scale(110%);
+}
+
+.technical-tag::after 
+{
+  background-color: var(--background-color);
 }
