@@ -90,7 +90,7 @@ const videoGameDatas =
     }, 
     {
         "name" : "EBA Effects",
-        "image1": "/img/video-games/eba-effect/ee-menu.gif",
+        "image1": "/img/video-games/eba-effect.jpg",
         "link": "video-games/eba-effect.html",
         "filter-type": "school technical",
         "tags": ["2022-2023 📆", "Technical"],
@@ -101,7 +101,7 @@ const videoGameDatas =
         "image1": "/img/video-games/deck-on-the-nile.jpg",
         "link": "video-games/creeping-deck.html",
         "filter-type": "work",
-        "tags": ["2022 📆", "Blanket Games"],
+        "tags": ["2022 📆", "Steam 🤖", "Blanket Games"],
         "description":"To start off my apprenticeship at TavroxGames, I had the occasion to work on Creeping deck : Pharaoh's curse, a deckbuilding game on the theme of Egyptian mythology. I only worked three weeks on the project, mainly on FX. Things such as a text indicating the number of damage popping on the screen, the chest opening or the arrow following the mouse in fight. I also worked on making it possible to have multiple ennemies in fight."
     },   
     {
@@ -109,7 +109,7 @@ const videoGameDatas =
         "image1": "/img/video-games/sandwalkers.jpg",
         "link": "video-games/sandwalkers.html",
         "filter-type": "work",
-        "tags": ["2022 📆", "Goblinz Studio"],
+        "tags": ["2022 📆", "Steam 🤖", "Goblinz Studio"],
         "description":"During my internship at TavroxGames I had the occasion to work for a month and a half with GoblinzStudio on the game Sandwalkers. I first created a map editor which would help level designer to build complex levels easily and directly from the game."
     },    
     {

@@ -96,7 +96,9 @@
 
 .other-projects {
     background-color: var(--background-color);
-    border: solid 2px var(--secondary-color); 
+    border: solid 1.5px var(--dark-color); 
+    border-left: 0;
+    border-right: 0;
     width: calc(3vw*26 + .1em);
     height: 50px;
     position: absolute;
@@ -109,14 +111,12 @@
 .next-project-button {
     height: 100%; 
     width: 100px; 
-    /* background: linear-gradient(to left, var(--background-color), var(--secondary-color));  */
     font-size: 20px;
     text-decoration: none;
     transform: .3s;
-}
-
-.next-project-button-right {
-    /* background: linear-gradient(to left, var(--secondary-color), var(--background-color)); */
+    border: solid 1.5px var(--dark-color); 
+    border-top: 0;
+    border-bottom: 0;
 }
 
 .next-project-button:hover {
