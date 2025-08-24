@@ -41,13 +41,13 @@
             </div>
             <p>I had only used C++ on a few really small projects before, so this was a huge first for me. The fact that we had no engine and everything was done in the code was also really interesting and made this game a big learning experience.</p>
             <div class="div-row" style="width: 100%;">
-                <img src="../../../img/video-games/luminar-expedition/le-playing.jpg" style="width: 49%;">
-                <img src="../../../img/video-games/luminar-expedition/le-trophy.jpg" style="width: 49%;">
+                <img src="/img/video-games/luminar-expedition/le-playing.jpg" style="width: 49%;">
+                <img src="/img/video-games/luminar-expedition/le-trophy.jpg" style="width: 49%;">
             </div> 
             <h3>Camera</h3>
 
             <div class="div-row" style="width: 100%;">
-                <img src="../../../img/video-games/luminar-expedition/le-camera.gif" style="width: 49%;">
+                <img src="/img/video-games/luminar-expedition/le-camera.gif" style="width: 49%;">
                 <div class="div-column" style="width: 49%;">
                     <p>Since this was an exploration game I wanted the player to be able to move around quite far. So I decided to implement a camera system from zero. What happens is that I created a simple movement system, and then substracted the position of the player to all the sprites on the screen. That way, the sprite of the player always stays in the center, and the whole environment moves.</p>
                     <p>This was simple but allowed for much more possibilities in terms of gameplay and exploration (the theme of the program was "space exploration" so it's quite handy).</p>
@@ -66,7 +66,7 @@
                     </a> on the subject that was really interesting and helpful : <a class="link-in-text" href="https://www.redblobgames.com/grids/circle-drawing/" target="_blank">Circle fill on a grid
                     </a>. </p>
                 </div>
-                <img src="../../../img/video-games/luminar-expedition/le-light-circle.jpg" style="width: 49%;">
+                <img src="/img/video-games/luminar-expedition/le-light-circle.jpg" style="width: 49%;">
             </div> 
             <h3>Contextual input</h3>
             <p>One of the rule of this challenge was that we could only have two inputs, a Vector2 one for the 2D movement, and another one for whatever we wanted. But for what I had in mind the player could do three actions : mine, attack with a sword and build torches. Depending on the context, using the action button would make one of those actions. If the player was looking at a wall they would mine. If there was nothing in front of them they would attack. And if the player holds the button for a while then a torch is built on the floor in front of them.</p>
@@ -74,8 +74,8 @@
             <p>Since I didn't have a level editor, it was easier for me to just generate the environment procedurally. I didn't do anything fancy as I didn't have much time left. There's a percentage of each type of tiles, walls, iron ore, gold, diamond and charcoal... And they are placed randomly on the map.</p>
             <p>A system I really wanted for the game was autotiling. It makes the environment looks much more coherent. Since everyting was generated procedurally, it was an important feature to have a "clean" look. I did it with something approaching a flag system. Each wall tile check if their neighbor is also a wall. If that's the case for the tile on the left, we add 1. If it's the case for the tile above we add 2. If it's both you then get 3. Each combination of neighbors gives back a precise number, from which you can determine which sprite would fit best to this precise case.</p>
             <div class="div-row" style="width: 100%;">
-                <img src="../../../img/video-games/luminar-expedition/le-autotile.jpg" style="width: 49%;">
-                <img src="../../../img/video-games/luminar-expedition/le-autotile-example.jpg" style="width: 49%;">
+                <img src="/img/video-games/luminar-expedition/le-autotile.jpg" style="width: 49%;">
+                <img src="/img/video-games/luminar-expedition/le-autotile-example.jpg" style="width: 49%;">
             </div> 
         </div>
 
@@ -101,8 +101,8 @@
 
     <footer id="footer"></footer>
 
-    <script src="../../../data/video-games.js"></script>
-    <script src="../../../js/vg-template.js"></script>
+    <script src="/data/video-games.js"></script>
+    <script src="/js/vg-template.js"></script>
     <script src="/js/mouse-cursor.js"></script>
     <script src="/js/components/navbar.js"></script>
     <script src="/js/components/footer.js"></script>

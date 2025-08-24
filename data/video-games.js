@@ -22,7 +22,7 @@ const videoGameDatas =
         "link": "video-games/saudade.html",
         "filter-type": "school technical",
         "tags": ["2024-2025 📆", "Unity", "Wwise 🎵", "Steam 🤖", "Technical"],
-        "description": "For this project we had no engine, just a library (NextAPI) given by Ubisoft that allowed us to display sprites, read inputs and play sounds in a window. This was a solo project done in a few months, only working in the evening and the weekend (all sounds and music are done by Mael Heurard though, big thanks to him)."
+        "description": "Explore your home village in Portugal and rediscover your past... Time is up! Start again, create shortcuts and explore deeper and deeper in your memories to fulfill your childhood dream."
     }, 
     {
         "name" : "Rolling Food Chain",
@@ -30,7 +30,7 @@ const videoGameDatas =
         "link": "video-games/rolling-food-chain.html",
         "filter-type": "jam",
         "tags": ["2024 📆", "Unity", "GMTK"],
-        "description": "For this project we had no engine, just a library (NextAPI) given by Ubisoft that allowed us to display sprites, read inputs and play sounds in a window. This was a solo project done in a few months, only working in the evening and the weekend (all sounds and music are done by Mael Heurard though, big thanks to him)."
+        "description": "For GMTK JAM 2024, I participated in a team of three with Paci and Zakku. Exceptionally this year the jam was four days long. I was the main programmer, with a little help from Paci the last two days as I had to work on monday and tuesday."
     }, 
     {
         "name" : "Nadir Giant Hunter",
@@ -46,6 +46,7 @@ const videoGameDatas =
         "link": "video-games/luminar-expedition.html",
         "filter-type": "prototype technical",
         "tags": ["2024 📆", "C++", "No Engine", "Technical"],
+        "description": 'At the end of 2023, I had the chance to participate in the Develop At Ubisoft Program. For this project we had no engine, just a library (NextAPI) given by Ubisoft that allowed us to display sprites, read inputs and play sounds in a window. This was a solo project done in a few months, only working in the evening and the weekend (all sounds and music are done by Mael Heurard though, big thanks to him).'
     }, 
     {
         "name" : "Throw Teleport",
@@ -53,6 +54,7 @@ const videoGameDatas =
         "link": "video-games/throw-teleport.html",
         "filter-type": "prototype",
         "tags": ["2023 📆"],
+        "description":`Throw Teleport is a really bad name but I never really took the time to find a good one. Basically the idea of the game was to make some sort of 3D metroidvania where the main player capacity is to "throw" some kind of weapon and call it back. Another important mechanic is the ability to "teleport" where the weapon is. That way you get a mix of dynamic combat and puzzle possibilities (as shown in the video below). I've worked on this game for a few weeks in my free time in summer 2023 and reused it in class for a level design exercice around january 2024.`
     }, 
     {
         "name" : "Space, Love and Blouge",
@@ -60,6 +62,7 @@ const videoGameDatas =
         "link": "video-games/space-love-blouge.html",
         "filter-type": "school",
         "tags": ["2023 📆"],
+        "description":'The idea we had was to make a two player cooperation game where each player wears glasses. One has red glasses and the other has blue ones. That way, both players will see different things based on the color they have (for example blue light will look the same as "no light / black" for the player wearing red glasses cause it will be absorbed by the color filter).'
     }, 
     {
         "name" : "Overboss",
@@ -67,6 +70,7 @@ const videoGameDatas =
         "link": "video-games/overboss.html",
         "filter-type": "work",
         "tags": ["2023 📆", "Steam 🤖", "Blanket Games"],
+        "description":"Overboss is originally a board-game published by Brotherwise Games. To play, the players place tiles and tokens on their board. The goal is to be the one to make the most points. The video game adaptation was made at BlanketGames (formerly TavroxGames) and published by GoblinzStudio. I personnaly worked around six months on the project during my work-study program and the engine used was Unity."
     },  
     {
         "name" : "Diver Down",
@@ -74,6 +78,7 @@ const videoGameDatas =
         "link": "video-games/diver-down.html",
         "filter-type": "jam",
         "tags": ["2023 📆"],
+        "description":"Diver Down is the result of my third EMMI Jam (a jam that we organise between MMI and the ENSEIRB which is an engineer school in Bordeaux). We had a team of five and were two devs, which allowed me to focus on the graphic side of the game."
     }, 
     {
         "name" : "QATP",
@@ -81,6 +86,7 @@ const videoGameDatas =
         "link": "video-games/qatp.html",
         "filter-type": "jam",
         "tags": ["2023 📆"],
+        "description":'In april 2023, I had the chance to take part in the Laval Virtual, a huge virtual/augmented reality event in Europe. Encouraged by our teachers back in Tarbes, we participated to the student limited time competition (fancy name for hackathon). We were against ten other teams from schools all around the world and had to conceive a whole experience / game / application in 30 hours on the theme of "Collaborative XR for industry". A secondary theme per team was also assigned and ours was "Traceabilty".'
     }, 
     {
         "name" : "EBA Effects",
@@ -88,6 +94,7 @@ const videoGameDatas =
         "link": "video-games/eba-effect.html",
         "filter-type": "school technical",
         "tags": ["2022-2023 📆", "Technical"],
+        "description":"EBA Effects is a VR game inspired by Elite Beat Agents. We had five weeks spreaded from October to November 2022 to create it. Our team of four was composed of a level/game designer, a sound/music designer, a 3D artist and myself who worked on the programming side of the game."
     },  
     {
         "name" : "Creeping Deck",
@@ -95,6 +102,7 @@ const videoGameDatas =
         "link": "video-games/creeping-deck.html",
         "filter-type": "work",
         "tags": ["2022 📆", "Blanket Games"],
+        "description":"To start off my apprenticeship at TavroxGames, I had the occasion to work on Creeping deck : Pharaoh's curse, a deckbuilding game on the theme of Egyptian mythology. I only worked three weeks on the project, mainly on FX. Things such as a text indicating the number of damage popping on the screen, the chest opening or the arrow following the mouse in fight. I also worked on making it possible to have multiple ennemies in fight."
     },   
     {
         "name" : "Sandwalkers",
@@ -102,6 +110,7 @@ const videoGameDatas =
         "link": "video-games/sandwalkers.html",
         "filter-type": "work",
         "tags": ["2022 📆", "Goblinz Studio"],
+        "description":"During my internship at TavroxGames I had the occasion to work for a month and a half with GoblinzStudio on the game Sandwalkers. I first created a map editor which would help level designer to build complex levels easily and directly from the game."
     },    
     {
         "name" : "Protectors of pomelo",
@@ -109,6 +118,7 @@ const videoGameDatas =
         "link": "video-games/protectors-of-pomelo.html",
         "filter-type": "work",
         "tags": ["2022 📆", "Blanket Games"],
+        "description":"When I started my internship at TavroxGames I first worked on the prototype of a game named Protectors of pomelo. It's a tower defense game on the theme of Polynesian islands in the Pacific."
     },   
     {
         "name" : "Pokemon memory",
@@ -116,5 +126,6 @@ const videoGameDatas =
         "link": "video-games/pokemon-memory.html",
         "filter-type": "school",
         "tags": ["2021 📆"],
+        "description":"In November 2021, we had a React workshop during my DHE. As I already had learned a bit of JS thanks to freeCodeCamp, I decided to realise a pokemon memory with my partner."
     },
 ]
