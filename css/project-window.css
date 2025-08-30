@@ -9,7 +9,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
     margin-top: 0;
     background-color: var(--dark-color);
     overflow: hidden;
@@ -24,12 +23,12 @@
     object-fit: cover;
     transition: .3s;
     position: relative;
-    filter: brightness(70%);
     transform: scale(100%);
+    margin-top: 37px;
 }
 
 .project-window1-image:hover {
-    filter: brightness(30%);
+    filter: brightness(50%);
     transform: scale(110%);
 
 }
@@ -38,8 +37,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    transform: translateY(0);
-    transition: transform 0.3s;
+    border-bottom: solid var(--dark-color) 1.5px;
 }
 
 .project-card-content {
@@ -47,19 +45,6 @@
     position: relative;
     z-index: 1;
     background-color: var(--light-color);
-}
-
-.new-tag {
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    right: 0;
-    margin-right: 10px;
-    color: var(--primary-color);
-}
-
-.new-tag-hidden  {
-    display: none;
 }
 
 #project-menu {
@@ -71,24 +56,10 @@
     margin-bottom: 40px;
 }
 
-#project-menu button {
-    border: solid 1px var(--light-color);
-    width: 100%;
-}
-
-#project-menu button:hover {
-    border: solid 1px var(--light-color);
-    background-color: var(--light-color);
-    padding-bottom: 20px;
-    height: 30px;
-}
-
 .project-window2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    margin-top: 0;
     background-color: var(--background-color);
     border: solid var(--dark-color) 1.5px;
     height: 300px;
@@ -109,22 +80,6 @@
 .project-window2 .project-window-content {
     padding: 10px;
     width: 100%;
-}
-
-#project-menu .active {
-    background-color: var(--light-color);
-}
-
-#project-section .div-column {
-    width: 40%;
-}
-
-.project-window-btn-more {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-    margin: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -152,4 +107,13 @@
 #left-button:hover, #right-button:hover {
     background-color: var(--primary-color);
     color: var(--background-color);
+}
+
+.project-window-btn-more 
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    margin: 20px;
 }

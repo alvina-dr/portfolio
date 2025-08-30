@@ -43,12 +43,26 @@ h2 {
   color: var(--secondary-color);
 }
 
-h3 {
-  font-family: "Nunito", sans-serif;
+h3 
+{
+  font-family: "Cy Grotesk", sans-serif;
+  text-transform: uppercase;
   font-weight: 800;
   font-size: 3vh;
   color: var(--primary-color);
   margin-top: 10px;
+}
+
+h3::before 
+{
+  content: url('/img/asterix-icon.svg');
+  width: 3vh;
+  height: fit-content;
+  display: inline-block;
+  color: var(--text-color);
+  align-self: center;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 a {
@@ -151,12 +165,14 @@ b::after {
   line-height: 31px;
 }
 
-.external-link {
-  text-decoration: none;
-  font-size: 1rem;
+.external-link 
+{
+  text-transform: uppercase;
 }
 
 .external-link::after {
+  display: inline-block;
+  text-decoration: none;
   content: "🡥";
   margin-left: 5px;
   font-size: 1rem;

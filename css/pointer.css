@@ -42,7 +42,7 @@
 #text-to-copy {
     position: absolute;
     user-select: none;
-    font-family: Barlow;
+    font-family: "Barlow";
     font-weight: 700;
     animation: text-rotation 7.5s linear infinite;
     left: 50%;

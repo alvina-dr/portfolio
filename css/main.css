@@ -7,18 +7,16 @@
 /*COLOR VARIABLES*/
 body {
     /*FIRST SET OF COLOR*/
-    --primary-color: rgb(60, 153, 145);
     --highlight-color:rgb(201, 161, 0);
-    --background-color: rgb(229, 218, 190);
-    --light-color:rgb(205, 171, 70);
+    --light-color:#ffd761;
     --dark-color: rgb(13, 22, 24);
     --text-color: rgb(161, 161, 161);
 
     /*SECOND SET OF COLOR*/
     --primary-color:rgb(53, 53, 53);
-    --secondary-color: rgb(204, 201, 195);
-    --background-color: rgb(201, 192, 183);
-    --grid-color: rgb(187, 181, 181);
+    --secondary-color: rgb(245, 241, 241);
+    --background-color: rgb(240, 233, 228);
+    --grid-color: rgb(225, 219, 219);
     --square-size: 100px;
 }
 
