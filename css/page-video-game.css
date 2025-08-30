@@ -31,6 +31,7 @@
 .vgr-text-column 
 {
   width: 65%;
+  height: 100%;
 }
 
 .vgr-text-column h3 
@@ -38,6 +39,15 @@
   margin: 0;
   font-family: 'Cy Grotesk Heavy', sans-serif;
   text-transform: uppercase;
+}
+
+.vgr-text-column p 
+{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .vgr-image-container 
@@ -73,4 +83,9 @@
 .steam-tag::after 
 {
   background-color: #e88585;
+}
+
+.tag-list 
+{
+  height: 22px;
 }
