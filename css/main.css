@@ -40,12 +40,13 @@ body {
     padding: 0;
     background: transparent;
     background-image: linear-gradient(var(--grid-color) .5px, transparent .5px), linear-gradient(90deg, var(--grid-color) .5px, transparent .5px);
-    background-size: 1.3vw 1.3vw; /*size of one square*/
+    background-size: 15px 15px; /*size of one square*/
     z-index: -1;
     margin-top: 120px;
     margin-bottom: 100px;
-    width: calc(3vw*26 + .1em);
+    width: 78vw;
     border-bottom: solid var(--grid-color) 0.5px;
+    border-right: solid var(--grid-color) 0.5px;
 }
 
 .grid-index-2 {

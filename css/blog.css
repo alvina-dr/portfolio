@@ -4,35 +4,37 @@
 
 .grid-blog {
     margin-bottom: 9vw;
-    border-bottom: solid var(--grid-color) 1.5px;
 }
 
 #blog-section {
     margin-bottom: 2vw;
 }
 
-#blog-section .div-column:nth-child(1) {
+#blog-section .div-column:nth-child(1) 
+{
     width: 70%;
 }
 
-#blog-section .div-column:nth-child(2) {
+#blog-section .div-column:nth-child(2) 
+{
     width: 30%;
     margin-left: 50px;
 }
 
 @media screen and (max-width: 1500px) {
-    #blog-section {
+    #blog-section 
+    {
         flex-direction: column;
     }
-    #blog-section .div-column {
+
+    #blog-section .div-column:nth-child(1) 
+    {
         width: 100%;
     }
-}
-  
-@media screen and (max-width: 1000px) {
 
-}
-  
-@media screen and (max-width: 600px) {
-
+    #blog-section .div-column:nth-child(2) 
+    {
+        width: 100%;
+        margin-left: 0px;
+    }
 }

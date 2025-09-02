@@ -53,12 +53,6 @@
     margin-bottom: 100px;
 }
 
-.grid-blog {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: calc(3vw*26 + .1em);
-}
-
 #photography-container {
     width: 100%;
     margin: auto;

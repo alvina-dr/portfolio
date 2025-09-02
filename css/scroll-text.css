@@ -34,7 +34,7 @@
 .scroll-text h5 {
     white-space: nowrap;
     color: var(--background-color);
-    text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color), 1px 0 var(--primary-color), 0 -1px var(--primary-color);
+    text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color), 1px 0 var(--primary-color), 0 -1px var(--primary-color), 0 5px var(--primary-color);
     font-size: 8vh;
     font-family: 'CyGrotesk Heavy';
 }
@@ -49,5 +49,6 @@
 }
 
 .scroll-text span {
-    color: var(--primary-color);
+    color: var(--light-color);
+    text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color), 1px 0 var(--primary-color), 0 -1px var(--primary-color), 0 5px var(--primary-color);
 }
