@@ -44,18 +44,18 @@
             <p>For this part, I first tried to <span class="text-highlight">look into what Spiderman actually does</span>. One of the big questions I had, was how do we know <span class="text-highlight">which point to use to swing</span>. After searching a bit on the internet I found this conference that at some point explains how the developers of Spiderman themselves got inspired by <a class="link-in-text" href="https://store.steampowered.com/app/378070/Energy_Hook/" target="_blank">Energy Hook</a>'s way of doing things : <a class="link-in-text" href="https://youtu.be/5T1hnau158M?si=UZ7K8-DZiZsFD34D" target="_blank">Classic Game Design Postmortem: Swinging with Spider-Man (GDC)</a>.</p>
             <div class="div-row" style="width: 100%;">
                 <div style="width: 49%;">
-                    <img src="../../../img/video-games/nadir/ngh-gdc-explanation.png" style="width: 100%; margin-bottom: 0;">
+                    <img src="/img/video-games/nadir/ngh-gdc-explanation.png" style="width: 100%; margin-bottom: 0;">
                     <p><i>Swinging with Spider-man (GDC)</i></p>
                 </div>
                 <div style="width: 49%;">
-                    <img src="../../../img/video-games/nadir/ngh-grapple-detection.png" style="width: 100%;margin-bottom: 0;">
+                    <img src="/img/video-games/nadir/ngh-grapple-detection.png" style="width: 100%;margin-bottom: 0;">
                     <p><i>Our documentation about the swinging behavior</i></p>
                 </div>
             </div> 
             <p>Basically, what they did is they <span class="text-highlight">trace a cone of raycast that detects all the possible hanging points</span>. In Energy Hook, <span class="text-highlight">the cone expands the longer the input to swing is held</span>, in order to catch more possible points. At first, we decided to go with something pretty similar and just <span class="text-highlight">trace a cone of raycast</span>. If a raycast hits something, it <span class="text-highlight">saves the collided object and the point of collision</span> in a list. Once all collisions have been saved, we then calculate the distance between each one and a defined point that we call <span class="text-highlight">"perfect swinging point"</span> - which the game designers can move around to influence how we want our average swing curve to feel like (see "Perfect Swinging Point example" below). <span class="text-highlight">The point that the player will use to swing is the one that's the closest to our perfect swinging point</span>.</p>
             <div class="div-row" style="width: 100%;">
                 <div style="width: 39%;">
-                    <img src="../../../img/video-games/nadir/ngh-cone-raycast-opening.gif" style="width: 100%; margin: 0; height: 20vw; object-fit: cover;">
+                    <img src="/img/video-games/nadir/ngh-cone-raycast-opening.gif" style="width: 100%; margin: 0; height: 20vw; object-fit: cover;">
                     <p><i>Cone raycast opening</i></p>
                 </div>
                 <div style="width: 59%;">
@@ -71,16 +71,16 @@
             <p>The problem is that in our case, a point detected near the ceiling might not be closer to the perfect point than a point taken in front of the player (see "Perfect Swinging Point example" below). So what we did <span class="text-highlight">instead of opening the radius slowly</span>, is that we choose a number of radius we want to test, and <span class="text-highlight">go through each radius to find all the possible swinging points</span>. THEN we choose the one closest to the perfect point. That way we actually test many different radius (see "Example of several radius step" below).</p>
             <div class="div-row" style="width: 100%;">
                 <div style="width: 32%;">
-                    <img src="../../../img/video-games/nadir/ngh-cone-raycast-example.gif" style="width: 100%; margin-bottom: 0;">
+                    <img src="/img/video-games/nadir/ngh-cone-raycast-example.gif" style="width: 100%; margin-bottom: 0;">
                     <p><i>Cone raycast placement on the player</i></p>
                 </div>
                 <div style="width: 32%;">
-                    <img src="../../../img/video-games/nadir/ngh-cone-raycast-perfect-point.png" style="width: 100%; margin-bottom: 0;">
+                    <img src="/img/video-games/nadir/ngh-cone-raycast-perfect-point.png" style="width: 100%; margin-bottom: 0;">
                     <p><i>Perfect Swinging Point example</i></p>
                 </div>
 
                 <div style="width: 32%;">
-                    <img src="../../../img/video-games/nadir/ngh-cone-raycast-radius-step.png" style="width: 100%; margin-bottom: 0;"> 
+                    <img src="/img/video-games/nadir/ngh-cone-raycast-radius-step.png" style="width: 100%; margin-bottom: 0;"> 
                     <p><i>Example of several radius step</i></p>
                 </div>
             </div> 

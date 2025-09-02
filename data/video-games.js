@@ -98,7 +98,7 @@ const videoGameDatas =
     },  
     {
         "name" : "Creeping Deck",
-        "image1": "/img/video-games/deck-on-the-nile.jpg",
+        "image1": "/img/video-games/creeping-deck.png",
         "link": "video-games/creeping-deck.html",
         "filter-type": "work",
         "tags": ["2022 📆", "Steam 🤖", "Blanket Games"],
